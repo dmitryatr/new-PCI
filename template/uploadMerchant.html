@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>PCI Compiliance</title>
+        <link href="../plugins/jquery-circliful/css/jquery.circliful.css" rel="stylesheet" type="text/css" />
+        <link href="../plugins/datatables/buttons.bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="../plugins/datatables/jQuery.dataTables.min.css" rel="stylesheet" type="text/css">
+        
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/icons.css" rel="stylesheet" type="text/css" />
+        
+        <script src="assets/js/modernizr.min.js"></script>
+    </head>
+    <body>
+        <!-- Navigation Bar-->
+        <header id="topnav">
+            <div class="topbar-main">
+                <div class="container">
+
+                    <!-- Logo container-->
+                    <div class="logo m-t-5">
+                        <!-- Text Logo -->
+                        <a href="index.html" class="logo">
+                            <span class="logo-large">Mersa Tech</span>
+                        </a>
+                    </div>
+                    <!-- End Logo container-->
+                    <div class="menu-extras topbar-custom float-right">
+                        <div class="list-inline mb-0 text-white">
+                            Dev Team
+                            <a href="#" class="text-secondary">Sign Out</a>
+                        </div>
+                        <div class="btn-group">
+                                    <button type="button" class="btn btn-default dropdown-toggle waves-effect waves-light m-b-10" data-toggle="dropdown" aria-expanded="false">Choose language 
+                                    <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="#">English</a></li>
+                                        <li><a href="#">Spanish</a></li>
+                                        <li><a href="#">Portuguese</a></li>
+                                        <li><a href="#">Vietnamese</a></li>
+                                    </ul>
+                                </div>
+                    </div>
+                    <!-- end menu-extras -->
+
+                    <div class="clearfix"></div>
+
+                </div> <!-- end container -->
+            </div>
+            <!-- end topbar-main -->
+
+            <div class="navbar-custom">
+                <div class="container">
+                    <div id="navigation">
+                        <!-- Navigation Menu-->
+                        <ul class="navigation-menu clearfix">
+                            <li>
+                                <a>OFFICES/AGENTS</a>
+                            </li>
+                            <li class="has-submenu float-right">
+                                <button onclick="location.href='addEdit.html'" type="button" class="btn btn-light waves-effect waves-light m-t-10 m-b-10">ADD/EDIT</button>
+                                <button onclick="location.href='index.html'" type="button" class="btn btn-light waves-effect waves-light m-t-10 m-b-10">DASHBOARD</button>
+                            </li>                           
+                        </ul>
+                        <!-- End navigation menu -->
+                    </div> <!-- end #navigation -->
+                </div> <!-- end container -->
+            </div> <!-- end navbar-custom -->
+        </header>
+        <!-- End Navigation Bar-->
+        
+        <div class="wrapper">
+            <form>
+                <div class="container" >
+                <div class="card-box m-t-40">
+                    <div class="header-title">
+                        <span>FILE VALIDATION</span>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-3">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <span>Select Uploaded File</span>
+                                <div class=" fileupload btn waves-effect btn-primary">
+                                    <span><i class="ion-upload m-r-5"></i>Upload</span>
+                                    <input class="m-t-5 upload" type="file">
+                                </div>
+                            </div>
+                            <div class="my-3">
+                                <button type="button" class="btn btn-info btn-block dropdown-toggle waves-effect waves-light w-lg" data-toggle="dropdown" aria-expanded="false">
+                                    <span class="caret">Select Bank...</span>
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">iPmt</a>
+                                    <a class="dropdown-item" href="#">Vantiv</a>
+                                </div>
+                            </div>
+                            <div class="checkbox checkbox-primary m-t-10">
+                                <input id="checkbox3" type="checkbox">
+                                <label for="checkbox3">Show Full Validation Log</label>
+                            </div>
+                        </div>
+                        <div class="col-4"></div>
+                        <div class="col">
+                            <span>If there is a duplicate company how do you want us to handle?</span>
+                            <div class="m-t-10">
+                                <div class="radio radio-primary">
+                                    <input type="radio" name="radio_inline" value="option1" id="radio5">
+                                    <label for="radio5">Skip the duplicate</label>
+                                </div>
+                                <div class="radio radio-primary">
+                                    <input type="radio" name="radio_inline" value="option1" id="radio6">
+                                    <label for="radio6">Update the merchant with this information</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-end m-b-20">
+                    <button type="button" class="btn btn-primary btn-custom waves-effect waves-light w-lg">Validate File</button>
+                    <button type="button" class="btn btn-default btn-custom waves-effect waves-light m-l-10 w-lg">Load File</button>
+                </div>
+                <div class="card-box">
+                    <div class="header-title">
+                        <span>FILE VALIDATION</span>
+                    </div>
+                    <div class="row m-b-30 mt-3">
+                        <div class="col">
+                            <span>Validation Report Summary</span>
+                            <textarea class="form-control m-t-5" rows="3"></textarea>
+                            <button type="button" class="btn btn-default btn-custom waves-effect m-t-10 waves-light w-lg">View Full Validation Report</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <span>Loading Report Summary</span>
+                            <textarea class="form-control m-t-5" rows="3"></textarea>
+                            <button type="button" class="btn btn-default btn-custom waves-effect m-t-10 aves-light w-lg">View Full Loading Report</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-box">
+                    <div class="header-title">
+                        <span>FILTER <i class="ti-search"></i></span>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-3">
+                            <input type="text" class="form-control m-b-10" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Full or Partial File Name">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3">
+                            
+                        </div>                        
+                    </div>
+                </div>
+                <div class="card-box table-bordered">
+                    <div class="table-responsive">
+                    <table id="datatable-editable" class="table text-center table-hover">
+                        <thead class="thead-light">
+                            <tr>
+                                <th>Date Loading</th>
+                                <th>File Name</th>
+                                <th>Records</th>
+                                <th>Start Date</th>
+                                <th>End Date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+                </div>
+                </div>
+            </form>
+        </div>
+
+        <!--Footer-->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="m-r-10">©2018 PCI Compliance. All rights reserved</div>
+                    <div class="border-right"><a href="termsOfService.html" class="m-r-5">Terms Of Service</a></div>
+                    <div class="border-right"><a href="termsConditions.html" class="m-l-5 m-r-5">ISO Terms & Conditions</a></div>
+                    <div class="border-right"><a href="privacyPolicy.html" class="m-r-5 m-l-5">Privacy Policy</a></div>
+                    <a href="help.html" class="m-l-5">Help</a>
+                </div>
+            </div>         
+        </footer>
+                <!-- jQuery  -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/popper.min.js"></script><!-- Popper for Bootstrap --><!-- Tether for Bootstrap -->
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/waves.js"></script>
+        <script src="assets/js/jquery.slimscroll.js"></script>
+        <script src="assets/js/jquery.scrollTo.min.js"></script>
+
+        <!--DataTable-->
+        <script src="../plugins/datatables/jquery.dataTables.min.js"></script>
+        <script src="../plugins/datatables/dataTables.bootstrap.js"></script>
+        <script src="../plugins/datatables/buttons.bootstrap.min.js"></script>
+
+        <!-- EASY PIE CHART JS -->
+        <script src="../plugins/jquery.easy-pie-chart/dist/easypiechart.min.js"></script>
+        <script src="../plugins/jquery.easy-pie-chart/dist/jquery.easypiechart.min.js"></script>
+        <script src="assets/pages/easy-pie-chart.init.js"></script>
+
+        <!-- KNOB JS -->
+        <!--[if IE]>
+        <script type="text/javascript" src="../plugins/jquery-knob/excanvas.js"></script>
+        <![endif]-->
+        <script src="../plugins/jquery-knob/jquery.knob.js"></script>
+
+        <!-- Circliful -->
+        <script src="../plugins/jquery-circliful/js/jquery.circliful.min.js"></script>
+
+        <script src="assets/js/jquery.core.js"></script>
+        <script src="assets/js/jquery.app.js"></script>
+
+        <script>
+            $(function() {
+                $(".knob").knob();
+                $('.circliful-chart').circliful();
+            });
+        </script>
+        <script type="text/javascript">
+           $(document).ready(function() {
+            $('#datatable').DataTable({
+                scrollX: 400,
+                searching: false,
+                info: false,
+                lengthChange: false
+            });
+           }); 
+        </script>
+    </body>
+</html>

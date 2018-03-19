@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>PCI Compiliance</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link href="../plugins/jquery-circliful/css/jquery.circliful.css" rel="stylesheet" type="text/css" />
+        <link href="../plugins/datatables/buttons.bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="../plugins/datatables/jQuery.dataTables.min.css" rel="stylesheet" type="text/css">
+
+        
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/icons.css" rel="stylesheet" type="text/css" />
+        
+        <script src="assets/js/modernizr.min.js"></script>
+    </head>
+    <body>
+        <!-- Navigation Bar-->
+        <header id="topnav">
+            <div class="topbar-main">
+                <div class="container">
+
+                    <!-- Logo container-->
+                    <div class="logo m-t-5">
+                        <!-- Text Logo -->
+                        <a href="index.html" class="logo">
+                            <span class="logo-large">Mersa Tech</span>
+                        </a>
+                    </div>
+                    <!-- End Logo container-->
+                    <div class="menu-extras topbar-custom float-right">
+                        <div class="list-inline mb-0 text-white">
+                            Dev Team
+                            <a href="#" class="text-secondary">Sign Out</a>
+                        </div>
+                        <div class="btn-group">
+                                    <button type="button" class="btn btn-default dropdown-toggle waves-effect waves-light m-b-10" data-toggle="dropdown" aria-expanded="false">Choose language 
+                                    <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="#">English</a></li>
+                                        <li><a href="#">Spanish</a></li>
+                                        <li><a href="#">Portuguese</a></li>
+                                        <li><a href="#">Vietnamese</a></li>
+                                    </ul>
+                                </div>
+                    </div>
+                    <!-- end menu-extras -->
+
+                    <div class="clearfix"></div>
+
+                </div> <!-- end container -->
+            </div>
+            <!-- end topbar-main -->
+
+            <div class="navbar-custom">
+                <div class="container">
+                    <div id="navigation">
+                        <!-- Navigation Menu-->
+                        <ul class="navigation-menu">
+
+                            <li class="has-submenu">
+                                <a href="index.html"><i class="ti-home"></i>ISO Dashboard</a>
+                            </li>
+
+                            <li class="has-submenu">
+                                <a href="addEdit.html">Add/Edit</a>
+                            </li>
+
+                            <li class="has-submenu">
+                                <a href="communications.html">Comm List</a>
+                            </li>
+
+                            <li class="has-submenu">
+                                <a href="isoDocuments.html">Docs</a>
+                            </li>
+
+                            <li class="has-submenu">
+                                <a href="reportingType.html">Reports</a>
+                            </li>
+
+                            <li class="has-submenu">
+                                <a href="scanDashboard.html">Scan Dashboard</a>
+                            </li>
+                            
+                        </ul>
+                        <!-- End navigation menu -->
+                    </div> <!-- end #navigation -->
+                </div> <!-- end container -->
+            </div> <!-- end navbar-custom -->
+        </header>
+        <!-- End Navigation Bar-->
+        
+        <div class="wrapper">
+            <div class="container">
+                <form>
+                    <div class="m-t-15">
+                        <button type="button" id="button-gauges" class="btn btn-outline-light waves-effect btn-sm">Hide Gauges</button>
+                        <button type="button" id="button-options" class="btn btn-outline-light waves-effect btn-sm">Show Options</button>
+                    </div>
+                    <div id="block">
+                        <div class="row text-center d-flex justify-content-between">        
+                    <div class="col text-left">
+                        <a href="chart.html">
+                            <div class="chart easy-pie-chart-3" data-percent="3">
+                                <span class="percent"></span>
+                                <div>Compliant Saq's</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <div class="chart easy-pie-chart-3" data-percent="25">
+                            <span class="percent"></span>
+                            <div>Compliant Scans</div>
+                        </div>
+                    </div> 
+                    <div class="col">
+                        <div class="chart easy-pie-chart-3" data-percent="93">
+                            <span class="percent"></span>
+                            <div>Non Responsive</div>
+                        </div>
+                    </div> 
+                    <div class="col">
+                        <div class="chart easy-pie-chart-3" data-percent="3">
+                            <span class="percent"></span>
+                            <div>Overall Compliant</div>
+                        </div>
+                    </div> 
+                    <div class="col">
+                        <div class="chart easy-pie-chart-3" data-percent="97">
+                            <span class="percent"></span>
+                            <div>Overall Non Compliant</div>
+                        </div>
+                    </div> 
+                    <div class="col">
+                        <div class="chart easy-pie-chart-3" data-percent="1">
+                            <span class="percent"></span>
+                            <div>Scan Merchants</div>
+                        </div>
+                    </div> 
+                    <div class="col">
+                        <div class="chart easy-pie-chart-3" data-percent="75">
+                            <span class="percent"></span>
+                            <div>Non Compliant Scans</div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="chart easy-pie-chart-3" data-percent="97">
+                            <span class="percent"></span>
+                            <div>Non Compliant Saq's</div>
+                        </div>
+                    </div> 
+                        </div>
+
+                        <div class="row text-center d-flex justify-content-between">
+                   <div class="col m-l-30 m-t-40">
+                        <a href="hierarchySearchEditUser.html"><button type="button" class="btn btn-light btn-block waves-effect">3847</button></a>
+                        <div>Users</div>
+                   </div>
+                   <div class="col m-l-30 m-t-40">
+                        <a href="chart10.html"><button type="button" class="btn btn-light btn-block  waves-effect">63</button></a>
+                        <div>Scan</div>
+                   </div>
+                   <div class="col m-l-30 m-t-40">
+                        <a href="#"><button type="button" class="btn btn-light btn-block  waves-effect">260</button></a>
+                        <div>SAQ's</div>
+                   </div>
+                   <div class="col m-l-30 m-t-40">
+                        <a href="#"><button type="button" class="btn btn-light btn-block  waves-effect">267</button></a>
+                        <div>Registered</div>
+                   </div>
+                   <div class="col m-l-30 m-t-40">
+                        <a href="#"><button type="button" class="btn btn-light btn-block  waves-effect">300</button></a>
+                        <div>Disabled</div>
+                   </div>
+                   <div class="col m-l-30 m-t-40">
+                        <a href="#"><button type="button" class="btn btn-light btn-block  waves-effect">16</button></a>
+                        <div>Compliant Scan</div>
+                   </div>
+                   <div class="col m-l-30 m-t-40">
+                        <a href="#"><button type="button" class="btn btn-light btn-block  waves-effect">139</button></a>
+                        <div>Compliant SAQ</div>
+                   </div>
+                   <div class="col m-l-30 m-t-40">
+                        <a href="#"><button type="button" class="btn btn-light btn-block  waves-effect">3571</button></a>
+                        <div>Not Registered</div>
+                   </div>
+                   <div class="col m-l-30 m-t-40">
+                        <a href="#"><button type="button" class="btn btn-light btn-block  waves-effect">3838</button></a>
+                        <div>Merchants All</div>
+                   </div>
+                        </div>
+                        <div id="options" style="display: none">
+                    <div class="row d-flex align-items-center">
+                        <span class="mx-3">MID Status:</span>
+                        <button type="button" class="btn btn-info dropdown-toggle waves-effect waves-light w-lg" data-toggle="dropdown" aria-expanded="false">
+                            <span class="caret">All</span>
+                        </button>
+                        <div class="dropdown-menu" x-placement="bottom-start">
+                            <a class="dropdown-item" href="#">Enabled Only</a>
+                            <a class="dropdown-item" href="#">Disabled Only</a>
+                        </div>
+                        <button type="button" class="btn btn-primary btn-custom waves-effect waves-light ml-4">Filter Gauges</button>
+                    </div>
+                        </div>
+                    </div>
+                    <div class="card-box m-t-40">
+                        <div class="m-t-0 header-title">
+                            <span>Filter</span>
+                        </div>
+                        <div class="row">
+                        <div class="col- mr-5">
+                            <div>
+                            <div class="m-2">
+                                <button type="button" class="btn btn-info btn-block dropdown-toggle waves-effect waves-light w-lg" data-toggle="dropdown" aria-expanded="false">
+                                    <span class="caret">Office/Agent</span>
+                                </button>
+                                <div class="dropdown-menu" x-placement="bottom-start">
+                                    <a class="dropdown-item" href="#">BestCard</a>
+                                    <a class="dropdown-item" href="#">MAC USA</a>
+                                </div>
+                            </div>
+                            <div class="m-2">
+                                <button type="button" class="btn btn-info btn-block dropdown-toggle waves-effect waves-light w-lg" data-toggle="dropdown" aria-expanded="false">Rep
+                                    <span class="caret"></span>
+                                </button>
+                                <div class="dropdown-menu" x-placement="bottom-start">
+                                    <a class="dropdown-item" href="#">BestCard - IP76</a>
+                                    <a class="dropdown-item" href="#">BestCard - MT76</a>
+                                </div>
+                            </div>
+                            <div class="d-flex m-2">
+                            <div>
+                                <button type="button" class="btn btn-info dropdown-toggle waves-effect waves-light w-md" data-toggle="dropdown" aria-expanded="false">
+                                    <span class="caret">HQ</span>
+                                </button>
+                                <div class="dropdown-menu" x-placement="bottom-start">
+                                    <a class="dropdown-item" href="#">Law Office of John Preston</a>
+                                    <a class="dropdown-item" href="#">Parker Orthodontics</a>
+                                </div>
+                            </div>
+                            <div>
+                                <button type="button" class="btn btn-info dropdown-toggle waves-effect waves-light w-md m-l-10" data-toggle="dropdown" aria-expanded="false">
+                                    <span class="caret">Chain</span>
+                                </button>
+                                <div class="dropdown-menu" x-placement="bottom-start">
+                                    <a class="dropdown-item" href="#">Ace in the Hole Bail Bonds</a>
+                                    <a class="dropdown-item" href="#">Advanced Communications</a>
+                                    <a class="dropdown-item" href="#">Affordable Enterprises Inc.</a>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="m-2">
+                                <button type="button" class="btn btn-info btn-block dropdown-toggle waves-effect waves-light w-lg" data-toggle="dropdown" aria-expanded="false">
+                                    <span class="caret">Bank/Processor</span>
+                                </button>
+                                <div class="dropdown-menu" x-placement="bottom-start">
+                                    <a class="dropdown-item" href="#">Electronic Merchant Systems (EMS)</a>
+                                    <a class="dropdown-item" href="#">Evo/PowerPay</a>
+                                    <a class="dropdown-item" href="#">First Data Merchant Services</a>
+                                    <a class="dropdown-item" href="#">iPmt</a>
+                                    <a class="dropdown-item" href="#">Vantiv</a>
+                                </div>
+                            </div>
+                            <div class="m-2">
+                                <button type="button" class="btn btn-info btn-block dropdown-toggle waves-effect waves-light w-lg" data-toggle="dropdown" aria-expanded="false">
+                                    <span class="caret">Platform</span>
+                                </button>
+                                <div class="dropdown-menu" x-placement="bottom-start">
+                                </div>
+                            </div>
+                            <div class="m-2">
+                                <button type="button" class="btn btn-info btn-block dropdown-toggle waves-effect waves-light w-lg" data-toggle="dropdown" aria-expanded="false">
+                                    <span class="caret">Sys/Prin</span>
+                                </button>
+                                <div class="dropdown-menu" x-placement="bottom-start">
+                                    <a class="dropdown-item" href="#">02740</a>
+                                    <a class="dropdown-item" href="#">02949</a>
+                                    <a class="dropdown-item" href="#">03215</a>
+                                    <a class="dropdown-item" href="#">03420</a>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="col-4 m-r-15">
+                            <div class="m-t-10 m-l-5 header-title">
+                                <span>Filter By:</span>
+                            </div>
+                            <div class="m-l-5">
+                                <input type="text" class="form-control m-b-10" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Name">
+                                <input type="text" class="form-control m-b-10" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Phone">
+                                <input type="text" class="form-control m-b-10" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="MID">
+                                <input type="text" class="form-control m-b-10" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Email">
+                            </div>
+                            <div class="m-t-20 m-l-5 header-title">
+                                <span>By Date:</span>
+                            </div>
+                            <div class="m-l-5">
+                                <input type="date" class="form-control m-b-10" id="datepicker" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="From">
+                                <input type="date" class="form-control m-b-10" id="datepicker" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="To" name="date">
+                            </div>
+                            <div class="m-t-30 m-l-5">
+                                <button type="button" class="btn btn-primary btn-custom waves-effect waves-light w-100">Show All</button>
+                            </div>
+                        </div>
+                        <div class="col-4 m-l-15 d-flex flex-column justify-content-between">
+                             <div class="m-t-10 m-l-5 header-title">
+                                <span>Other:</span>
+                            </div>
+                            <div>
+                                <div class="radio radio-primary">
+                                    <input type="radio" name="radio" value="option1" id="radio1" checked="checked">
+                                    <label for="radio1">All Loaded</label>
+                                </div>
+                                <div class="radio radio-primary">
+                                    <input type="radio" name="radio" value="option2" id="radio2">
+                                    <label for="radio2">Non Registered</label>
+                                </div>
+                                <div class="radio radio-primary">
+                                    <input type="radio" name="radio" value="option3" id="radio3">
+                                    <label for="radio3">Registered</label>
+                                </div>
+                                <div class="radio radio-primary">
+                                    <input type="radio" name="radio" value="option4" id="radio4">
+                                    <label for="radio4">Disabled</label>
+                                </div>
+                            </div>
+                            <div class="m-t-20 m-b-15">
+                                <button type="button" class="btn btn-info dropdown-toggle waves-effect waves-light w-lg" data-toggle="dropdown" aria-expanded="false">
+                                    <span class="caret">Select One</span>
+                                </button>
+                                <div class="dropdown-menu" x-placement="bottom-start">
+                                    <a class="dropdown-item" href="#">Compliant</a>
+                                    <a class="dropdown-item" href="#">Not Compliant</a>
+                                </div>
+                            </div>
+                            <div class="m-l-5">
+                                <div class="radio radio-primary form-check-inline">
+                                    <input type="radio" name="radio_inline" value="option1" id="radio5">
+                                    <label for="radio5">Saq</label>
+                                </div>
+                                <div class="radio radio-primary form-check-inline">
+                                    <input type="radio" name="radio_inline" value="option1" id="radio6">
+                                    <label for="radio6">Scan</label>
+                                </div>
+                                <div class="radio radio-primary form-check-inline">
+                                    <input type="radio" name="radio_inline" value="option1" id="radio7" checked="checked">
+                                    <label for="radio7">Both</label>
+                                </div>
+                            </div>
+                            <div class="checkbox checkbox-primary">
+                                <input type="checkbox" id="checkbox1">
+                                <label for="checkbox1">Show Disabled</label>
+                            </div>
+                            <div>
+                                <button type="button" class="btn btn-primary btn-custom waves-effect waves-light w-100 m-t-20">Search</button>
+                                <button type="button" class="btn btn-primary btn-custom waves-effect waves-light w-100 m-t-20">Clear Filter</button>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="d-flex justify-content-end m-b-20">
+                        <a href="uploadMerchant.html" class="btn btn-primary btn-custom waves-effect waves-light">Upload Merchant</a>
+                        <a href="manuallyEnterMerchant.html" class="btn btn-primary btn-custom waves-effect waves-light m-l-10">Manually Add Merchant</a>
+                        <a href="addEditHQSearch.html" class="btn btn-primary btn-custom waves-effect waves-light m-l-10">Add/Edit HQ</a>
+                        <a href="addEditChainSearch.html" class="btn btn-primary btn-custom waves-effect waves-light m-l-10">Add/Edit Chain</a>
+                    </div>
+                </form>
+                <div class="w-100"></div>
+                <div class="card-box table-bordered">
+                    <div class="table-responsive">
+                        <table id="datatable-editable" class="table text-center table-hover">
+                        <thead class="thead-light">
+                            <tr>
+                                <th>Level</th>
+                                <th>Owner</th>
+                                <th>User Name</th>
+                                <th>Email</th>
+                                <th>Edit</th>
+                                <th>Last Logged In</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>ISO</td>
+                                <td>Mersatech</td>
+                                <td>b.trombley@mersatech.com</td>
+                                <td>b.trombley@mersatech.com</td>
+                                <td class="actions">
+                                    <a href="#" class="on-default edit-row" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><i class="fa fa-pencil"></i></a>
+                                    <a href="#" class="on-default remove-row" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><i class="fa fa-trash-o"></i></a>
+                                    <a href="#" class="on-default text-warning" data-toggle="tooltip" data-placement="top" title="" data-original-title="Reset Password"><i class="mdi mdi-lock-reset"></i></a>
+                                </td>
+                                <td>6/27/2017 12:45:32 PM</td>
+                            </tr>
+                            <tr>
+                                <td>ISO</td>
+                                <td>Mersatech</td>
+                                <td>Devteam</td>
+                                <td>Sergei@pcicompliancellc.com</td>
+                                <td class="actions">
+                                    <a href="#" class="on-default edit-row" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><i class="fa fa-pencil"></i></a>
+                                    <a href="#" class="on-default remove-row" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><i class="fa fa-trash-o"></i></a>
+                                    <a href="#" class="on-default text-warning" data-toggle="tooltip" data-placement="top" title="" data-original-title="Reset Password"><i class="mdi mdi-lock-reset"></i></a>
+                                </td>
+                                <td>3/9/2018 2:35:18 AM</td>
+                            </tr>
+                        </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-end m-b-20">
+                    <a href="#" class="btn btn-primary btn-custom waves-effect waves-light w-lg">Print</a>
+                    <a href="#" class="btn btn-primary btn-custom waves-effect waves-light m-l-10 w-lg">Export</a>
+                </div>
+            </div>
+        </div>
+
+        <!--Footer-->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="m-r-10">©2018 PCI Compliance. All rights reserved</div>
+                    <div class="border-right"><a href="termsOfService.html" class="m-r-5">Terms Of Service</a></div>
+                    <div class="border-right"><a href="termsConditions.html" class="m-l-5 m-r-5">ISO Terms & Conditions</a></div>
+                    <div class="border-right"><a href="privacyPolicy.html" class="m-r-5 m-l-5">Privacy Policy</a></div>
+                    <a href="help.html" class="m-l-5">Help</a>
+                </div>
+            </div>         
+        </footer>
+                <!-- jQuery  -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/popper.min.js"></script><!-- Popper for Bootstrap -->
+        <!-- Tether for Bootstrap -->
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/waves.js"></script>
+        <script src="assets/js/jquery.slimscroll.js"></script>
+        <script src="assets/js/jquery.scrollTo.min.js"></script>
+
+        <!--DataTable-->
+        <script src="../plugins/datatables/jquery.dataTables.min.js"></script>
+        <script src="../plugins/datatables/dataTables.bootstrap.js"></script>
+        <script src="../plugins/datatables/buttons.bootstrap.min.js"></script>
+
+        <!-- EASY PIE CHART JS -->
+        <script src="../plugins/jquery.easy-pie-chart/dist/easypiechart.min.js"></script>
+        <script src="../plugins/jquery.easy-pie-chart/dist/jquery.easypiechart.min.js"></script>
+        <script src="assets/pages/easy-pie-chart.init.js"></script>
+
+        <!-- KNOB JS -->
+        <!--[if IE]>
+        <script type="text/javascript" src="../plugins/jquery-knob/excanvas.js"></script>
+        <![endif]-->
+        <script src="../plugins/jquery-knob/jquery.knob.js"></script>
+
+        <!-- Circliful -->
+        <script src="../plugins/jquery-circliful/js/jquery.circliful.min.js"></script>
+
+        <script src="assets/js/jquery.core.js"></script>
+        <script src="assets/js/jquery.app.js"></script>
+
+        <script>
+            $(function() {
+                $(".knob").knob();
+                $('.circliful-chart').circliful();
+            });
+        </script>
+        <script type="text/javascript">
+        $(function() {
+            $('#button-gauges').on('click', function(e) {
+                $('#block').slideToggle(function() {
+                    $('#button-options').slideToggle(10);
+                    $(e.target).text($(this).is(':visible') ? 'Hide Gauges' : 'Show Gauges');
+                });
+            });
+        });
+        </script>
+        <script type="text/javascript">
+        $(function() {
+            $('#button-options').on('click', function(e) {
+                $('#options').slideToggle(function() {
+                    $(e.target).text($(this).is(':visible') ? 'Hide Options' : 'Show Options');
+                });
+            });
+        });
+        </script>
+        <script type="text/javascript">
+           $(document).ready(function() {
+            $('#datatable').DataTable({
+                scrollX: 400,
+                searching: false,
+                info: false,
+                lengthChange: false
+            });
+           }); 
+        </script>
+    </body>
+</html>

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>PCI Compiliance</title>
+        <link href="../plugins/jquery-circliful/css/jquery.circliful.css" rel="stylesheet" type="text/css" />
+        
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/icons.css" rel="stylesheet" type="text/css" />
+        
+        <script src="assets/js/modernizr.min.js"></script>
+    </head>
+    <body>
+        <!-- Navigation Bar-->
+        <header id="topnav">
+            <div class="topbar-main">
+                <div class="container">
+
+                    <!-- Logo container-->
+                    <div class="logo m-t-5">
+                        <!-- Text Logo -->
+                        <a href="index.html" class="logo">
+                            <span class="logo-large">Mersa Tech</span>
+                        </a>
+                    </div>
+                    <!-- End Logo container-->
+                    <div class="menu-extras topbar-custom float-right">
+                        <div class="list-inline mb-0 text-white">
+                            Dev Team
+                            <a href="#" class="text-secondary">Sign Out</a>
+                        </div>
+                        <div class="btn-group">
+                                    <button type="button" class="btn btn-default dropdown-toggle waves-effect waves-light m-b-10" data-toggle="dropdown" aria-expanded="false">Choose language 
+                                    <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="#">English</a></li>
+                                        <li><a href="#">Spanish</a></li>
+                                        <li><a href="#">Portuguese</a></li>
+                                        <li><a href="#">Vietnamese</a></li>
+                                    </ul>
+                                </div>
+                    </div>
+                    <!-- end menu-extras -->
+
+                    <div class="clearfix"></div>
+
+                </div> <!-- end container -->
+            </div>
+            <!-- end topbar-main -->
+
+            <div class="navbar-custom">
+                <div class="container">
+                    <div id="navigation">
+                        <!-- Navigation Menu-->
+                        <ul class="navigation-menu clearfix">
+                            <li>
+                                <a>MANUALLY ENTER MERCHANT</a>
+                            </li>
+                            <li class="has-submenu float-right">
+                                <button onclick="location.href='reportingType.html'" type="button" class="btn btn-light waves-effect waves-light m-t-10 m-b-10">REPORTS</button>
+                                <button onclick="location.href='index.html'" type="button" class="btn btn-light waves-effect waves-light m-t-10 m-b-10">DASHBOARD</button>
+                            </li>                           
+                        </ul>
+                        <!-- End navigation menu -->
+                    </div> <!-- end #navigation -->
+                </div> <!-- end container -->
+            </div> <!-- end navbar-custom -->
+        </header>
+        <!-- End Navigation Bar-->
+        
+        <div class="wrapper">
+            <form>
+                <div class="container">
+                    <div class="card-box mt-5">
+                        <div class="m-b-20 header-title">Add/Edit Merchant</div>
+                        <div class="row">
+                            <div class="col-3">
+                                <div class="m-b-20">
+                                    <span>Business Name</span>
+                                    <div class="m-t-5">
+                                    <input type="text" class="form-control m-b-10" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="*Business Name (DBA)">
+                                    <input type="text" class="form-control m-b-10" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Legal Name">
+                                    <input type="text" class="form-control m-b-10" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="*Merchant ID">
+                                    </div>
+                                </div>
+                                <div class="m-b-20">
+                                    <span>Account Info</span>
+                                    <div class="m-t-5">
+                                    <input type="text" class="form-control m-b-10" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Account Number (DDA)">
+                                    <input type="text" class="form-control m-b-10" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Routing Number">
+                                    </div>
+                                </div>
+                                <div class="m-b-20">
+                                    <span>Company Name</span>
+                                    <input type="text" class="form-control m-b-10" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Company Phone">
+                                    <input type="text" class="form-control m-b-10" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Company Contact Email">
+                                    <input type="text" class="form-control m-b-10" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Company Url">
+                                    <input type="text" class="form-control m-b-10" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="MCC/SIC Code">
+                                </div>
+                                <div class="m-b-20">
+                                    <span>Type of Business</span>
+                                    <div class="my-2">
+                                        <button type="button" class="btn btn-info btn-block dropdown-toggle waves-effect waves-light w-lg" data-toggle="dropdown" aria-expanded="false">
+                                            <span class="caret">None</span>
+                                        </button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="#">Retailer</a>
+                                            <a class="dropdown-item" href="#">Telecommunication</a>
+                                        </div>
+                                    </div>
+                                    <div class="checkbox checkbox-primary m-t-10">
+                                        <input id="checkbox1" type="checkbox">
+                                        <label for="checkbox1">Compliant Through Another Provider</label>
+                                    </div>
+                                </div>
+                                <div class="m-b-20">
+                                    <span>Custom Fields</span>
+                                    <input type="text" class="form-control m-b-10" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Custom 1">
+                                    <input type="text" class="form-control m-b-10" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Custom 2">
+                                    <input type="text" class="form-control m-b-10" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Custom 3">
+                                </div>
+                                <div class="m-b-20">
+                                    <span>Breach Protection</span>
+                                    <div class="checkbox checkbox-primary m-t-10">
+                                        <input id="checkbox2" disabled="" checked="" type="checkbox">
+                                        <label for="checkbox2">Breach Protection Coverage</label>
+                                    </div>
+                                </div>
+                                <div class="m-b-20">
+                                    <span>Coverage Start Date</span>
+                                    <input type="text" class="form-control m-b-10" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Date">
+                                </div>
+                                <div class="m-b-20">
+                                    <span>Level:</span>
+                                    <input type="text" class="form-control m-b-10" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Level">
+                                </div>
+                            </div>
+                            <div class="col-1"></div>
+                            <div class="col-3">
+                                <div>
+                                    <span>Location Info</span>
+                                    <div class="m-t-5 m-b-20">
+                                    <input type="text" class="form-control m-b-10" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Street Line 1:">
+                                    <input type="text" class="form-control m-b-10" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Street Line 2:">
+                                    <input type="text" class="form-control m-b-10" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="City">
+                                    <button type="button" class="btn btn-info btn-block dropdown-toggle waves-effect waves-light m-b-10" data-toggle="dropdown" aria-expanded="false">Country</button>
+                                    <div class="dropdown-menu" x-placement="bottom-start">
+                                        <button type="button" class="dropdown-item" href="#">USA</button>
+                                        <button type="button" class="dropdown-item" href="#">Belarus</button>
+                                    </div>
+                                    <button type="button" class="btn btn-info btn-block dropdown-toggle waves-effect waves-light m-b-10" data-toggle="dropdown" aria-expanded="false">State</button>
+                                    <div class="dropdown-menu" x-placement="bottom-start">
+                                        <button type="button" class="dropdown-item" href="#">Alabama</button>
+                                        <button type="button" class="dropdown-item" href="#">Alaska</button>
+                                    </div>
+                                    <div class="d-flex">
+                                        <button type="button" class="btn btn-info dropdown-toggle waves-effect waves-light w-50 m-b-10 m-r-5" data-toggle="dropdown" aria-expanded="false">Non US Zip</button>
+                                            <div class="dropdown-menu" x-placement="bottom-start">
+                                                <button type="button" class="dropdown-item" href="#">US Zip</button>
+                                            </div>
+                                            <input type="text" class="form-control m-b-10 w-50" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="*Merchant Zip Code">
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="m-b-20">
+                                    <span class="m-t-5">Hierarchy</span>
+                                   <div class="my-2">
+                                       <button type="button" class="btn btn-info btn-block dropdown-toggle waves-effect waves-light w-lg" data-toggle="dropdown" aria-expanded="false">
+                                           <span class="caret">Office/Agent</span>
+                                       </button>
+                                       <div class="dropdown-menu">
+                                           <a class="dropdown-item" href="#">BestCard</a>
+                                           <a class="dropdown-item" href="#">MAC USA</a>
+                                       </div>
+                                   </div>
+                                   <div class="my-2">
+                                       <button type="button" class="btn btn-info btn-block dropdown-toggle waves-effect waves-light w-lg" data-toggle="dropdown" aria-expanded="false">Rep
+                                           <span class="caret"></span>
+                                       </button>
+                                       <div class="dropdown-menu">
+                                           <a class="dropdown-item" href="#">BestCard - IP76</a>
+                                           <a class="dropdown-item" href="#">BestCard - MT76</a>
+                                       </div>
+                                   </div>
+                                   <div class="my-2">
+                                       <button type="button" class="btn btn-info btn-block dropdown-toggle waves-effect waves-light w-lg" data-toggle="dropdown" aria-expanded="false">
+                                           <span class="caret">Bank/Processor</span>
+                                       </button>
+                                       <div class="dropdown-menu" x-placement="bottom-start">
+                                           <a class="dropdown-item" href="#">Electronic Merchant Systems (EMS)</a>
+                                           <a class="dropdown-item" href="#">Evo/PowerPay</a>
+                                           <a class="dropdown-item" href="#">First Data Merchant Services</a>
+                                           <a class="dropdown-item" href="#">iPmt</a>
+                                           <a class="dropdown-item" href="#">Vantiv</a>
+                                       </div>
+                                   </div>
+                                   <div class="my-2">
+                                       <button type="button" class="btn btn-info btn-block dropdown-toggle waves-effect waves-light w-lg" data-toggle="dropdown" aria-expanded="false">
+                                           <span class="caret">Platform</span>
+                                       </button>
+                                       <div class="dropdown-menu" x-placement="bottom-start">
+                                       </div>
+                                   </div>
+                                   <div class="my-2">
+                                       <button type="button" class="btn btn-info btn-block dropdown-toggle waves-effect waves-light w-lg" data-toggle="dropdown" aria-expanded="false">
+                                           <span class="caret">Sys/Prin</span>
+                                       </button>
+                                       <div class="dropdown-menu" x-placement="bottom-start">
+                                           <a class="dropdown-item" href="#">02740</a>
+                                           <a class="dropdown-item" href="#">02949</a>
+                                           <a class="dropdown-item" href="#">03215</a>
+                                           <a class="dropdown-item" href="#">03420</a>
+                                       </div>
+                                   </div> 
+                                </div>
+                            </div>
+                            <div class="col-1"></div>
+                            <div class="col-3">
+                                <div>
+                                    <span>Contact Info</span>
+                                    <div class="m-t-5 m-b-20">
+                                        <input type="text" class="form-control m-b-10" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Contact Name">
+                                        <input type="text" class="form-control m-b-10" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Contact Phone">
+                                        <input type="text" class="form-control m-b-10" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Extension:">
+                                        <input type="text" class="form-control m-b-10" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Contact Phone 2">
+                                        <input type="text" class="form-control m-b-10" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Contact Email">
+                                        <input type="text" class="form-control m-b-10" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Contact Fax">
+                                    </div>
+                                </div>
+                                <div class="m-b-20">
+                                    <span>Business Description</span>
+                                    <textarea class="form-control m-t-5" rows="6"></textarea>
+                                    <div class="checkbox checkbox-primary m-t-10">
+                                        <input id="checkbox3" type="checkbox">
+                                        <label for="checkbox3">Send to multiple email addresses</label>
+                                    </div>
+                                </div>
+                                <div class="m-b-20">
+                                    <span>Default language:</span>
+                                    <button type="button" class="btn btn-info btn-block dropdown-toggle waves-effect waves-light m-t-5" data-toggle="dropdown" aria-expanded="false">Choose language
+                                        <span class="caret"></span>
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">English</a>
+                                        <a class="dropdown-item" href="#">Spanish</a>
+                                        <a class="dropdown-item" href="#">Portuguese</a>
+                                        <a class="dropdown-item" href="#">Vietnamese</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between m-b-20">
+                        <button type="button" class="btn btn-primary btn-custom waves-effect waves-light w-25">Cancel</button>
+                        <button type="button" class="btn btn-primary btn-custom waves-effect waves-light w-25">Save</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+            
+
+        <!--Footer-->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="m-r-10">©2018 PCI Compliance. All rights reserved</div>
+                    <div class="border-right"><a href="termsOfService.html" class="m-r-5">Terms Of Service</a></div>
+                    <div class="border-right"><a href="termsConditions.html" class="m-l-5 m-r-5">ISO Terms & Conditions</a></div>
+                    <div class="border-right"><a href="privacyPolicy.html" class="m-r-5 m-l-5">Privacy Policy</a></div>
+                    <a href="help.html" class="m-l-5">Help</a>
+                </div>
+            </div>         
+        </footer>
+                <!-- jQuery  -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/popper.min.js"></script><!-- Popper for Bootstrap --><!-- Tether for Bootstrap -->
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/waves.js"></script>
+        <script src="assets/js/jquery.slimscroll.js"></script>
+        <script src="assets/js/jquery.scrollTo.min.js"></script>
+
+        <!-- EASY PIE CHART JS -->
+        <script src="../plugins/jquery.easy-pie-chart/dist/easypiechart.min.js"></script>
+        <script src="../plugins/jquery.easy-pie-chart/dist/jquery.easypiechart.min.js"></script>
+        <script src="assets/pages/easy-pie-chart.init.js"></script>
+
+        <!-- KNOB JS -->
+        <!--[if IE]>
+        <script type="text/javascript" src="../plugins/jquery-knob/excanvas.js"></script>
+        <![endif]-->
+        <script src="../plugins/jquery-knob/jquery.knob.js"></script>
+
+        <!-- Circliful -->
+        <script src="../plugins/jquery-circliful/js/jquery.circliful.min.js"></script>
+
+        <script src="assets/js/jquery.core.js"></script>
+        <script src="assets/js/jquery.app.js"></script>
+
+        <script>
+            $(function() {
+                $(".knob").knob();
+                $('.circliful-chart').circliful();
+            });
+        </script>
+    </body>
+</html>
