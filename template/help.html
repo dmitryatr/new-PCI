@@ -1,6 +1,7 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
     <head>
+        <meta charset="utf-8">
         <title>PCI Compiliance</title>
         <link href="../plugins/jquery-circliful/css/jquery.circliful.css" rel="stylesheet" type="text/css" />
         
@@ -9,11 +10,6 @@
         <link href="assets/css/icons.css" rel="stylesheet" type="text/css" />
         
         <script src="assets/js/modernizr.min.js"></script>
-        <style>
-            .dropdown_button_filter{
-                margin: 10px;
-            }
-        </style>
     </head>
     <body>
         <!-- Navigation Bar-->
@@ -32,7 +28,7 @@
                     <div class="menu-extras topbar-custom float-right">
                         <div class="list-inline mb-0 text-white">
                             Dev Team
-                            <a href="#" style="color: black">Sign Out</a>
+                            <a href="#" class="tect-secondary">Sign Out</a>
                         </div>
                         <div class="btn-group">
                                     <button type="button" class="btn btn-default dropdown-toggle waves-effect waves-light m-b-10" data-toggle="dropdown" aria-expanded="false">Choose language 
@@ -60,7 +56,7 @@
                         <!-- Navigation Menu-->
                         <ul class="navigation-menu">
                             <li class="has-submenu">
-                                <a href="#" style="pointer-events: none;">HELP</a>
+                                <a>HELP</a>
                             </li>                           
                         </ul>
                         <!-- End navigation menu -->
@@ -71,30 +67,31 @@
         <!-- End Navigation Bar-->
         
         <div class="wrapper">
-            <div class="container" >
+            <form>
+                <div class="container" >
                 <div class="card-box m-t-40">
-                    <div class="m-t-0 header-title">
+                    <div class="m-t-0 px-3 header-title">
                         <span>Contact Us</span>
                     </div>
-                    <div class="border" style="padding:25px 20px 15px 25px">
+                    <div class="px-2 py-3">
                         <div class="row">
                             <div class="col">
                                 <div>
-                                    <input type="text" class="form-control m-b-10" aria-label="Default" aria-describedby="inputGroup-sizing-default" value="FirstName">
-                                    <input type="text" class="form-control m-b-10" aria-label="Default" aria-describedby="inputGroup-sizing-default" value="LastName">
-                                    <input type="text" class="form-control m-b-10" aria-label="Default" aria-describedby="inputGroup-sizing-default" value="Email">
+                                    <input type="text" class="form-control m-b-10" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="FirstName">
+                                    <input type="text" class="form-control m-b-10" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="LastName">
+                                    <input type="text" class="form-control m-b-10" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Email">
                                 </div>
                             </div>
                             <div class="col">
                                 <div>
-                                    <input type="text" class="form-control m-b-10" aria-label="Default" aria-describedby="inputGroup-sizing-default" value="Topic">
+                                    <input type="text" class="form-control m-b-10" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Topic">
                                     <button type="button" class="btn waves-effect waves-light w-50 m-t-20">Upload Attachment</button>
                                 </div>
                             </div>
                      </div>
                      <div class="row">
                         <div class="col">
-                            <textarea class="w-100 form-control" style="height: 188px">
+                            <textarea class="w-100 form-control" rows="8">
                             </textarea>
                         </div>
                     </div>
@@ -104,7 +101,8 @@
                     <button type="button" class="btn btn-primary btn-custom waves-effect waves-light w-25 float-left">Back</button>
                     <button type="button" class="btn btn-primary btn-custom waves-effect waves-light w-25 float-right">Send Request</button>
                 </div>
-            </div>
+                </div>
+            </form>
         </div>
 
         <!--Footer-->
@@ -143,12 +141,5 @@
 
         <script src="assets/js/jquery.core.js"></script>
         <script src="assets/js/jquery.app.js"></script>
-
-        <script>
-            $(function() {
-                $(".knob").knob();
-                $('.circliful-chart').circliful();
-            });
-        </script>
     </body>
 </html>

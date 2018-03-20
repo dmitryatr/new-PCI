@@ -71,8 +71,9 @@
         <!-- End Navigation Bar-->
         
         <div class="wrapper">
-            <div class="container" >
-                <div class="card-box m-t-40">
+            <form>
+                <div class="container" >
+                    <div class="card-box m-t-40">
                     <div class="m-t-0 header-title">
                         <span>ADD/EDIT TEMPLATES <i class="ti-search"></i></span>
                     </div>
@@ -83,8 +84,8 @@
                             <button type="button" class="btn btn-primary btn-custom waves-effect waves-light w-lg m-l-15">Add New</button>
                         </div>
                     </div>
-                </div>
-                <div class="card-box m-t-40">
+                    </div>
+                    <div class="card-box m-t-40">
                     <div class="m-t-0 header-title">
                         <span>FILTER <i class="ti-search"></i></span>
                     </div>
@@ -94,7 +95,7 @@
                                 <button type="button" class="btn btn-info btn-block dropdown-toggle waves-effect waves-light" data-toggle="dropdown" aria-expanded="false">
                                     <span class="caret">Office/Agent</span>
                                 </button>
-                                <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 38px, 0px); top: 0px; left: 0px; will-change: transform;">
+                                <div class="dropdown-menu" x-placement="bottom-start">
                                     <a class="dropdown-item" href="#">BestCard</a>
                                     <a class="dropdown-item" href="#">MAC USA</a>
                                 </div>
@@ -103,16 +104,17 @@
                                 <button type="button" class="btn btn-info btn-block dropdown-toggle waves-effect waves-light" data-toggle="dropdown" aria-expanded="false">Rep
                                     <span class="caret"></span>
                                 </button>
-                                <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 38px, 0px); top: 0px; left: 0px; will-change: transform;">
+                                <div class="dropdown-menu" x-placement="bottom-start">
                                     <a class="dropdown-item" href="#">BestCard - IP76</a>
                                     <a class="dropdown-item" href="#">BestCard - MT76</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="card-box">
-                    <table id="datatable-editable" class="table table-bordered text-center table-hover">
+                    </div>
+                    <div class="card-box table-bordered">
+                        <div class="table-responsive">
+                            <table id="datatable-editable" class="table text-center table-hover">
                         <thead class="thead-light">
                             <tr>
                                 <th>Status</th>
@@ -148,10 +150,12 @@
                                 </td>
                             </tr>
                         </tbody>
-                    </table>
-                </div>
-                <div class="card-box">
-                    <table id="datatable-editable" class="table table-bordered text-center table-hover">
+                            </table>
+                        </div>
+                    </div>
+                    <div class="card-box table-bordered">
+                        <div class="table-responsive">
+                            <table id="datatable-editable" class="table text-center table-hover">
                         <thead class="thead-light">
                             <th>Status</th>
                             <th>Name</th>
@@ -170,12 +174,14 @@
                             <td>Yes</td>
                             <td class="actions">
                                 <a href="#" class="on-default edit-row" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><i class="fa fa-pencil"></i></a>                     <a href="#" class="on-default remove-row" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><i class="fa fa-trash-o"></i></a>
-                                <a href="#" class="on-default text-warning" data-toggle="tooltip" data-placement="top" title="" data-original-title="Reset Password"><i class="mdi mdi-lock-reset"></i>
+                                <a href="#" class="on-default text-warning" data-toggle="tooltip" data-placement="top" title="" data-original-title="Reset Password"><i class="mdi mdi-lock-reset"></i></a>
                             </td>
                         </tbody>
-                    </table>
+                            </table>
+                        </div>
+                    </div>
                 </div>
-            </div>
+            </form>
         </div>
 
         <!--Footer-->

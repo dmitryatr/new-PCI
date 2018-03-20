@@ -71,7 +71,8 @@
         <!-- End Navigation Bar-->
         
         <div class="wrapper">
-            <div class="container" >
+            <form>
+                <div class="container" >
                 <div class="card-box m-t-40">
                     <div class="m-t-0 header-title">
                         <span>NOTES/TICKETS <i class="ti-search"></i></span>
@@ -84,8 +85,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="card-box">
-                    <table id="datatable-editable" class="table table-bordered text-center table-hover">
+                <div class="card-box table-bordered">
+                    <div class="table-responsive">
+                        <table id="datatable-editable" class="table text-center table-hover">
                         <thead class="thead-light">
                             <tr>
                                 <th>Number</th>
@@ -97,9 +99,11 @@
                                 <th>Posted To</th>
                             </tr>
                         </thead>
-                    </table>
+                        </table>
+                    </div>
                 </div>
-            </div>
+                </div>
+            </form>
         </div>
 
         <!--Footer-->

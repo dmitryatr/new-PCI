@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf-8">
         <title>PCI Compiliance</title>
         <link href="../plugins/jquery-circliful/css/jquery.circliful.css" rel="stylesheet" type="text/css" />
         <link href="../plugins/datatables/buttons.bootstrap.min.css" rel="stylesheet" type="text/css">
@@ -72,7 +73,8 @@
         <!-- End Navigation Bar-->
         
         <div class="wrapper">
-            <div class="container" >
+            <form>
+                <div class="container" >
                 <div class="card-box m-t-40">
                     <div class="m-t-0 header-title">
                         <span>ADD/EDIT PLATFORM <i class="ti-search"></i></span>
@@ -95,7 +97,7 @@
                                 <button type="button" class="btn btn-info btn-block dropdown-toggle waves-effect waves-light w-lg" data-toggle="dropdown" aria-expanded="false">
                                     <span class="caret">Office/Agent</span>
                                 </button>
-                                <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 38px, 0px); top: 0px; left: 0px; will-change: transform;">
+                                <div class="dropdown-menu">
                                     <a class="dropdown-item" href="#">BestCard</a>
                                     <a class="dropdown-item" href="#">MAC USA</a>
                                 </div>
@@ -104,7 +106,7 @@
                                 <button type="button" class="btn btn-info btn-block dropdown-toggle waves-effect waves-light w-lg" data-toggle="dropdown" aria-expanded="false">Rep
                                     <span class="caret"></span>
                                 </button>
-                                <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 38px, 0px); top: 0px; left: 0px; will-change: transform;">
+                                <div class="dropdown-menu">
                                     <a class="dropdown-item" href="#">BestCard - IP76</a>
                                     <a class="dropdown-item" href="#">BestCard - MT76</a>
                                 </div>
@@ -113,7 +115,7 @@
                                 <button type="button" class="btn btn-info btn-block dropdown-toggle waves-effect waves-light w-lg" data-toggle="dropdown" aria-expanded="false">
                                     <span class="caret">HQ</span>
                                 </button>
-                                <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 38px, 0px); top: 0px; left: 0px; will-change: transform;">
+                                <div class="dropdown-menu">
                                     <a class="dropdown-item" href="#">Law Office of John Preston</a>
                                     <a class="dropdown-item" href="#">Parker Orthodontics</a>
                                 </div>
@@ -122,7 +124,7 @@
                                 <button type="button" class="btn btn-info btn-block dropdown-toggle waves-effect waves-light w-lg" data-toggle="dropdown" aria-expanded="false">
                                     <span class="caret">Chain</span>
                                 </button>
-                                <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 38px, 0px); top: 0px; left: 0px; will-change: transform;">
+                                <div class="dropdown-menu">
                                     <a class="dropdown-item" href="#">Ace in the Hole Bail Bonds</a>
                                     <a class="dropdown-item" href="#">Advanced Communications</a>
                                     <a class="dropdown-item" href="#">Affordable Enterprises Inc.</a>
@@ -132,7 +134,7 @@
                                 <button type="button" class="btn btn-info btn-block dropdown-toggle waves-effect waves-light w-lg" data-toggle="dropdown" aria-expanded="false">
                                     <span class="caret">Bank/Processor</span>
                                 </button>
-                                <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 38px, 0px); top: 0px; left: 0px; will-change: transform;">
+                                <div class="dropdown-menu">
                                     <a class="dropdown-item" href="#">Electronic Merchant Systems (EMS)</a>
                                     <a class="dropdown-item" href="#">Evo/PowerPay</a>
                                     <a class="dropdown-item" href="#">First Data Merchant Services</a>
@@ -143,17 +145,20 @@
                         </div>
                     </div>
                 </div>
-                <div class="card-box">
-                    <table id="datatable-editable" class="table table-bordered text-center table-hover">
+                <div class="card-box table-bordered">
+                    <div class="table-responsive">
+                        <table id="datatable-editable" class="table text-center table-hover">
                         <thead class="thead-light">
                             <tr>
                                 <th>Platform Name</th>
                                 <th></th>
                             </tr>
                         </thead>
-                    </table>
+                        </table>
+                    </div>
                 </div>
-            </div>
+                </div>
+            </form>
         </div>
 
         <!--Footer-->
