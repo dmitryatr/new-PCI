@@ -3,6 +3,8 @@
     <head>
         <meta charset="utf-8">
         <title>PCI Compiliance</title>
+        <!--Plugins css-->
+        <link href="../plugins/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css" rel="stylesheet">
         <link href="../plugins/jquery-circliful/css/jquery.circliful.css" rel="stylesheet" type="text/css" />
         <link href="../plugins/datatables/buttons.bootstrap.min.css" rel="stylesheet" type="text/css">
         <link href="../plugins/datatables/jQuery.dataTables.min.css" rel="stylesheet" type="text/css">
@@ -18,7 +20,7 @@
         <!-- Navigation Bar-->
         <header id="topnav">
             <div class="topbar-main">
-                <div class="container">
+                <div class="container-fluid">
 
                     <!-- Logo container-->
                     <div class="logo m-t-5">
@@ -29,37 +31,78 @@
                     </div>
                     <!-- End Logo container-->
                     <div class="menu-extras topbar-custom float-right">
-                        <div class="list-inline mb-0 text-white">
-                            Dev Team
-                            <a href="#" class="text-secondary">Sign Out</a>
-                        </div>
-                        <div class="btn-group">
-                                    <button type="button" class="btn btn-default dropdown-toggle waves-effect waves-light m-b-10" data-toggle="dropdown" aria-expanded="false">Choose language 
-                                    <span class="caret"></span>
-                                    </button>
-                                    <ul class="dropdown-menu" role="menu">
-                                        <li><a href="#">English</a></li>
-                                        <li><a href="#">Spanish</a></li>
-                                        <li><a href="#">Portuguese</a></li>
-                                        <li><a href="#">Vietnamese</a></li>
-                                    </ul>
+                        <ul class="list-inline float-right mb-0">
+                            <li class="menu-item list-inline-item"> 
+                                <!-- Mobile menu toggle--> 
+                                <a class="navbar-toggle nav-link">
+                                    <div class="lines"> <span></span> <span></span> <span></span> </div>
+                                </a> 
+                                    <!-- End mobile menu toggle--> 
+                            </li>
+                            <li class="list-inline-item dropdown notification-list"> <a class="nav-link dropdown-toggle arrow-none waves-effect" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false"> <i class="mdi mdi-bell noti-icon"></i> <span class="badge badge-pink noti-icon-badge">4</span> </a>
+                                <div class="dropdown-menu dropdown-menu-right dropdown-arrow dropdown-menu-lg" aria-labelledby="Preview" x-placement="bottom-end" > 
+                                    <!-- item-->
+                                    <div class="dropdown-item noti-title">
+                                        <h5 class="font-16"><span class="badge badge-danger float-right">5</span>Notification</h5>
+                                    </div>
+                                      
+                                    <!-- item--> 
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <div class="notify-icon bg-success"><i class="mdi mdi-comment-account"></i></div>
+                                            <p class="notify-details">Robert S. Taylor commented on Admin<small class="text-muted">1 min ago</small></p>
+                                    </a> 
+                                      
+                                    <!-- item--> 
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <div class="notify-icon bg-info"><i class="mdi mdi-account"></i></div>
+                                            <p class="notify-details">New user registered.<small class="text-muted">1 min ago</small></p>
+                                    </a> 
+                                      
+                                      <!-- item--> 
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <div class="notify-icon bg-danger"><i class="mdi mdi-airplane"></i></div>
+                                            <p class="notify-details">Carlos Crouch liked <b>Admin</b><small class="text-muted">1 min ago</small></p>
+                                    </a> 
+                                      
+                                    <!-- All--> 
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item notify-all"> View All </a> 
                                 </div>
+                            </li>
+                            <li class="list-inline-item dropdown notification-list"> <a class="nav-link dropdown-toggle waves-effect nav-user" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false"> <img src="assets/images/users/avatar-1.jpg" alt="user" class="rounded-circle"> </a>
+                                <div class="dropdown-menu dropdown-menu-right profile-dropdown" aria-labelledby="Preview" x-placement="bottom-end"> 
+                                    <!-- item-->
+                                    <div class="dropdown-item noti-title">
+                                        <h5 class="text-overflow"><small class="text-white">Welcome ! John</small> </h5>
+                                    </div>
+                                      
+                                    <!-- item--> 
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item"> <i class="mdi mdi-account"></i> <span>Profile</span> </a> 
+                                      
+                                    <!-- item--> 
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item"> <i class="mdi mdi-settings"></i> <span>Settings</span> </a> 
+                                      
+                                    <!-- item--> 
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item"> <i class="mdi mdi-lock-open"></i> <span>Lock Screen</span> </a> 
+                                      
+                                    <!-- item--> 
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item"> <i class="mdi mdi-logout"></i> <span>Logout</span> </a> 
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                     <!-- end menu-extras -->
-
                     <div class="clearfix"></div>
-
                 </div> <!-- end container -->
             </div>
             <!-- end topbar-main -->
 
             <div class="navbar-custom">
-                <div class="container">
+                <div class="container-fluid">
                     <div id="navigation">
                         <!-- Navigation Menu-->
                          <ul class="navigation-menu clearfix">
                             <li>
-                                <a>SCAN DASHBOARD</a>
+                                <a><h4 class="m-0">SCAN DASHBOARD</h4></a>
                             </li>
                             <li class="has-submenu float-right">
                                 <button onclick="location.href='index.html'" type="button" class="btn btn-light waves-effect waves-light m-t-10 m-b-10">DASHBOARD</button>
@@ -74,203 +117,162 @@
         
         <div class="wrapper">
             <form>
-                <div class="container" >
-                <div class="m-t-15">
-                        <button type="button" id="button" class="btn btn-outline-light waves-effect btn-sm">Hide Gauges</button>
-                </div>
-                <form>
-                    <div id="block" class="clearfix">
-                    <div class="row text-center d-flex float-left w-50 justify-content-between">
-                    <div class="w-100"></div>       
-                    <div class="col">
-                        <div class="chart easy-pie-chart-3 m-t-20" data-percent="1">
-                            <span class="percent"></span>
-                            <div>Scan Merchants</div>
+                <div class="container-fluid" >
+                    <div class="row mt-5">
+                        <div class="col-sm-12 col-lg-2">
+                            <div class="widget-simple-chart text-right card-box">
+                                <div class="circliful-chart circliful" data-dimension="90" data-text="1%" data-width="5" data-fontsize="14" data-percent="1" data-fgcolor="#3bafda" data-bgcolor="#505A66" ></div>
+                                <h3 class="text-primary counter m-t-10">1241</h3>
+                                <p class="text-muted text-nowrap m-b-10">COMPLIANT SAQ's</p>
+                            </div>
+                            <div class="text-center card-box">
+                                <h2 class="text-muted counter m-t-10">67</h2>
+                                <p class="text-muted text-nowrap m-b-10">SCAN</p>
+                            </div>
                         </div>
-                    </div> 
-                    <div class="col">
-                        <div class="chart easy-pie-chart-3 m-t-20" data-percent="26">
-                            <span class="percent"></span>
-                            <div>Compliant Scans</div>
+                        <div class="col-sm-12 col-lg-3">
+                            <div class="widget-simple-chart text-right card-box">
+                                <div class="circliful-chart circliful" data-dimension="90" data-text="75%" data-width="5" data-fontsize="14" data-percent="75" data-fgcolor="#f76397" data-bgcolor="#505A66""></div>
+                                <h3 class="text-pink counter m-t-10">10887</h3>
+                                <p class="text-muted text-nowrap m-b-10">NON COMPLIANT SCANS</p>
+                            </div>
+                            <div class="text-center card-box">
+                                <h2 class="text-muted counter m-t-10">17</h2>
+                                <p class="text-muted text-nowrap m-b-10">COMPLIANT SCAN</p>
+                            </div>
                         </div>
-                    </div> 
-                    <div class="col">
-                        <div class="chart easy-pie-chart-3 m-t-20" data-percent="74">
-                            <span class="percent"></span>
-                            <div>Non Compliant Scans</div>
+                        <div class="col-sm-12 col-lg-2">
+                            <div class="widget-simple-chart text-right card-box">
+                                <div class="circliful-chart circliful" data-dimension="90" data-text="25%" data-width="5" data-fontsize="14" data-percent="25" data-fgcolor="#3bafda" data-bgcolor="#505A66"></div>
+                                <h3 class="text-primary counter m-t-10">10887</h3>
+                                <p class="text-muted text-nowrap m-b-10">COMPLIANT SCANS</p>
+                            </div>
+                            <div class="text-center card-box">
+                                <h2 class="text-muted counter m-t-10">3892</h2>
+                                <p class="text-muted text-nowrap m-b-10">MERCHANTS ALL</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-lg-4">
+                            <canvas id="myChart"></canvas>
                         </div>
                     </div>
-                    <div class="w-100"></div>
-                    <div class="col m-t-40">
-                        <a href="#"><button type="button" class="btn w-sm btn-light waves-effect">3847</button></a>
-                        <div>Users</div>
-                   </div>
-                   <div class="col m-t-40">
-                        <a href="#"><button type="button" class="btn w-sm btn-light waves-effect">63</button></a>
-                        <div>Scan</div>
-                   </div>
-                   <div class="col m-t-40">
-                        <a href="#"><button type="button" class="btn w-sm btn-light waves-effect">260</button></a>
-                        <div>SAQ's</div>
-                    </div>
-                    </div>  
-                    <canvas id="myChart" class="float-right" style="max-width: 500px;"></canvas>
-                    </div>     
-                       
-                    <div class="card-box m-t-40">
-                        <div class="m-t-0 header-title">
-                            <span>Filter</span>
-                        </div>
+                      
+                    <h4 class="page-title text-uppercase">FILTER BY <i class="ti-filter"></i></h4>
+                    <div class="card-box">
                         <div class="row">
-                        <div class="col- mr-5">
-                        <div>
-                            <div class="m-2">
-                                <button type="button" class="btn btn-info btn-block dropdown-toggle waves-effect waves-light w-lg" data-toggle="dropdown" aria-expanded="false">
-                                    <span class="caret">Office/Agent</span>
-                                </button>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="#">BestCard</a>
-                                    <a class="dropdown-item" href="#">MAC USA</a>
+                            <div class="col-sm-12 col-lg-3">
+                                <div class="card-box">
+                                    <select class="custom-select mt-3">
+                                        <option selected="">OFFICE/AGENT</option>
+                                        <option value="1">BestCard</option>
+                                        <option value="2">MAC USA</option>
+                                    </select>
+                                    <select class="custom-select mt-3">
+                                        <option selected="">REP</option>
+                                        <option value="1">BestCard - IP76</option>
+                                        <option value="2">BestCard - MT76</option>
+                                    </select>
+                                    <div class="row">
+                                        <div class="col-sm-12 col-lg-6">
+                                            <select class="custom-select mt-3">
+                                                <option selected="">HQ</option>
+                                                <option value="1">Law Office of John Preston</option>
+                                                <option value="2">Parker Orthodontics</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-12 col-lg-6">
+                                            <select class="custom-select mt-3">
+                                                <option selected="">CHAIN</option>
+                                                <option value="1">Ace in the Hole Bail Bonds</option>
+                                                <option value="2">Advanced Communications</option>
+                                                <option value="3">Affordable Enterprises Inc.</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <select class="custom-select mt-3">
+                                        <option selected="">BANK/PROCESSOR</option>
+                                        <option value="1">Electronic Merchant Systems (EMS)</option>
+                                        <option value="2">Evo/PowerPay</option>
+                                        <option value="3">First Data Merchant Services</option>
+                                        <option value="4">iPmt</option>
+                                        <option value="5">Vantiv</option>
+                                    </select>
+                                    <select class="custom-select mt-3">
+                                        <option selected="">PLATFORM</option>
+                                    </select>
+                                    <select class="custom-select mt-3">
+                                        <option selected="">SYS/PRIN</option>
+                                        <option value="1">02740</option>
+                                        <option value="2">02949</option>
+                                    </select>
                                 </div>
                             </div>
-                            <div class="m-2">
-                                <button type="button" class="btn btn-info btn-block dropdown-toggle waves-effect waves-light w-lg" data-toggle="dropdown" aria-expanded="false">Rep
-                                    <span class="caret"></span>
-                                </button>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="#">BestCard - IP76</a>
-                                    <a class="dropdown-item" href="#">BestCard - MT76</a>
+                            <div class="d-flex col-sm-12 col-lg-1 align-items-center">
+                                <span class="badge badge-pill badge-warning">
+                                    <h3 class="p-1">AND/OR</h3>
+                                </span>
+                            </div>
+                            <div class="col-sm-12 col-lg-3">
+                                <h4 class="text-uppercase">Filter By:</h4>
+                                <input type="text" class="form-control mt-3" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Name">
+                                <input type="text" class="form-control mt-3" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Phone">
+                                <input type="text" class="form-control mt-3" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="MID">
+                                <input type="text" class="form-control mt-3" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Email">
+                                <h4 class="text-uppercase mt-4">By Date:</h4>
+                                <div class="input-daterange input-group" id="date-range">
+                                    <input class="form-control" name="start" type="text" placeholder="From">
+                                    <input class="form-control" name="start" type="text" placeholder="To">
                                 </div>
+                                <button type="button" class="btn btn-primary btn-custom waves-effect waves-light w-lg mt-4 mb-3">Show All</button>
                             </div>
-                            <div class="d-flex m-2">
-                            <div>
-                                <button type="button" class="btn btn-info dropdown-toggle waves-effect waves-light w-md" data-toggle="dropdown" aria-expanded="false">
-                                    <span class="caret">HQ</span>
-                                </button>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="#">Law Office of John Preston</a>
-                                    <a class="dropdown-item" href="#">Parker Orthodontics</a>
-                                </div>
-                            </div>
-                            <div>
-                                <button type="button" class="btn btn-info dropdown-toggle waves-effect waves-light w-md m-l-10" data-toggle="dropdown" aria-expanded="false">
-                                    <span class="caret">Chain</span>
-                                </button>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="#">Ace in the Hole Bail Bonds</a>
-                                    <a class="dropdown-item" href="#">Advanced Communications</a>
-                                    <a class="dropdown-item" href="#">Affordable Enterprises Inc.</a>
-                                </div>
-                            </div>
-                            </div>
-                            <div class="m-2">
-                                <button type="button" class="btn btn-info btn-block dropdown-toggle waves-effect waves-light w-lg" data-toggle="dropdown" aria-expanded="false">
-                                    <span class="caret">Bank/Processor</span>
-                                </button>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="#">Electronic Merchant Systems (EMS)</a>
-                                    <a class="dropdown-item" href="#">Evo/PowerPay</a>
-                                    <a class="dropdown-item" href="#">First Data Merchant Services</a>
-                                    <a class="dropdown-item" href="#">iPmt</a>
-                                    <a class="dropdown-item" href="#">Vantiv</a>
-                                </div>
-                            </div>
-                            <div class="m-2">
-                                <button type="button" class="btn btn-info btn-block dropdown-toggle waves-effect waves-light w-lg" data-toggle="dropdown" aria-expanded="false">
-                                    <span class="caret">Platform</span>
-                                </button>
-                                <div class="dropdown-menu">
-                                </div>
-                            </div>
-                            <div class="m-2">
-                                <button type="button" class="btn btn-info btn-block dropdown-toggle waves-effect waves-light w-lg" data-toggle="dropdown" aria-expanded="false">
-                                    <span class="caret">Sys/Prin</span>
-                                </button>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="#">02740</a>
-                                    <a class="dropdown-item" href="#">02949</a>
-                                    <a class="dropdown-item" href="#">03215</a>
-                                    <a class="dropdown-item" href="#">03420</a>
-                                </div>
-                            </div>
-                        </div>
-                        </div>
-                        <div class="col-4 m-r-15">
-                            <div class="m-t-10 m-l-5 header-title">
-                                <span>Filter By:</span>
-                            </div>
-                            <div class="m-l-5">
-                                <input type="text" class="form-control m-b-10" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Name">
-                                <input type="text" class="form-control m-b-10" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Phone">
-                                <input type="text" class="form-control m-b-10" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="MID">
-                                <input type="text" class="form-control m-b-10" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Email">
-                            </div>
-                            <div class="m-t-20 m-l-5 header-title">
-                                <span>By Date:</span>
-                            </div>
-                            <div class="m-l-5">
-                                <input type="date" class="form-control m-b-10" id="datepicker" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="From">
-                                <input type="date" class="form-control m-b-10" id="datepicker" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="To" name="date">
-                            </div>
-                            <div class="m-t-30 m-l-5">
-                                <button type="button" class="btn btn-primary btn-custom waves-effect waves-light w-100">Show All</button>
-                            </div>
-                        </div>
-                        <div class="col-4 m-l-15 d-flex flex-column justify-content-between">
-                             <div class="m-t-10 m-l-5 header-title">
-                                <span>Other:</span>
-                            </div>
-                            <div>
-                                <div class="radio radio-primary">
+                            <div class="col-lg-1"></div>
+                            <div class="col-sm-12 col-lg-3">
+                                <h4 class="text-uppercase">Other:</h4>
+                                <div class="radio radio-primary mt-2">
                                     <input type="radio" name="radio" value="option1" id="radio1" checked="checked">
-                                    <label for="radio1">All Loaded</label>
+                                    <label class="text-uppercase" for="radio1">All Loaded</label>
                                 </div>
-                                <div class="radio radio-primary">
+                                <div class="radio radio-primary mt-2">
                                     <input type="radio" name="radio" value="option2" id="radio2">
-                                    <label for="radio2">Non Registered</label>
+                                    <label class="text-uppercase" for="radio2">Non Registered</label>
                                 </div>
-                                <div class="radio radio-primary">
+                                <div class="radio radio-primary mt-2">
                                     <input type="radio" name="radio" value="option3" id="radio3">
-                                    <label for="radio3">Registered</label>
+                                    <label class="text-uppercase" for="radio3">Registered</label>
                                 </div>
-                                <div class="radio radio-primary">
+                                <div class="radio radio-primary mt-2">
                                     <input type="radio" name="radio" value="option4" id="radio4">
-                                    <label for="radio4">Disabled</label>
+                                    <label class="text-uppercase" for="radio4">Disabled</label>
                                 </div>
-                            </div>
-                            <div class="m-t-20 m-b-15">
-                                <button type="button" class="btn btn-info dropdown-toggle waves-effect waves-light w-lg" data-toggle="dropdown" aria-expanded="false">
-                                    <span class="caret">Select One</span>
-                                </button>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="#">Compliant</a>
-                                    <a class="dropdown-item" href="#">Not Compliant</a>
+                                <select class="custom-select mt-2">
+                                    <option>SELECT ONE</option>
+                                    <option>Compliant</option>
+                                    <option>Not Compliant</option>
+                                </select>
+                                <div class="mt-3 m-l-5">
+                                    <div class="radio radio-primary form-check-inline mr-4">
+                                        <input type="radio" name="radio_inline" value="option1" id="radio5">
+                                        <label class="text-uppercase" for="radio5">Saq</label>
+                                    </div>
+                                    <div class="radio radio-primary form-check-inline mr-4">
+                                        <input type="radio" name="radio_inline" value="option1" id="radio6">
+                                        <label class="text-uppercase" for="radio6">Scan</label>
+                                    </div>
+                                    <div class="radio radio-primary form-check-inline mr-4">
+                                        <input type="radio" name="radio_inline" value="option1" id="radio7" checked="checked">
+                                        <label class="text-uppercase" for="radio7">Both</label>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="m-l-5">
-                                <div class="radio radio-primary form-check-inline">
-                                    <input type="radio" name="radio_inline" value="option1" id="radio5">
-                                    <label for="radio5">Saq</label>
+                                <div class="checkbox checkbox-primary mt-2">
+                                    <input type="checkbox" id="checkbox1">
+                                    <label class="text-uppercase" for="checkbox1">Show Disabled</label>
                                 </div>
-                                <div class="radio radio-primary form-check-inline">
-                                    <input type="radio" name="radio_inline" value="option1" id="radio6">
-                                    <label for="radio6">Scan</label>
+                                <div class="mt-5">
+                                    <button type="button" class="btn btn-primary btn-custom waves-effect waves-light w-lg mt-1">Search</button>
+                                    <button type="button" class="btn btn-secondary btn-custom waves-effect waves-light w-lg mt-1">Clear Filter</button>
                                 </div>
-                                <div class="radio radio-primary form-check-inline">
-                                    <input type="radio" name="radio_inline" value="option1" id="radio7" checked="checked">
-                                    <label for="radio7">Both</label>
-                                </div>
-                            </div>
-                            <div class="checkbox checkbox-primary">
-                                <input type="checkbox" id="checkbox1">
-                                <label for="checkbox1">Show Disabled</label>
-                            </div>
-                            <div>
-                                <button type="button" class="btn btn-primary btn-custom waves-effect waves-light w-100 m-t-20">Search</button>
-                                <button type="button" class="btn btn-primary btn-custom waves-effect waves-light w-100 m-t-20">Clear Filter</button>
                             </div>
                         </div>
-                    </div>
                     </div>
                     <div class="card-box table-bordered">
                         <div class="table-responsive">
@@ -306,7 +308,6 @@
                             </table>
                         </div>
                     </div>
-                </form>
                 </div>
             </form>
         </div>
@@ -314,13 +315,14 @@
 
         <!--Footer-->
         <footer class="footer">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
-                    <div class="m-r-10">©2018 PCI Compliance. All rights reserved</div>
-                    <div class="border-right"><a href="termsOfService.html" class="m-r-5">Terms Of Service</a></div>
-                    <div class="border-right"><a href="termsConditions.html" class="m-l-5 m-r-5">ISO Terms & Conditions</a></div>
-                    <div class="border-right"><a href="privacyPolicy.html" class="m-r-5 m-l-5">Privacy Policy</a></div>
-                    <a href="help.html" class="m-l-5">Help</a>
+                    <div class="col-sm-12 col-lg-10 text-center">©2018 PCI Compliance. All rights reserved
+                        <a href="termsOfService.html" class="m-r-5">Terms Of Service</a>|
+                        <a href="termsConditions.html" class="m-l-5 m-r-5">ISO Terms & Conditions</a>|
+                        <a href="privacyPolicy.html" class="m-r-5 m-l-5">Privacy Policy</a>|
+                        <a href="help.html" class="m-l-5">Help</a>
+                    </div>
                 </div>
             </div>         
         </footer>
@@ -331,6 +333,13 @@
         <script src="assets/js/waves.js"></script>
         <script src="assets/js/jquery.slimscroll.js"></script>
         <script src="assets/js/jquery.scrollTo.min.js"></script>
+        <script src="../plugins/switchery/switchery.min.js"></script>
+        <script src="../plugins/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.min.js" type="text/javascript"></script>
+
+        <script src="../plugins/mjolnic-bootstrap-colorpicker/dist/js/bootstrap-colorpicker.min.js"></script>
+        <script src="../plugins/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+
+        <script src="assets/pages/jquery.form-advanced.init.js"></script>
 
         <!--DataTable-->
         <script src="../plugins/datatables/jquery.dataTables.min.js"></script>

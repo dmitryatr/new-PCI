@@ -15,43 +15,84 @@
         <!-- Navigation Bar-->
         <header id="topnav">
             <div class="topbar-main">
-                <div class="container">
+                <div class="container-fluid">
 
                     <!-- Logo container-->
                     <div class="logo m-t-5">
                         <!-- Text Logo -->
-                        <a href="#" class="logo">
+                        <a href="index.html" class="logo">
                             <span class="logo-large">Mersa Tech</span>
                         </a>
                     </div>
                     <!-- End Logo container-->
                     <div class="menu-extras topbar-custom float-right">
-                        <div class="list-inline mb-0 text-white">
-                            Dev Team
-                            <a href="#" class="text-secondary">Sign Out</a>
-                        </div>
-                        <div class="btn-group">
-                                    <button type="button" class="btn btn-default dropdown-toggle waves-effect waves-light m-b-10" data-toggle="dropdown" aria-expanded="false">Choose language 
-                                    <span class="caret"></span>
-                                    </button>
-                                    <ul class="dropdown-menu" role="menu">
-                                        <li><a href="#">English</a></li>
-                                        <li><a href="#">Spanish</a></li>
-                                        <li><a href="#">Portuguese</a></li>
-                                        <li><a href="#">Vietnamese</a></li>
-                                    </ul>
+                        <ul class="list-inline float-right mb-0">
+                            <li class="menu-item list-inline-item"> 
+                                <!-- Mobile menu toggle--> 
+                                <a class="navbar-toggle nav-link">
+                                    <div class="lines"> <span></span> <span></span> <span></span> </div>
+                                </a> 
+                                    <!-- End mobile menu toggle--> 
+                            </li>
+                            <li class="list-inline-item dropdown notification-list"> <a class="nav-link dropdown-toggle arrow-none waves-effect" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false"> <i class="mdi mdi-bell noti-icon"></i> <span class="badge badge-pink noti-icon-badge">4</span> </a>
+                                <div class="dropdown-menu dropdown-menu-right dropdown-arrow dropdown-menu-lg" aria-labelledby="Preview" x-placement="bottom-end" > 
+                                    <!-- item-->
+                                    <div class="dropdown-item noti-title">
+                                        <h5 class="font-16"><span class="badge badge-danger float-right">5</span>Notification</h5>
+                                    </div>
+                                      
+                                    <!-- item--> 
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <div class="notify-icon bg-success"><i class="mdi mdi-comment-account"></i></div>
+                                            <p class="notify-details">Robert S. Taylor commented on Admin<small class="text-muted">1 min ago</small></p>
+                                    </a> 
+                                      
+                                    <!-- item--> 
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <div class="notify-icon bg-info"><i class="mdi mdi-account"></i></div>
+                                            <p class="notify-details">New user registered.<small class="text-muted">1 min ago</small></p>
+                                    </a> 
+                                      
+                                      <!-- item--> 
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <div class="notify-icon bg-danger"><i class="mdi mdi-airplane"></i></div>
+                                            <p class="notify-details">Carlos Crouch liked <b>Admin</b><small class="text-muted">1 min ago</small></p>
+                                    </a> 
+                                      
+                                    <!-- All--> 
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item notify-all"> View All </a> 
                                 </div>
+                            </li>
+                            <li class="list-inline-item dropdown notification-list"> <a class="nav-link dropdown-toggle waves-effect nav-user" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false"> <img src="assets/images/users/avatar-1.jpg" alt="user" class="rounded-circle"> </a>
+                                <div class="dropdown-menu dropdown-menu-right profile-dropdown" aria-labelledby="Preview" x-placement="bottom-end"> 
+                                    <!-- item-->
+                                    <div class="dropdown-item noti-title">
+                                        <h5 class="text-overflow"><small class="text-white">Welcome ! John</small> </h5>
+                                    </div>
+                                      
+                                    <!-- item--> 
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item"> <i class="mdi mdi-account"></i> <span>Profile</span> </a> 
+                                      
+                                    <!-- item--> 
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item"> <i class="mdi mdi-settings"></i> <span>Settings</span> </a> 
+                                      
+                                    <!-- item--> 
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item"> <i class="mdi mdi-lock-open"></i> <span>Lock Screen</span> </a> 
+                                      
+                                    <!-- item--> 
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item"> <i class="mdi mdi-logout"></i> <span>Logout</span> </a> 
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                     <!-- end menu-extras -->
-
                     <div class="clearfix"></div>
-
                 </div> <!-- end container -->
             </div>
             <!-- end topbar-main -->
 
             <div class="navbar-custom">
-                <div class="container">
+                <div class="container-fluid">
                     <div id="navigation">
                         <!-- Navigation Menu-->
                         <ul class="navigation-menu clearfix">
@@ -67,62 +108,59 @@
         <!-- End Navigation Bar-->
         
         <div class="wrapper">
-            <div class="container" >
-                <div class="card-box m-t-40">
-                    <div class="m-t-0 header-title px-2 m-l-10">
-                        <span>ADD/EDIT</span>
-                    </div>
-                    <div class="clearfix py-3 px-2">
-                        <div>
-                            <div class="text-center float-left m-l-10">
+            <div class="container-fluid" >
+                <h4 class="text-uppercase mt-5">Add/Edit</h4>
+                <div class="card-box">
+                    <div class="row py-3 justify-content-around text-center">
+                            <div class="col-sm-12 col-lg-1">
                                 <a href="addEditAdminUsers.html">
                                     <img src="assets/images/add_edit_icon/add_edit_users_block.png">
+                                    <h4 class="ml-4 text-muted">USER(S)</h4>
                                 </a>
-                                <h5 >USER(S)</h5>
                             </div>
-                            <div class="text-center float-left m-l-10">
+                            <div class="col-sm-12 col-lg-1">
                                 <a href="addEditOfficeAgentSearch.html">
                                     <img src="assets/images/add_edit_icon/office_agent_block.png">
+                                    <h4 class="text-muted ml-2">OFFICE/AGENT(S)</h4>
                                 </a>
-                                <h5 >OFFICE/AGENT(S)</h5>
+                                
                             </div>
-                            <div class="text-center float-left m-l-10">
+                            <div class="col-sm-12 col-lg-1">
                                 <a href="addEditRepSearch.html">
                                     <img src="assets/images/add_edit_icon/reps_block.png">
+                                    <h4 class="ml-4 text-muted">REP(S)</h4>
                                 </a>
-                                <h5 >REP(S)</h5>
                             </div>
-                            <div class="text-center float-left m-l-10">
+                            <div class="col-sm-12 col-lg-1">
                                 <a href="addEditHQSearch.html">
                                     <img src="assets/images/add_edit_icon/hq_block.png">
+                                    <h4 class="ml-4 text-muted">HQ(S)</h4>
                                 </a>
-                                <h5 >HQ(S)</h5>
                             </div>
-                            <div class="text-center float-left m-l-10">
+                            <div class="col-sm-12 col-lg-1">
                                 <a href="addEditChainSearch.html">
                                     <img src="assets/images/add_edit_icon/chain_block.png">
+                                    <h4 class="ml-4 text-muted">CHAIN(S)</h4>
                                 </a>
-                                <h5 >CHAIN(S)</h5>
                             </div>
-                            <div class="text-center float-left m-l-10">
+                            <div class="col-sm-12 col-lg-1">
                                 <a href="addEditBankProcessorSearch.html">
                                     <img src="assets/images/add_edit_icon/bank_block.png">
+                                    <h4 class="text-muted">BANK/PROCESSOR(S)</h4>
                                 </a>
-                                <h5 >BANK/PROCESSOR(S)</h5>
                             </div>
-                            <div class="text-center float-left m-l-10">
+                            <div class="col-sm-12 col-lg-1">
                                 <a href="addEditPlatformSearch.html">
                                     <img src="assets/images/add_edit_icon/platform_block.png">
+                                    <h4 class="ml-4 text-muted">PLATFORM(S)</h4>
                                 </a>
-                                <h5 >PLATFORM(S)</h5>
                             </div>
-                            <div class="text-center float-left m-l-10">
+                            <div class="col-sm-12 col-lg-1">
                                 <a href="addEditSysPrinSearch.html">
                                     <img src="assets/images/add_edit_icon/sys_prin_block.png">
+                                    <h4 class="ml-4 text-muted">SYS/PRIN(S)</h4>
                                 </a>
-                                <h5 >SYS/PRIN(S)</h5>
                             </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -130,13 +168,14 @@
 
         <!--Footer-->
         <footer class="footer">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
-                    <div class="m-r-10">©2018 PCI Compliance. All rights reserved</div>
-                    <div class="border-right"><a href="termsOfService.html" class="m-r-5">Terms Of Service</a></div>
-                    <div class="border-right"><a href="termsConditions.html" class="m-l-5 m-r-5">ISO Terms & Conditions</a></div>
-                    <div class="border-right"><a href="privacyPolicy.html" class="m-r-5 m-l-5">Privacy Policy</a></div>
-                    <a href="help.html" class="m-l-5">Help</a>
+                    <div class="col-sm-12 col-lg-10 text-center">©2018 PCI Compliance. All rights reserved
+                        <a href="termsOfService.html" class="m-r-5">Terms Of Service</a>|
+                        <a href="termsConditions.html" class="m-l-5 m-r-5">ISO Terms & Conditions</a>|
+                        <a href="privacyPolicy.html" class="m-r-5 m-l-5">Privacy Policy</a>|
+                        <a href="help.html" class="m-l-5">Help</a>
+                    </div>
                 </div>
             </div>         
         </footer>
