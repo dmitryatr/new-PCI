@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
         <title>PCI Compiliance</title>
         <link href="../plugins/jquery-circliful/css/jquery.circliful.css" rel="stylesheet" type="text/css" />
         <link href="../plugins/datatables/buttons.bootstrap.min.css" rel="stylesheet" type="text/css">
@@ -94,12 +95,12 @@
             <!-- end topbar-main -->
 
             <div class="navbar-custom">
-                <div class="container">
+                <div class="container-fluid">
                     <div id="navigation">
                         <!-- Navigation Menu-->
                         <ul class="navigation-menu clearfix">
                             <li>
-                                <a>USERS</a>
+                                <a><h4 class="m-0">USERS</h4></a>
                             </li>
                             <li class="float-right">
                                 <button onclick="location.href='index.html'" type="button" class="btn btn-light waves-effect waves-light m-t-10">DASHBOARD</button>
@@ -114,88 +115,82 @@
         
         <div class="wrapper">
             <form>
-                <div class="container" >
-                <div class="card-box m-t-40">
-                    <div class="m-t-0 header-title">
-                        <span>ADD/EDIT USER SEARCH <i class="ti-search"></i></span>
-                    </div>
-                    <div class="clearfix py-3 px-2">
-                        <div class="row">
-                            <input type="text" class="form-control m-r-15 w-25" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Enter Name">
-                            <button type="button" class="btn btn-primary btn-custom waves-effect waves-light w-lg m-l-15">Search</button>
-                            <button type="button" class="btn btn-primary btn-custom waves-effect waves-light w-lg m-l-15">Add New</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-box m-t-40">
-                    <div class="m-t-0 header-title">
-                        <span>FILTER <i class="ti-search"></i></span>
-                    </div>
-                    <div class="clearfix py-3 px-2">
-                        <div class="row">
-                            <div class="w-25">
-                                <button type="button" class="btn btn-info btn-block dropdown-toggle waves-effect waves-light" data-toggle="dropdown" aria-expanded="false">
-                                    <span class="caret">Office/Agent</span>
-                                </button>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="#">BestCard</a>
-                                    <a class="dropdown-item" href="#">MAC USA</a>
-                                </div>
+                <div class="container">
+                    <h4 class="mt-4">ADD/EDIT USER SEARCH <i class="ti-search"></i></h4>
+                    <div class="card-box">
+                        <div class="row py-2">
+                            <div class="col-sm-12 col-lg-3 my-1">
+                                <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Enter Name">
                             </div>
-                            <div class="m-l-15 w-25">
-                                <button type="button" class="btn btn-info btn-block dropdown-toggle waves-effect waves-light" data-toggle="dropdown" aria-expanded="false">Rep
-                                    <span class="caret"></span>
-                                </button>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="#">BestCard - IP76</a>
-                                    <a class="dropdown-item" href="#">BestCard - MT76</a>
-                                </div>
+                            <div class="col-sm-12 col-lg-2 my-1">
+                                <button type="button" class="btn btn-primary btn-custom btn-block waves-effect waves-light">Search</button>
+                            </div>
+                            <div class="col-sm-12 col-lg-2 my-1">
+                                <button type="button" class="btn btn-primary btn-custom btn-block waves-effect waves-light">Add New</button>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="card-box table-bordered">
-                    <div class="table-responsive">
-                        <table id="datatable-editable" class="table text-center table-hover">
-                        <thead class="thead-light">
-                            <tr>
-                                <th>Level</th>
-                                <th>Owner</th>
-                                <th>User Name</th>
-                                <th>Email</th>
-                                <th>Edit</th>
-                                <th>Last Logged In</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>ISO</td>
-                                <td>Mersatech</td>
-                                <td>b.trombley@mersatech.com</td>
-                                <td>b.trombley@mersatech.com</td>
-                                <td class="actions">
-                                    <a href="#" class="on-default edit-row" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><i class="fa fa-pencil"></i></a>
-                                    <a href="#" class="on-default remove-row" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><i class="fa fa-trash-o"></i></a>
-                                    <a href="#" class="on-default text-warning" data-toggle="tooltip" data-placement="top" title="" data-original-title="Reset Password"><i class="mdi mdi-lock-reset"></i></a>
-                                </td>
-                                <td>6/27/2017 12:45:32 PM</td>
-                            </tr>
-                            <tr>
-                                <td>ISO</td>
-                                <td>Mersatech</td>
-                                <td>Devteam</td>
-                                <td>Sergei@pcicompliancellc.com</td>
-                                <td class="actions">
-                                    <a href="#" class="on-default edit-row" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><i class="fa fa-pencil"></i></a>
-                                    <a href="#" class="on-default remove-row" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><i class="fa fa-trash-o"></i></a>
-                                    <a href="#" class="on-default text-warning" data-toggle="tooltip" data-placement="top" title="" data-original-title="Reset Password"><i class="mdi mdi-lock-reset"></i></a>
-                                </td>
-                                <td>3/9/2018 2:35:18 AM</td>
-                            </tr>
-                        </tbody>
-                        </table>
+                    <h4>FILTER <i class="ti-filter"></i></h4>
+                    <div class="card-box">
+                        <div class="row py-2">
+                            <div class="col-sm-12 col-lg-3 my-1">
+                                <select class="custom-select">
+                                    <option selected="">OFFICE/AGENT</option>
+                                    <option value="1">BestCard</option>
+                                    <option value="2">MAC USA</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-12 col-lg-3 my-1">
+                                <select class="custom-select">
+                                    <option selected="">REP</option>
+                                    <option value="1">BestCard - IP76</option>
+                                    <option value="2">BestCard - MT76</option>
+                                </select>
+                            </div>
+                        </div>
                     </div>
-                </div>
+                    <div class="card-box table-bordered">
+                        <div class="table-responsive">
+                            <table id="datatable-editable" class="table text-center table-hover">
+                            <thead class="thead-light">
+                                <tr>
+                                    <th>Level</th>
+                                    <th>Owner</th>
+                                    <th>User Name</th>
+                                    <th>Email</th>
+                                    <th>Edit</th>
+                                    <th>Last Logged In</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>ISO</td>
+                                    <td>Mersatech</td>
+                                    <td>b.trombley@mersatech.com</td>
+                                    <td>b.trombley@mersatech.com</td>
+                                    <td class="actions">
+                                        <a href="#" class="on-default edit-row" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><i class="fa fa-pencil"></i></a>
+                                        <a href="#" class="on-default remove-row" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><i class="fa fa-trash-o"></i></a>
+                                        <a href="#" class="on-default text-warning" data-toggle="tooltip" data-placement="top" title="" data-original-title="Reset Password"><i class="mdi mdi-lock-reset"></i></a>
+                                    </td>
+                                    <td>6/27/2017 12:45:32 PM</td>
+                                </tr>
+                                <tr>
+                                    <td>ISO</td>
+                                    <td>Mersatech</td>
+                                    <td>Devteam</td>
+                                    <td>Sergei@pcicompliancellc.com</td>
+                                    <td class="actions">
+                                        <a href="#" class="on-default edit-row" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><i class="fa fa-pencil"></i></a>
+                                        <a href="#" class="on-default remove-row" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><i class="fa fa-trash-o"></i></a>
+                                        <a href="#" class="on-default text-warning" data-toggle="tooltip" data-placement="top" title="" data-original-title="Reset Password"><i class="mdi mdi-lock-reset"></i></a>
+                                    </td>
+                                    <td>3/9/2018 2:35:18 AM</td>
+                                </tr>
+                            </tbody>
+                            </table>
+                        </div>
+                    </div>
                 </div>
             </form>
         </div>
@@ -203,7 +198,7 @@
         <!--Footer-->
        <footer class="footer">
             <div class="container-fluid">
-                <div class="row">
+                <div class="row justify-content-center">
                     <div class="col-sm-12 col-lg-10 text-center">©2018 PCI Compliance. All rights reserved
                         <a href="termsOfService.html" class="m-r-5">Terms Of Service</a>|
                         <a href="termsConditions.html" class="m-l-5 m-r-5">ISO Terms & Conditions</a>|
