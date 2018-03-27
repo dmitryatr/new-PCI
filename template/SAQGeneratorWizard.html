@@ -93,12 +93,12 @@
             <!-- end topbar-main -->
 
             <div class="navbar-custom">
-                <div class="container">
+                <div class="container-fluid">
                     <div id="navigation">
                         <!-- Navigation Menu-->
                         <ul class="navigation-menu clearfix">
                             <li>
-                                <a>SAQ GENERATOR WIZARD</a>
+                                <a><h4 class="m-0">SAQ GENERATOR WIZARD</h4></a>
                             </li>
                             <li class="has-submenu float-right">
                                 <button onclick="location.href='communications.html'" type="button" class="btn btn-light waves-effect waves-light m-t-10 m-b-10">COMM LIST</button>
@@ -115,50 +115,42 @@
         <div class="wrapper">
             <form>
                 <div class="container">
-                <form>
                     <div class="btn-group mt-5">
-                            <button type="button" class="btn btn-warning waves-effect waves-light w-lg">GROUP</button>
-                            <button type="button" class="btn btn-secondary waves-effect waves-light w-lg">SUMMARY</button>
+                        <button type="button" class="btn btn-warning waves-effect waves-light w-lg">GROUP</button>
+                        <button type="button" class="btn btn-secondary waves-effect waves-light w-lg">SUMMARY</button>
                     </div>
-                    <div class="card-box m-t-40">
-                        <div class="m-t-0 header-title">
-                            <span>GROUP</span>
-                        </div>
-                        <div class="clearfix px-2 py-3">
-                        <div class="row">
-                            <div class="w-25">
-                                <button type="button" class="btn btn-info btn-block dropdown-toggle waves-effect waves-light" data-toggle="dropdown" aria-expanded="false">
-                                    <span class="caret">Office/Agent</span>
-                                </button>
-                                <div class="dropdown-menu" x-placement="bottom-start">
-                                    <a class="dropdown-item" href="#">BestCard</a>
-                                    <a class="dropdown-item" href="#">MAC USA</a>
+                    <h4 class="mt-4">GROUP</h4>
+                    <div class="card-box">
+                        <div class="row py-2">
+                                <div class="col-sm-12 col-md-4 col-lg-3 my-1">
+                                    <select class="custom-select">
+                                        <option selected="">OFFICE/AGENT</option>
+                                        <option value="1">BestCard</option>
+                                        <option value="2">MAC USA</option>
+                                    </select>
                                 </div>
-                            </div>
-                            <div class="m-l-15 w-25">
-                                <button type="button" class="btn btn-info btn-block dropdown-toggle waves-effect waves-light" data-toggle="dropdown" aria-expanded="false">Rep
-                                    <span class="caret"></span>
-                                </button>
-                                <div class="dropdown-menu" x-placement="bottom-start">
-                                    <a class="dropdown-item" href="#">BestCard - IP76</a>
-                                    <a class="dropdown-item" href="#">BestCard - MT76</a>
+                                <div class="col-sm-12 col-md-4 col-lg-3 my-1">
+                                    <select class="custom-select">
+                                        <option selected="">REP</option>
+                                        <option value="1">BestCard - IP76</option>
+                                        <option value="2">BestCard - MT76</option>
+                                    </select>
                                 </div>
-                            </div>
-                            <div class="m-l-15 w-25">
-                                <button type="button" class="btn btn-info btn-block dropdown-toggle waves-effect waves-light" data-toggle="dropdown" aria-expanded="false">Group
-                                    <span class="caret"></span>
-                                </button>
-                                <div class="dropdown-menu" x-placement="bottom-start">
+                                <div class="col-sm-12 col-md-4 col-lg-3 my-1">
+                                    <select class="custom-select">
+                                        <option selected="">GROUP</option>
+                                    </select>
                                 </div>
-                            </div>
                         </div>
                     </div>
+                    <div class="row justify-content-between mt-3">
+                        <div class="col-sm-12 col-md-6 col-lg-3 my-1">
+                            <a href="#" class="btn btn-primary btn-custom btn-block waves-effect waves-light">Cancel</a>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-3 my-1">
+                            <a href="#" class="btn btn-primary btn-custom btn-block waves-effect waves-light">Continue</a>
+                        </div>
                     </div>
-                    <div class="d-flex justify-content-between m-b-20">
-                        <a href="#" class="btn btn-primary btn-custom waves-effect waves-light w-25">Cancel</a>
-                        <a href="#" class="btn btn-primary btn-custom waves-effect waves-light m-l-10 w-25">Continue</a>
-                </div>
-                </form>
                 </div>
             </form>
         </div>
