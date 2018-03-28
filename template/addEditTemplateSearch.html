@@ -5,6 +5,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
         <title>PCI Compiliance</title>
         <link href="../plugins/jquery-circliful/css/jquery.circliful.css" rel="stylesheet" type="text/css" />
+
+        <!-- Plugins css-->
+        <link href="../plugins/datatables/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css">
+        <link href="../plugins/datatables/buttons.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+        <link href="../plugins/datatables/responsive.bootstrap4.min.css" rel="stylesheet" type="text/css">
+        <link href="../plugins/datatables/select.bootstrap4.min.css" rel="stylesheet" type="text/css" />
         
         <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
         <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
@@ -148,72 +154,77 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card-box table-bordered">
-                        <div class="table-responsive">
-                            <table id="datatable-editable" class="table text-center table-hover">
-                        <thead class="thead-light">
-                            <tr>
-                                <th>Status</th>
-                                <th>Name</th>
-                                <th>Auto-Pilot</th>
-                                <th>Is Master</th>
-                                <th>Sent To</th>
-                                <th>In Use</th>
-                                <th></th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><i class="ion-checkmark-round text-success"></i></td>
-                                <td>1 day Breach Notice</td>
-                                <td>1 day Breach Notice</td>
-                                <td>Yes</td>
-                                <td>Merchant</td>
-                                <td>Yes</td>
-                                <td class="actions">
-                                    <a href="#" class="on-default edit-row" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><i class="fa fa-pencil"></i></a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><i class="ion-close-round text-danger"></i></td>
-                                <td>1 Day Scan Notice Letter</td>
-                                <td>1 Day Scan Notice Letter</td>
-                                <td>Yes</td>
-                                <td>Merchant</td>
-                                <td>Yes</td>
-                                <td class="actions">
-                                    <a href="#" class="on-default edit-row" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><i class="fa fa-pencil"></i></a>
-                                </td>
-                            </tr>
-                        </tbody>
-                            </table>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card-box table-responsive">
+                                <table id="responsive-datatable1" class="table text-center table-bordered table-hover table-striped nowrap dt-responsive" cellspacing="0" width="100%">
+                                    <thead class="thead-light">
+                                        <tr>
+                                            <th>Status</th>
+                                            <th>Name</th>
+                                            <th>Auto-Pilot</th>
+                                            <th>Is Master</th>
+                                            <th>Sent To</th>
+                                            <th>In Use</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><i class="ion-checkmark-round text-success"></i></td>
+                                            <td>1 day Breach Notice</td>
+                                            <td>1 day Breach Notice</td>
+                                            <td>Yes</td>
+                                            <td>Merchant</td>
+                                            <td>Yes</td>
+                                            <td class="actions">
+                                                <a href="#" class="on-default edit-row" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><i class="fa fa-pencil"></i></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><i class="ion-close-round text-danger"></i></td>
+                                            <td>1 Day Scan Notice Letter</td>
+                                            <td>1 Day Scan Notice Letter</td>
+                                            <td>Yes</td>
+                                            <td>Merchant</td>
+                                            <td>Yes</td>
+                                            <td class="actions">
+                                                <a href="#" class="on-default edit-row" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><i class="fa fa-pencil"></i></a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
-                    <div class="card-box table-bordered">
-                        <div class="table-responsive">
-                            <table id="datatable-editable" class="table text-center table-hover">
-                        <thead class="thead-light">
-                            <th>Status</th>
-                            <th>Name</th>
-                            <th>Auto-Pilot</th>
-                            <th>Is Master</th>
-                            <th>Sent To</th>
-                            <th>In Use</th>
-                            <th></th>
-                        </thead>
-                        <tbody>
-                            <td><i class="ion-checkmark-round text-success"></i></td>
-                            <td>Load Welcome Letter</td>
-                            <td>Load Welcome Letter</td>
-                            <td>No</td>
-                            <td>Merchant</td>
-                            <td>Yes</td>
-                            <td class="actions">
-                                <a href="#" class="on-default edit-row" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><i class="fa fa-pencil"></i></a>                     <a href="#" class="on-default remove-row" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><i class="fa fa-trash-o"></i></a>
-                                <a href="#" class="on-default text-warning" data-toggle="tooltip" data-placement="top" title="" data-original-title="Reset Password"><i class="mdi mdi-lock-reset"></i></a>
-                            </td>
-                        </tbody>
-                            </table>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card-box table-responsive">
+                                <table id="responsive-datatable2" class="table text-center table-bordered table-hover table-striped nowrap dt-responsive" cellspacing="0" width="100%">
+                                    <thead class="thead-light">
+                                        <th>Status</th>
+                                        <th>Name</th>
+                                        <th>Auto-Pilot</th>
+                                        <th>Is Master</th>
+                                        <th>Sent To</th>
+                                        <th>In Use</th>
+                                        <th></th>
+                                    </thead>
+                                    <tbody>
+                                        <td><i class="ion-checkmark-round text-success"></i></td>
+                                        <td>Load Welcome Letter</td>
+                                        <td>Load Welcome Letter</td>
+                                        <td>No</td>
+                                        <td>Merchant</td>
+                                        <td>Yes</td>
+                                        <td class="actions">
+                                            <a href="#" class="on-default edit-row px-1" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><i class="fa fa-pencil"></i></a>        
+                                            <a href="#" class="on-default text-danger px-1" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><i class="fa fa-trash-o"></i></a>
+                                            <a href="#" class="on-default text-warning px-1" data-toggle="tooltip" data-placement="top" title="" data-original-title="Reset Password"><i class="mdi mdi-lock-reset"></i></a>
+                                        </td>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -241,6 +252,21 @@
         <script src="assets/js/jquery.slimscroll.js"></script>
         <script src="assets/js/jquery.scrollTo.min.js"></script>
 
+        <!--DataTable-->
+        <script src="../plugins/datatables/jquery.dataTables.min.js"></script>
+        <script src="../plugins/datatables/dataTables.bootstrap4.min.js"></script>
+        <script src="../plugins/datatables/dataTables.buttons.min.js"></script>
+        <script src="../plugins/datatables/buttons.bootstrap4.min.js"></script>
+        <script src="../plugins/datatables/jszip.min.js"></script>
+        <script src="../plugins/datatables/pdfmake.min.js"></script>
+        <script src="../plugins/datatables/vfs_fonts.js"></script>
+        <script src="../plugins/datatables/buttons.html5.min.js"></script>
+        <script src="../plugins/datatables/buttons.print.min.js"></script>
+        <script src="../plugins/datatables/dataTables.keyTable.min.js"></script>
+        <script src="../plugins/datatables/dataTables.responsive.min.js"></script>
+        <script src="../plugins/datatables/responsive.bootstrap4.min.js"></script>
+        <script src="../plugins/datatables/dataTables.select.min.js"></script>
+
         <!-- EASY PIE CHART JS -->
         <script src="../plugins/jquery.easy-pie-chart/dist/easypiechart.min.js"></script>
         <script src="../plugins/jquery.easy-pie-chart/dist/jquery.easypiechart.min.js"></script>
@@ -263,6 +289,12 @@
                 $(".knob").knob();
                 $('.circliful-chart').circliful();
             });
+        </script>
+        <script type="text/javascript">
+           $(document).ready(function() {
+            $('#responsive-datatable1').DataTable();
+            $('#responsive-datatable2').DataTable();
+           }); 
         </script>
     </body>
 </html>

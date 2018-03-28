@@ -5,6 +5,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
         <title>PCI Compiliance</title>
         <link href="../plugins/jquery-circliful/css/jquery.circliful.css" rel="stylesheet" type="text/css" />
+
+        <!-- Plugins css-->
+        <link href="../plugins/datatables/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css">
+        <link href="../plugins/datatables/buttons.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+        <link href="../plugins/datatables/responsive.bootstrap4.min.css" rel="stylesheet" type="text/css">
+        <link href="../plugins/datatables/select.bootstrap4.min.css" rel="stylesheet" type="text/css" />
         
         <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
         <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
@@ -148,16 +154,18 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card-box table-bordered">
-                        <div class="table-responsive">
-                            <table id="datatable-editable" class="table text-center table-hover">
-                            <thead class="thead-light">
-                                <tr>
-                                    <th>Communication Group Name</th>
-                                    <th>Count</th>
-                                </tr>
-                            </thead>
-                            </table>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card-box table-responsive">
+                                <table id="responsive-datatable" class="table text-center table-bordered table-hover table-striped nowrap dt-responsive" cellspacing="0" width="100%">
+                                    <thead class="thead-light">
+                                        <tr>
+                                            <th>Communication Group Name</th>
+                                            <th>Count</th>
+                                        </tr>
+                                    </thead>
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -198,6 +206,21 @@
 
         <!-- Circliful -->
         <script src="../plugins/jquery-circliful/js/jquery.circliful.min.js"></script>
+
+        <!--DataTable-->
+        <script src="../plugins/datatables/jquery.dataTables.min.js"></script>
+        <script src="../plugins/datatables/dataTables.bootstrap4.min.js"></script>
+        <script src="../plugins/datatables/dataTables.buttons.min.js"></script>
+        <script src="../plugins/datatables/buttons.bootstrap4.min.js"></script>
+        <script src="../plugins/datatables/jszip.min.js"></script>
+        <script src="../plugins/datatables/pdfmake.min.js"></script>
+        <script src="../plugins/datatables/vfs_fonts.js"></script>
+        <script src="../plugins/datatables/buttons.html5.min.js"></script>
+        <script src="../plugins/datatables/buttons.print.min.js"></script>
+        <script src="../plugins/datatables/dataTables.keyTable.min.js"></script>
+        <script src="../plugins/datatables/dataTables.responsive.min.js"></script>
+        <script src="../plugins/datatables/responsive.bootstrap4.min.js"></script>
+        <script src="../plugins/datatables/dataTables.select.min.js"></script>
 
         <script src="assets/js/jquery.core.js"></script>
         <script src="assets/js/jquery.app.js"></script>

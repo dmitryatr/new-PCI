@@ -16,6 +16,11 @@
         <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
             
                 <!-- Plugins css-->
+                <link href="../plugins/datatables/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css">
+                <link href="../plugins/datatables/buttons.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+                <link href="../plugins/datatables/responsive.bootstrap4.min.css" rel="stylesheet" type="text/css">
+                <link href="../plugins/datatables/select.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+
                 <link href="../plugins/bootstrap-tagsinput/dist/bootstrap-tagsinput.css" rel="stylesheet" />
                 <link href="../plugins/multiselect/css/multi-select.css"  rel="stylesheet" type="text/css" />
                 <link href="../plugins/select2/css/select2.min.css" rel="stylesheet" type="text/css" />
@@ -262,118 +267,7 @@
                               <p class="text-muted text-nowrap m-b-10">NOT REGISTERED</p>
                             </div>
                           </div>
-                        </div>
-                    <!-- <div class="m-t-15">
-                        <button type="button" id="button-gauges" class="btn btn-outline-light waves-effect btn-sm" data-toggle="collapse" data-target="#block"
-                        onclick="changeText(this, 'Hide Gauges', 'Show Gauges');">Hide Gauges</button>
-                        <button type="button" id="button-options" class="btn btn-outline-light waves-effect btn-sm" data-toggle="collapse" data-target="#options"
-                        onclick="changeText(this, 'Show Options', 'Hide Options')">Show Options</button>
                     </div>
-                    <div id="block" class="collapse show">
-                        <div class="row text-center d-flex justify-content-between">        
-                            <div class="col text-left">
-                                <a href="chart.html">
-                                    <div class="chart easy-pie-chart-3" data-percent="3">
-                                        <span class="percent"></span>
-                                        <div>Compliant Saq's</div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col">
-                                <div class="chart easy-pie-chart-3" data-percent="25">
-                                    <span class="percent"></span>
-                                    <div>Compliant Scans</div>
-                                </div>
-                            </div> 
-                            <div class="col">
-                                <div class="chart easy-pie-chart-3" data-percent="93">
-                                    <span class="percent"></span>
-                                    <div>Non Responsive</div>
-                                </div>
-                            </div> 
-                            <div class="col">
-                                <div class="chart easy-pie-chart-3" data-percent="3">
-                                    <span class="percent"></span>
-                                    <div>Overall Compliant</div>
-                                </div>
-                            </div> 
-                            <div class="col">
-                                <div class="chart easy-pie-chart-3" data-percent="97">
-                                    <span class="percent"></span>
-                                    <div>Overall Non Compliant</div>
-                                </div>
-                            </div> 
-                            <div class="col">
-                                <div class="chart easy-pie-chart-3" data-percent="1">
-                                    <span class="percent"></span>
-                                    <div>Scan Merchants</div>
-                                </div>
-                            </div> 
-                            <div class="col">
-                                <div class="chart easy-pie-chart-3" data-percent="75">
-                                    <span class="percent"></span>
-                                    <div>Non Compliant Scans</div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="chart easy-pie-chart-3" data-percent="97">
-                                    <span class="percent"></span>
-                                    <div>Non Compliant Saq's</div>
-                                </div>
-                            </div> 
-                        </div>
-                        <div class="row text-center d-flex justify-content-between">
-                            <div class="col m-l-30 m-t-40">
-                                <a href="hierarchySearchEditUser.html"><button type="button" class="btn btn-light btn-block waves-effect">3847</button></a>
-                                <div>Users</div>
-                            </div>
-                            <div class="col m-l-30 m-t-40">
-                                <a href="chart10.html"><button type="button" class="btn btn-light btn-block  waves-effect">63</button></a>
-                                <div>Scan</div>
-                            </div>
-                            <div class="col m-l-30 m-t-40">
-                                <a href="#"><button type="button" class="btn btn-light btn-block  waves-effect">260</button></a>
-                                <div>SAQ's</div>
-                            </div>
-                            <div class="col m-l-30 m-t-40">
-                                <a href="#"><button type="button" class="btn btn-light btn-block  waves-effect">267</button></a>
-                                <div>Registered</div>
-                            </div>
-                            <div class="col m-l-30 m-t-40">
-                                <a href="#"><button type="button" class="btn btn-light btn-block  waves-effect">300</button></a>
-                                <div>Disabled</div>
-                            </div>
-                            <div class="col m-l-30 m-t-40">
-                                <a href="#"><button type="button" class="btn btn-light btn-block  waves-effect">16</button></a>
-                                <div>Compliant Scan</div>
-                            </div>
-                            <div class="col m-l-30 m-t-40">
-                                <a href="#"><button type="button" class="btn btn-light btn-block  waves-effect">139</button></a>
-                                <div>Compliant SAQ</div>
-                            </div>
-                            <div class="col m-l-30 m-t-40">
-                                <a href="#"><button type="button" class="btn btn-light btn-block  waves-effect">3571</button></a>
-                                <div>Not Registered</div>
-                            </div>
-                            <div class="col m-l-30 m-t-40">
-                                <a href="#"><button type="button" class="btn btn-light btn-block  waves-effect">3838</button></a>
-                                <div>Merchants All</div>
-                            </div>
-                        </div>
-                        <div id="options" class="collapse">
-                            <div class="row d-flex align-items-center">
-                                <span class="mx-3">MID Status:</span>
-                                <button type="button" class="btn btn-info dropdown-toggle waves-effect waves-light w-lg" data-toggle="dropdown" aria-expanded="false">
-                                    <span class="caret">All</span>
-                                </button>
-                                <div class="dropdown-menu" x-placement="bottom-start">
-                                    <a class="dropdown-item" href="#">Enabled Only</a>
-                                    <a class="dropdown-item" href="#">Disabled Only</a>
-                                </div>
-                                <button type="button" class="btn btn-primary btn-custom waves-effect waves-light ml-4">Filter Gauges</button>
-                            </div>
-                        </div>
-                    </div> -->
                     <h4 class="page-title text-uppercase">FILTER BY <i class="ti-filter"></i></h4>
                     <div class="card-box">
                         <div class="row">
@@ -504,58 +398,59 @@
                             <a href="addEditChainSearch.html" class="btn btn-primary btn-custom btn-block waves-effect waves-light mr-3 mt-2">Add/Edit HQ</a>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card-box table-responsive">
+                                <table id="responsive-datatable" class="table text-center table-bordered table-hover table-striped nowrap dt-responsive" cellspacing="0" width="100%">
+                                    <thead class="thead-light">
+                                        <tr>
+                                            <th>Level</th>
+                                            <th>Owner</th>
+                                            <th>User Name</th>
+                                            <th>Email</th>
+                                            <th>Edit</th>
+                                            <th>Last Logged In</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>ISO</td>
+                                            <td>Mersatech</td>
+                                            <td>b.trombley@mersatech.com</td>
+                                            <td>b.trombley@mersatech.com</td>
+                                            <td class="actions">
+                                                <a href="#" class="on-default edit-row px-1" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><i class="fa fa-pencil"></i></a>
+                                                <a href="#" class="on-default text-danger px-1" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><i class="fa fa-trash-o"></i></a>
+                                                <a href="#" class="on-default text-warning px-1" data-toggle="tooltip" data-placement="top" title="" data-original-title="Reset Password"><i class="mdi mdi-lock-reset"></i></a>
+                                            </td>
+                                            <td>6/27/2017 12:45:32 PM</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ISO</td>
+                                            <td>Mersatech</td>
+                                            <td>Devteam</td>
+                                            <td>Sergei@pcicompliancellc.com</td>
+                                            <td class="actions">
+                                                <a href="#" class="on-default edit-row px-1" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><i class="fa fa-pencil"></i></a>
+                                                <a href="#" class="on-default text-danger px-1" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><i class="fa fa-trash-o"></i></a>
+                                                <a href="#" class="on-default text-warning px-1" data-toggle="tooltip" data-placement="top" title="" data-original-title="Reset Password"><i class="mdi mdi-lock-reset"></i></a>
+                                            </td>
+                                            <td>3/9/2018 2:35:18 AM</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-end m-b-20">
+                        <div class="col-6 col-sm-6 col-lg-1">
+                            <button type="button" class="btn btn-primary btn-block btn-custom waves-effect waves-light mt-1">Print</button>
+                        </div>
+                        <div class="col-6 col-sm-6 col-lg-1">
+                            <button type="button" class="btn btn-primary btn-block btn-custom waves-effect waves-light mt-1">Export</button>
+                        </div>
+                    </div>
                 </form>
-                <div class="w-100"></div>
-                <div class="card-box table-bordered">
-                    <div class="table-responsive">
-                        <table id="datatable-editable" class="table text-center table-hover">
-                        <thead class="thead-light">
-                            <tr>
-                                <th>Level</th>
-                                <th>Owner</th>
-                                <th>User Name</th>
-                                <th>Email</th>
-                                <th>Edit</th>
-                                <th>Last Logged In</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr data-toggle="dropdown">
-                                <td>ISO</td>
-                                <td>Mersatech</td>
-                                <td>b.trombley@mersatech.com</td>
-                                <td>b.trombley@mersatech.com</td>
-                                <td class="actions">
-                                    <a href="#" class="on-default edit-row" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><i class="fa fa-pencil"></i></a>
-                                    <a href="#" class="on-default remove-row" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><i class="fa fa-trash-o"></i></a>
-                                    <a href="#" class="on-default text-warning" data-toggle="tooltip" data-placement="top" title="" data-original-title="Reset Password"><i class="mdi mdi-lock-reset"></i></a>
-                                </td>
-                                <td>6/27/2017 12:45:32 PM</td>
-                            </tr>
-                            <tr>
-                                <td>ISO</td>
-                                <td>Mersatech</td>
-                                <td>Devteam</td>
-                                <td>Sergei@pcicompliancellc.com</td>
-                                <td class="actions">
-                                    <a href="#" class="on-default edit-row" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><i class="fa fa-pencil"></i></a>
-                                    <a href="#" class="on-default remove-row" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><i class="fa fa-trash-o"></i></a>
-                                    <a href="#" class="on-default text-warning" data-toggle="tooltip" data-placement="top" title="" data-original-title="Reset Password"><i class="mdi mdi-lock-reset"></i></a>
-                                </td>
-                                <td>3/9/2018 2:35:18 AM</td>
-                            </tr>
-                        </tbody>
-                        </table>
-                    </div>
-                </div>
-                <div class="row justify-content-end m-b-20">
-                    <div class="col-6 col-sm-6 col-lg-1">
-                        <button type="button" class="btn btn-primary btn-block btn-custom waves-effect waves-light mt-1">Print</button>
-                    </div>
-                    <div class="col-6 col-sm-6 col-lg-1">
-                        <button type="button" class="btn btn-primary btn-block btn-custom waves-effect waves-light mt-1">Export</button>
-                    </div>
-                </div>
             </div>
         </div>
 
@@ -588,6 +483,22 @@
                 <script src="../plugins/jquery-circliful/js/jquery.circliful.min.js"></script> 
                 <script src="../plugins/jquery-sparkline/jquery.sparkline.min.js"></script> 
 
+                <!--DataTable-->
+                        <script src="../plugins/datatables/jquery.dataTables.min.js"></script>
+                        <script src="../plugins/datatables/dataTables.bootstrap4.min.js"></script>
+                        <script src="../plugins/datatables/dataTables.buttons.min.js"></script>
+                        <script src="../plugins/datatables/buttons.bootstrap4.min.js"></script>
+                        <script src="../plugins/datatables/jszip.min.js"></script>
+                        <script src="../plugins/datatables/pdfmake.min.js"></script>
+                        <script src="../plugins/datatables/vfs_fonts.js"></script>
+                        <script src="../plugins/datatables/buttons.html5.min.js"></script>
+                        <script src="../plugins/datatables/buttons.print.min.js"></script>
+                        <script src="../plugins/datatables/dataTables.keyTable.min.js"></script>
+                        <script src="../plugins/datatables/dataTables.responsive.min.js"></script>
+                        <script src="../plugins/datatables/responsive.bootstrap4.min.js"></script>
+                        <script src="../plugins/datatables/dataTables.select.min.js"></script>
+
+                        
                         <script src="../plugins/bootstrap-tagsinput/dist/bootstrap-tagsinput.min.js"></script>
                         <script src="../plugins/switchery/switchery.min.js"></script>
                         <script type="text/javascript" src="../plugins/multiselect/js/jquery.multi-select.js"></script>
@@ -612,9 +523,6 @@
                 <script src="assets/js/jquery.app.js"></script> 
                 <script src="../plugins/switchery/switchery.min.js"></script>   
 
-        <!--DataTable-->
-        <script src="../plugins/datatables/jquery.dataTables.min.js"></script>
-        <script src="../plugins/datatables/dataTables.bootstrap.js"></script>
         <script type="text/javascript">
             function changeText(obj, mess1, mess2) {
                 obj.textContent == mess1 ? obj.textContent = mess2 : obj.textContent = mess1
@@ -631,12 +539,8 @@
         </script>
         <script type="text/javascript">
            $(document).ready(function() {
-            $('#datatable').DataTable({
-                scrollX: 400,
-                searching: false,
-                info: false,
-                lengthChange: false
-            });
+            $('#responsive-datatable').DataTable();
+            TableManageButtons.init();
            }); 
         </script>
     </body>
