@@ -140,61 +140,65 @@
                         </div>
                     </div>
                     <h4 class="text-uppercase mt-4">ISOS Documents <i class="mdi mdi-format-list-bulleted"></i></h4>
-                    <div class="card-box table-bordered">
-                        <div class="table-responsive">
-                            <table id="datatable-editable" class="table text-center table-hover">
-                            <thead class="thead-light">
-                                <tr>
-                                    <th></th>
-                                    <th>File Name</th>
-                                    <th>Date</th>
-                                    <th>Size</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><i class="mdi mdi-file-excel"></i></td>
-                                    <td>Visa-Report-incl-pre-loaded----MersaTech.xls</td>
-                                    <td>10/6/2011 2:14:09 PM</td>
-                                    <td>5015198</td>
-                                </tr>
-                                <tr>
-                                    <td><i class="mdi mdi-file-excel"></i></td>
-                                    <td>Visa-Report----MersaTech.xls</td>
-                                    <td>10/6/2011 2:13:47 PM</td>
-                                    <td>192389</td>
-                                </tr>
-                            </tbody>
-                            </table>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card-box table-responsive">
+                                <table id="responsive-datatable1" class="table text-center table-bordered table-hover table-striped nowrap dt-responsive" cellspacing="0" width="100%">
+                                    <thead class="thead-light">
+                                        <tr>
+                                            <th></th>
+                                            <th>File Name</th>
+                                            <th>Date</th>
+                                            <th>Size</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><i class="mdi mdi-file-excel"></i></td>
+                                            <td>Visa-Report-incl-pre-loaded----MersaTech.xls</td>
+                                            <td>10/6/2011 2:14:09 PM</td>
+                                            <td>5015198</td>
+                                        </tr>
+                                        <tr>
+                                            <td><i class="mdi mdi-file-excel"></i></td>
+                                            <td>Visa-Report----MersaTech.xls</td>
+                                            <td>10/6/2011 2:13:47 PM</td>
+                                            <td>192389</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
                     <h4 class="text-uppercase mt-4">Common Documents <i class="mdi mdi-format-list-bulleted"></i></h4>
-                    <div class="card-box table-bordered">
-                        <div class="table-responsive">
-                            <table id="datatable-editable" class="table text-center table-hover">
-                            <thead class="thead-light">
-                                <tr>
-                                    <th></th>
-                                    <th>File Name</th>
-                                    <th>Date</th>
-                                    <th>Size</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><i class="mdi mdi-file-word"></i></td>
-                                    <td>PCI-DSS-v3_2-SAQ-P2PE-rev1_1.docx</td>
-                                    <td>7/31/2017 6:46:38 PM</td>
-                                    <td>269930</td>
-                                </tr>
-                                <tr>
-                                    <td><i class="mdi mdi-file-word"></i></td>
-                                    <td>PCI-DSS-v3_2-SAQ-D_ServiceProvider-rev1_1.docx</td>
-                                    <td>7/31/2017 6:46:33 PM</td>
-                                    <td>362010</td>
-                                </tr>
-                            </tbody>
-                            </table>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card-box table-responsive">
+                                <table id="responsive-datatable2" class="table text-center table-bordered table-hover table-striped nowrap dt-responsive" cellspacing="0" width="100%">
+                                    <thead class="thead-light">
+                                        <tr>
+                                            <th></th>
+                                            <th>File Name</th>
+                                            <th>Date</th>
+                                            <th>Size</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><i class="mdi mdi-file-word"></i></td>
+                                            <td>PCI-DSS-v3_2-SAQ-P2PE-rev1_1.docx</td>
+                                            <td>7/31/2017 6:46:38 PM</td>
+                                            <td>269930</td>
+                                        </tr>
+                                        <tr>
+                                            <td><i class="mdi mdi-file-word"></i></td>
+                                            <td>PCI-DSS-v3_2-SAQ-D_ServiceProvider-rev1_1.docx</td>
+                                            <td>7/31/2017 6:46:33 PM</td>
+                                            <td>362010</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -259,6 +263,12 @@
                 $(".knob").knob();
                 $('.circliful-chart').circliful();
             });
+        </script>
+        <script type="text/javascript">
+           $(document).ready(function() {
+            $('#responsive-datatable1').DataTable();
+            $('#responsive-datatable2').DataTable();
+           }); 
         </script>
     </body>
 </html>

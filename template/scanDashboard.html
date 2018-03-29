@@ -279,38 +279,40 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card-box table-bordered">
-                        <div class="table-responsive">
-                            <table id="datatable-editable" class="table table-hover text-center">
-                                <thead class="thead-light">
-                                    <tr>
-                                        <th>Status</th>
-                                        <th>MID</th>
-                                        <th>Business Name</th>
-                                        <th>Last Scan Date</th>
-                                        <th>Next Scan Date</th>
-                                        <th>Schedule</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td><i class="ion-checkmark-round text-success"></i></td>
-                                        <td>4223697100004840 </td>
-                                        <td>Advanced Communications 122 </td>
-                                        <td>2/9/2018 9:48:21 AM</td>
-                                        <td>5/9/2018 7:33:00 AM</td>
-                                        <td>Scheduled every 90 days</td>
-                                    </tr>
-                                    <tr>
-                                        <td><i class="ion-close-round text-danger"></i></td>
-                                        <td>520002591832</td>
-                                        <td>Arapahoe Pack and Ship</td>
-                                        <td>2/7/2018 8:48:45 PM</td>
-                                        <td>5/7/2018 8:00:00 PM</td>
-                                        <td>Scheduled every 90 days</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card-box table-responsive">
+                                <table id="responsive-datatable" class="table text-center table-bordered table-hover table-striped nowrap dt-responsive" cellspacing="0" width="100%">
+                                    <thead class="thead-light">
+                                        <tr>
+                                            <th>Status</th>
+                                            <th>MID</th>
+                                            <th>Business Name</th>
+                                            <th>Last Scan Date</th>
+                                            <th>Next Scan Date</th>
+                                            <th>Schedule</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><i class="ion-checkmark-round text-success"></i></td>
+                                            <td>4223697100004840 </td>
+                                            <td>Advanced Communications 122 </td>
+                                            <td>2/9/2018 9:48:21 AM</td>
+                                            <td>5/9/2018 7:33:00 AM</td>
+                                            <td>Scheduled every 90 days</td>
+                                        </tr>
+                                        <tr>
+                                            <td><i class="ion-close-round text-danger"></i></td>
+                                            <td>520002591832</td>
+                                            <td>Arapahoe Pack and Ship</td>
+                                            <td>2/7/2018 8:48:45 PM</td>
+                                            <td>5/7/2018 8:00:00 PM</td>
+                                            <td>Scheduled every 90 days</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -435,12 +437,7 @@
     </script>
     <script type="text/javascript">
            $(document).ready(function() {
-            $('#datatable').DataTable({
-                scrollX: 400,
-                searching: false,
-                info: false,
-                lengthChange: false
-            });
+            $('#responsive-datatable').DataTable();
            }); 
         </script>
     </body>

@@ -154,28 +154,30 @@
                         </div>
                     </div>
                 </div>
-                <div class="card-box table-bordered">
-                    <div class="table-responsive">
-                        <table id="datatable-editable" class="table text-center table-hover">
-                        <thead class="thead-light">
-                            <tr>
-                                <th>Report Name</th>
-                                <th>Next Run</th>
-                                <th></th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>IPayment</td>
-                                <td></td>
-                                <td class="actions">
-                                    <a href="#" class="on-default edit-row" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><i class="fa fa-pencil"></i></a>
-                                    <a href="#" class="on-default remove-row" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><i class="fa fa-trash-o"></i></a>
-                                    <a href="#" class="on-default text-warning" data-toggle="tooltip" data-placement="top" title="" data-original-title="Run"><i class="mdi mdi-playlist-play"></i></a>
-                                </td>
-                            </tr>
-                        </tbody>
-                        </table>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card-box table-responsive">
+                            <table id="responsive-datatable" class="table text-center table-bordered table-hover table-striped nowrap dt-responsive" cellspacing="0" width="100%">
+                                <thead class="thead-light">
+                                    <tr>
+                                        <th>Report Name</th>
+                                        <th>Next Run</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>IPayment</td>
+                                        <td></td>
+                                        <td class="actions">
+                                            <a href="#" class="on-default edit-row px-1" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><i class="fa fa-pencil"></i></a>
+                                            <a href="#" class="on-default text-danger px-1" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><i class="fa fa-trash-o"></i></a>
+                                            <a href="#" class="on-default text-warning px-1" data-toggle="tooltip" data-placement="top" title="" data-original-title="Run"><i class="mdi mdi-playlist-play"></i></a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
                 </div>
@@ -243,12 +245,7 @@
         </script>
         <script type="text/javascript">
            $(document).ready(function() {
-            $('#datatable').DataTable({
-                scrollX: 400,
-                searching: false,
-                info: false,
-                lengthChange: false
-            });
+            $('#responsive-datatable').DataTable();
            }); 
         </script>
     </body>

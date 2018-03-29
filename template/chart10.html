@@ -278,53 +278,55 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card-box table-bordered">
-                        <div class="table-responsive">
-                            <table id="datatable-editable" class="table text-center table-hover">
-                            <thead class="thead-light">
-                                <tr>
-                                    <th>Status</th>
-                                    <th>Date Created</th>
-                                    <th>MID</th>
-                                    <th>Business Name</th>
-                                    <th>SAQ</th>
-                                    <th>Scan</th>
-                                    <th>Phone</th>
-                                    <th>Email</th>
-                                    <th>Registered</th>
-                                    <th>SAQ Compliance Date</th>
-                                    <th>SAQ Type</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><i class="ion-checkmark-round text-success"></i></td>
-                                    <td>2/15/2018</td>
-                                    <td>520002763237</td>
-                                    <td>Cuong Quach</td>
-                                    <td><i class="ion-checkmark-round text-success"></i></td>
-                                    <td><i class="ion-checkmark-round text-success"></i></td>
-                                    <td>270-906-2316</td>
-                                    <td>chic6972@yahoo.com</td>
-                                    <td>Yes</td>
-                                    <td>2/15/2019</td>
-                                    <td>SAQ B-IP v3.2r1.1</td>
-                                </tr>
-                                <tr>
-                                    <td><i class="ion-close-round text-danger"></i></td>
-                                    <td>1/10/2017</td>
-                                    <td>520001616620</td>
-                                    <td>BLOOMINGTON COUNTRY CLUB GC</td>
-                                    <td><i class="ion-close-round text-danger"></i></td>
-                                    <td><i class="ion-close-round text-danger"></i></td>
-                                    <td>435-673-4687</td>
-                                    <td>Finance@swmlife.com</td>
-                                    <td>Yes</td>
-                                    <td></td>
-                                    <td>SAQ B-IP v3.2</td>
-                                </tr>
-                            </tbody>
-                            </table>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card-box table-responsive">
+                                <table id="responsive-datatable" class="table text-center table-bordered table-hover table-striped nowrap dt-responsive" cellspacing="0" width="100%">
+                                    <thead class="thead-light">
+                                        <tr>
+                                            <th>Status</th>
+                                            <th>Date Created</th>
+                                            <th>MID</th>
+                                            <th>Business Name</th>
+                                            <th>SAQ</th>
+                                            <th>Scan</th>
+                                            <th>Phone</th>
+                                            <th>Email</th>
+                                            <th>Registered</th>
+                                            <th>SAQ Compliance Date</th>
+                                            <th>SAQ Type</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><i class="ion-checkmark-round text-success"></i></td>
+                                            <td>2/15/2018</td>
+                                            <td>520002763237</td>
+                                            <td>Cuong Quach</td>
+                                            <td><i class="ion-checkmark-round text-success"></i></td>
+                                            <td><i class="ion-checkmark-round text-success"></i></td>
+                                            <td>270-906-2316</td>
+                                            <td>chic6972@yahoo.com</td>
+                                            <td>Yes</td>
+                                            <td>2/15/2019</td>
+                                            <td>SAQ B-IP v3.2r1.1</td>
+                                        </tr>
+                                        <tr>
+                                            <td><i class="ion-close-round text-danger"></i></td>
+                                            <td>1/10/2017</td>
+                                            <td>520001616620</td>
+                                            <td>BLOOMINGTON COUNTRY CLUB GC</td>
+                                            <td><i class="ion-close-round text-danger"></i></td>
+                                            <td><i class="ion-close-round text-danger"></i></td>
+                                            <td>435-673-4687</td>
+                                            <td>Finance@swmlife.com</td>
+                                            <td>Yes</td>
+                                            <td></td>
+                                            <td>SAQ B-IP v3.2</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
                     <div class="d-flex justify-content-end m-b-20">
@@ -458,12 +460,7 @@
     </script>
     <script type="text/javascript">
            $(document).ready(function() {
-            $('#datatable').DataTable({
-                scrollX: 400,
-                searching: false,
-                info: false,
-                lengthChange: false
-            });
+            $('#responsive-datatable').DataTable();
            }); 
         </script>
     </body>
