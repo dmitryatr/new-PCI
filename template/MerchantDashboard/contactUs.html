@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <title>PCI Compiliance</title>
+        <link href="../../plugins/jquery-circliful/css/jquery.circliful.css" rel="stylesheet" type="text/css" />
+        
+        <link href="../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="../assets/css/style.css" rel="stylesheet" type="text/css" />
+        <link href="../assets/css/icons.css" rel="stylesheet" type="text/css" />
+        
+        <script src="../assets/js/modernizr.min.js"></script>
+    </head>
+    <body>
+        <!-- Navigation Bar-->
+        <header id="topnav">
+            <div class="topbar-main">
+                <div class="container-fluid">
+
+                    <!-- Logo container-->
+                    <div class="logo m-t-5">
+                        <!-- Text Logo -->
+                        <a href="index.html" class="logo">
+                            <span class="logo-large">Mersa Tech</span>
+                        </a>
+                    </div>
+                    <!-- End Logo container-->
+                    <div class="menu-extras topbar-custom float-right">
+                        <ul class="list-inline float-right mb-0">
+                            <li class="menu-item list-inline-item"> 
+                                <!-- Mobile menu toggle--> 
+                                <a class="navbar-toggle nav-link">
+                                    <div class="lines"> <span></span> <span></span> <span></span> </div>
+                                </a> 
+                                    <!-- End mobile menu toggle--> 
+                            </li>
+                            <li class="list-inline-item dropdown notification-list"> <a class="nav-link dropdown-toggle arrow-none waves-effect" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false"> <i class="mdi mdi-bell noti-icon"></i> <span class="badge badge-pink noti-icon-badge">4</span> </a>
+                                <div class="dropdown-menu dropdown-menu-right dropdown-arrow dropdown-menu-lg" aria-labelledby="Preview" x-placement="bottom-end" > 
+                                    <!-- item-->
+                                    <div class="dropdown-item noti-title">
+                                        <h5 class="font-16"><span class="badge badge-danger float-right">5</span>Notification</h5>
+                                    </div>
+                                      
+                                    <!-- item--> 
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <div class="notify-icon bg-success"><i class="mdi mdi-comment-account"></i></div>
+                                            <p class="notify-details">Robert S. Taylor commented on Admin<small class="text-muted">1 min ago</small></p>
+                                    </a> 
+                                      
+                                    <!-- item--> 
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <div class="notify-icon bg-info"><i class="mdi mdi-account"></i></div>
+                                            <p class="notify-details">New user registered.<small class="text-muted">1 min ago</small></p>
+                                    </a> 
+                                      
+                                      <!-- item--> 
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <div class="notify-icon bg-danger"><i class="mdi mdi-airplane"></i></div>
+                                            <p class="notify-details">Carlos Crouch liked <b>Admin</b><small class="text-muted">1 min ago</small></p>
+                                    </a> 
+                                      
+                                    <!-- All--> 
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item notify-all"> View All </a> 
+                                </div>
+                            </li>
+                            <li class="list-inline-item dropdown notification-list"> <a class="nav-link dropdown-toggle waves-effect nav-user" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false"> <img src="../assets/images/users/avatar-1.jpg" alt="user" class="rounded-circle"> </a>
+                                <div class="dropdown-menu dropdown-menu-right profile-dropdown" aria-labelledby="Preview" x-placement="bottom-end"> 
+                                    <!-- item-->
+                                    <div class="dropdown-item noti-title">
+                                        <h5 class="text-overflow"><small class="text-white">Welcome ! John</small> </h5>
+                                    </div>
+                                      
+                                    <!-- item--> 
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item"> <i class="mdi mdi-account"></i> <span>Profile</span> </a> 
+                                      
+                                    <!-- item--> 
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item"> <i class="mdi mdi-settings"></i> <span>Settings</span> </a> 
+                                      
+                                    <!-- item--> 
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item"> <i class="mdi mdi-lock-open"></i> <span>Lock Screen</span> </a> 
+                                      
+                                    <!-- item--> 
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item"> <i class="mdi mdi-logout"></i> <span>Logout</span> </a> 
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- end menu-extras -->
+                    <div class="clearfix"></div>
+                </div> <!-- end container -->
+            </div>
+            <!-- end topbar-main -->
+
+            <div class="navbar-custom">
+                <div class="container-fluid">
+                    <div id="navigation">
+                        <!-- Navigation Menu-->
+                        <ul class="navigation-menu text-uppercase">
+                            <li class="has-submenu">
+                                <a><h4 class="m-0">Contact Us</h4></a>
+                            </li>
+                            <li class="float-right">
+                                <button onclick="location.href='merchantDashboard.html'" type="button" class="btn btn-light waves-effect waves-light m-t-10">DASHBOARD</button>
+                            </li>                           
+                        </ul>
+                        <!-- End navigation menu -->
+                    </div> <!-- end #navigation -->
+                </div> <!-- end container -->
+            </div> <!-- end navbar-custom -->
+        </header>
+        <!-- End Navigation Bar-->
+        
+        <div class="wrapper">
+            <form>
+                <div class="container">
+                    <h4 class="mt-5 text-uppercase">Support Request</h4>
+                    <div class="card-box">
+                        <div class="row py-2">
+                            <div class="col-sm-12 col-md-6 col-lg-6">
+                                <input type="text" class="form-control m-b-10" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="FirstName">
+                                <input type="text" class="form-control m-b-10" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="LastName">
+                                <input type="text" class="form-control m-b-10" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Email">
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-6">
+                                    <h4 class="text-uppercase">Topic</h4>
+                                    <div class="radio radio-primary mt-2">
+                                        <input type="radio" name="radio" value="option1" id="radio1" checked="checked">
+                                        <label class="text-uppercase" for="radio1">SAQ</label>
+                                    </div>
+                                    <div class="radio radio-primary mt-2">
+                                        <input type="radio" name="radio" value="option2" id="radio2">
+                                        <label class="text-uppercase" for="radio2">Scan</label>
+                                    </div>
+                                    <div class="radio radio-primary mt-2">
+                                        <input type="radio" name="radio" value="option3" id="radio3">
+                                        <label class="text-uppercase" for="radio3">Other</label>
+                                    </div>
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-12 col-6">
+                                        <button type="button" class="btn waves-effect waves-light m-t-20">Upload Attachment</button>
+                                    </div>
+                                </div>
+                            </div>
+                         </div>
+                         <div class="row">
+                            <div class="col-12">
+                                <textarea class="w-100 form-control" rows="8">
+                                </textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row m-b-30 justify-content-end">
+                        <div class="col-sm-6 col-md-6 col-lg-3 my-1">
+                            <button type="button" class="btn btn-primary btn-custom btn-block waves-effect waves-light text-uppercase">Send Support Request</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <!--Footer-->
+        <footer class="footer">
+            <div class="container-fluid">
+                <div class="row justify-content-center">
+                    <div class="col-sm-12 col-lg-10 text-center">©2018 PCI Compliance. All rights reserved
+                        <a href="termsOfService.html" class="mx-2">Terms Of Service</a>|
+                        <a href="termsConditions.html" class="mx-2">ISO Terms & Conditions</a>|
+                        <a href="privacyPolicy.html" class="mx-2">Privacy Policy</a>|
+                        <a href="help.html" class="mx-2">Help</a>
+                    </div>
+                </div>
+            </div>         
+        </footer>
+                <!-- jQuery  -->
+        <script src="../assets/js/jquery.min.js"></script>
+        <script src="../assets/js/popper.min.js"></script><!-- Popper for Bootstrap --><!-- Tether for Bootstrap -->
+        <script src="../assets/js/bootstrap.min.js"></script>
+        <script src="../assets/js/waves.js"></script>
+        <script src="../assets/js/jquery.slimscroll.js"></script>
+        <script src="../assets/js/jquery.scrollTo.min.js"></script>
+
+        <!-- EASY PIE CHART JS -->
+        <script src="../../plugins/jquery.easy-pie-chart/dist/easypiechart.min.js"></script>
+        <script src="../../plugins/jquery.easy-pie-chart/dist/jquery.easypiechart.min.js"></script>
+        <script src="../assets/pages/easy-pie-chart.init.js"></script>
+
+        <!-- KNOB JS -->
+        <!--[if IE]>
+        <script type="text/javascript" src="../plugins/jquery-knob/excanvas.js"></script>
+        <![endif]-->
+        <script src="../../plugins/jquery-knob/jquery.knob.js"></script>
+
+        <!-- Circliful -->
+        <script src="../../plugins/jquery-circliful/js/jquery.circliful.min.js"></script>
+
+        <script src="../assets/js/jquery.core.js"></script>
+        <script src="../assets/js/jquery.app.js"></script>
+    </body>
+</html>
