@@ -118,7 +118,7 @@
                     <!-- Navigation Menu-->
                     <ul class="navigation-menu text-uppercase">
                         <li class="has-submenu">
-                            <a><h4 class="page-title m-0">Library</h4></a>
+                            <a><h4 class="page-title m-0">ELECTRONIC SIGNATURE</h4></a>
                         </li>
                         <li class="float-right">
                             <button onclick="location.href='merchantDashboard.html'" type="button" class="btn btn-light waves-effect waves-light m-t-10">DASHBOARD</button>
@@ -134,31 +134,28 @@
     <div class="wrapper">
         <form>
             <div class="container">
-                <div class="row mt-5">
-                    <div class="col-12">
-                        <div class="card-box table-responsive">
-                            <table id="responsive-datatable" class="table text-center table-bordered table-hover table-striped nowrap dt-responsive" cellspacing="0" width="100%">
-                                <thead class="thead-light">
-                                    <tr>
-                                        <th></th>
-                                        <th>Name</th>
-                                        <th>Size</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td><i class="mdi mdi-file-pdf font-18"></i></td>
-                                        <td>10 COMMON MYTHS OF PCI DSS COMPLIANCE</td>
-                                        <td>833366</td>
-                                    </tr>
-                                    <tr>
-                                        <td><i class="mdi mdi-file-pdf font-18"></i></td>
-                                        <td>ABOUT THE PCI SECURITY STANDARDS COUNCIL</td>
-                                        <td>38260</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                <div class="card mt-5 mb-2">
+                    <div class="card-header"><h4 class="text-uppercase m-0">ELECTRONIC SIGNATURE</div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="font-weight-bold mb-4">SIGNATURE REQUIREMENT:</div>
+                                <div class="w-100"></div>
+                                <div>BY SIGNING BELOW I VALIDATE AND CERTIFY THAT THE RESPONSES PROVIDED TO MY SELF ASSESSMENT QUESTIONNAIRE (SAQ) ARE ACCURATE, TRUTHFUL, AND COMPLETE TO THE BEST OF MY KNOWLEDGE. IF I AM COMPLETING A SCAN AS PART OF MY COMPLIANCE REQUIREMENTS THEN I ALSO VALIDATE AND CERTIFY THAT THE IP ADDRESSES INDICATED FOR SCAN ARE FULLY WITHIN MY RIGHTS AND DOMAIN TO COMPLETE THE SCAN PROCESS. BY SIGNING BELOW I AGREE TO THESE TERMS AND CONDITIONS AND CERTIFY THAT I AM AN AUTHORIZED SIGNOR ON BEHALF OF THE BUSINESS ENTITY OR INDIVIDUAL(S) ASSOCIATED WITH THIS MERCHANT ACCOUNT OR COLLECTIVELY MERCHANT ACCOUNTS.</div>
+                                <div class="checkbox checkbox-primary mt-3">
+                                    <input type="checkbox" id="checkbox1" checked="">
+                                    <label class="text-uppercase" for="checkbox1">I Agree</label>
+                                </div>
+                            </div>
                         </div>
+                    </div>
+                </div>
+                <div class="row justify-content-between">
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                        <button type="button" class="btn btn-block btn-custom mt-1">Cancel</button>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                        <button type="button" class="btn btn-primary btn-custom btn-block mt-1">Save</button>
                     </div>
                 </div>
             </div>
@@ -240,7 +237,6 @@
     <script type="text/javascript">
        $(document).ready(function() {
         $('#responsive-datatable').DataTable();
-        TableManageButtons.init();
        }); 
     </script>
 </body>

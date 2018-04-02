@@ -118,7 +118,7 @@
                     <!-- Navigation Menu-->
                     <ul class="navigation-menu text-uppercase">
                         <li class="has-submenu">
-                            <a><h4 class="page-title m-0">Library</h4></a>
+                            <a><h4 class="page-title m-0">SAQ Completion</h4></a>
                         </li>
                         <li class="float-right">
                             <button onclick="location.href='merchantDashboard.html'" type="button" class="btn btn-light waves-effect waves-light m-t-10">DASHBOARD</button>
@@ -134,30 +134,109 @@
     <div class="wrapper">
         <form>
             <div class="container">
-                <div class="row mt-5">
-                    <div class="col-12">
-                        <div class="card-box table-responsive">
-                            <table id="responsive-datatable" class="table text-center table-bordered table-hover table-striped nowrap dt-responsive" cellspacing="0" width="100%">
-                                <thead class="thead-light">
-                                    <tr>
-                                        <th></th>
-                                        <th>Name</th>
-                                        <th>Size</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td><i class="mdi mdi-file-pdf font-18"></i></td>
-                                        <td>10 COMMON MYTHS OF PCI DSS COMPLIANCE</td>
-                                        <td>833366</td>
-                                    </tr>
-                                    <tr>
-                                        <td><i class="mdi mdi-file-pdf font-18"></i></td>
-                                        <td>ABOUT THE PCI SECURITY STANDARDS COUNCIL</td>
-                                        <td>38260</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                <div class="card mt-5 mb-4">
+                    <div class="card-header"><h4 class="text-uppercase m-0">Status as of: 12/13/2017</h4></div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-12 col-lg-2 d-flex justify-content-center">
+                                <i class="mdi mdi-check-circle-outline text-success display-1"></i>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-5 text-primary offset-lg-1">
+                                <div class="w-100 mb-3">SAQ VERSION: SAQ P2PE-HW V3.2R1.1</div>
+                                <div class="w-100 mb-3">CURRENT SAQ STATUS: COMPLIANT</div>
+                                <div class="w-100 mb-3">SAQ STATUS DATE: 12/13/2017</div>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-4 text-primary">
+                                <div class="w-100 mb-3">SAQ EXPIRATION DATE: 12/13/2018</div>
+                                <div class="w-100 mb-3">SAQ LAST CHANGED: 12/13/2017</div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-end">
+                            <div class="col-sm-12 col-md-6 col-lg-3">
+                                <a href="merchantDashboard.html" class="btn btn-primary btn-block waves-effect waves-light text-uppercase">Return To Dashboard</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-4">
+                    <div class="card-header"><h4 class="text-uppercase m-0">ANNUAL SAQ VALIDATION - TO BE COMPLETED EACH YEAR AFTER THE INITIAL SAQ COMPLETION.</h4></div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="checkbox checkbox-primary mt-2 d-flex">
+                                    <input type="checkbox" id="checkbox1">
+                                    <label class="text-uppercase" for="checkbox1">BY CHECKING THIS BOX, I CERTIFY THAT ALL SAQ ANSWERS ARE ACCURATE AS OF TODAY’S DATE. ADDITIONALLY, MY ADDRESS, EMAIL, AND OTHER INFORMATION IS UP TO DATE. I ALSO ACKNOWLEDGE THAT REVIEWING THIS SAQ IS AN ANNUAL REQUIREMENT.</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-3 justify-content-between">
+                            <div class="col-sm-12 col-md-6 col-lg-3 my-1">
+                                <input type="text" class="form-control" disabled="" aria-label="Default" aria-describedby="inputGroup-sizing-default" value="hvacbrad">
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-3 my-1">
+                                <button type="button" class="btn btn-primary btn-block waves-effect waves-light text-uppercase">Update</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-2">
+                    <div class="card-body table-responsive">
+                        <table id="responsive-datatable" class="table text-center table-bordered table-hover table-striped nowrap dt-responsive" cellspacing="0" width="100%">
+                            <thead class="thead-light">
+                                <tr>
+                                    <th>Requirement</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Requirement 3</td>
+                                    <td class="actions">
+                                        <i class="mdi mdi-check-circle-outline text-success h3"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Requirement 9</td>
+                                    <td class="actions">
+                                        <i class="mdi mdi-check-circle-outline text-success h3"></i>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="row justify-content-end mb-4">
+                    <div class="col-sm-12 col-md-5 col-lg-3">
+                        <button type="button" class="btn btn-primary btn-block waves-effect waves-light text-uppercase">Download Certificate</button>
+                    </div>
+                </div>
+                <div class="card mb-4">
+                    <div class="card-header"><h4 class="text-uppercase m-0">POLICY & PROCEDURE TEMPLATES</h4></div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-12">
+                                If you need assistance in creating your Policy's & Procedures please click the link below.
+                            </div>
+                        </div>
+                        <div class="row justify-content-end mt-3">
+                            <div class="col-sm-12 col-md-6 col-lg-3">
+                                <button type="button" class="btn btn-primary btn-block waves-effect waves-light text-uppercase">Policy Templates</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-4">
+                    <div class="card-header"><h4 class="text-uppercase m-0">SURVEY</h4></div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-12">
+                                Click here if you would like to complete a survey
+                            </div>
+                        </div>
+                        <div class="row justify-content-end mt-3">
+                            <div class="col-sm-12 col-md-6 col-lg-3">
+                                <a href="Survey.html" class="btn btn-primary btn-block waves-effect waves-light text-uppercase">Complete a survey</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -240,7 +319,6 @@
     <script type="text/javascript">
        $(document).ready(function() {
         $('#responsive-datatable').DataTable();
-        TableManageButtons.init();
        }); 
     </script>
 </body>

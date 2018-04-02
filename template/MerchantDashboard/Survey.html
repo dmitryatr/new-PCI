@@ -134,31 +134,120 @@
     <div class="wrapper">
         <form>
             <div class="container">
-                <div class="row mt-5">
-                    <div class="col-12">
-                        <div class="card-box table-responsive">
-                            <table id="responsive-datatable" class="table text-center table-bordered table-hover table-striped nowrap dt-responsive" cellspacing="0" width="100%">
-                                <thead class="thead-light">
-                                    <tr>
-                                        <th></th>
-                                        <th>Name</th>
-                                        <th>Size</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td><i class="mdi mdi-file-pdf font-18"></i></td>
-                                        <td>10 COMMON MYTHS OF PCI DSS COMPLIANCE</td>
-                                        <td>833366</td>
-                                    </tr>
-                                    <tr>
-                                        <td><i class="mdi mdi-file-pdf font-18"></i></td>
-                                        <td>ABOUT THE PCI SECURITY STANDARDS COUNCIL</td>
-                                        <td>38260</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                <div class="card mt-5 mb-3">
+                    <div class="card-header"><h4 class="text-uppercase m-0">Survey</h4></div>
+                    <div class="card-body">
+                        <div id="accordion">
+                            <div role="tablist" aria-multiselectable="true">
+                                <div class="card">
+                                    <div class="card-header text-uppercase" role="tab" id="heading1">
+                                        <h5 class="mb-0">
+                                            <a href="#collapse1" data-toggle="collapse" aria-expanded="true" aria-controls="collapse1">
+                                                How easy was it to set up and complete your initial login into our website?
+                                            </a>
+                                        </h5>
+                                    </div>
+                                    <div id="collapse1" class="collapse" aria-labelledby="heading1" data-parent="#accordion" role="tabpanel">
+                                        <div class="card-body">
+                                            <div class="radio radio-primary mt-2">
+                                                <input type="radio" name="radio1" value="option1" id="radio1" checked="checked">
+                                                <label class="text-uppercase" for="radio1">Very Easy</label>
+                                            </div>
+                                            <div class="radio radio-primary mt-2">
+                                                <input type="radio" name="radio1" value="option2" id="radio2">
+                                                <label class="text-uppercase" for="radio2">Somewhat Easy</label>
+                                            </div>
+                                            <div class="radio radio-primary mt-2">
+                                                <input type="radio" name="radio1" value="option3" id="radio3">
+                                                <label class="text-uppercase" for="radio3">Nether Easy or Hard</label>
+                                            </div>
+                                            <div class="radio radio-primary mt-2">
+                                                <input type="radio" name="radio1" value="option4" id="radio4">
+                                                <label class="text-uppercase" for="radio4">Very Hard</label>
+                                            </div>
+                                            <div class="radio radio-primary mt-2">
+                                                <input type="radio" name="radio1" value="option4" id="radio4">
+                                                <label class="text-uppercase" for="radio5">N/A</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header text-uppercase" role="tab" id="heading2">
+                                        <h5 class="mb-0">
+                                            <a href="#collapse2" data-toggle="collapse" aria-expanded="true" aria-controls="collapse2">
+                                                How easy was it to navigate our website?
+                                            </a>
+                                        </h5>
+                                    </div>
+                                    <div id="collapse2" class="collapse" aria-labelledby="heading1" data-parent="#accordion" role="tabpanel">
+                                        <div class="card-body">
+                                            <div class="radio radio-primary mt-2">
+                                                <input type="radio" name="radio2" value="option1" id="radio6" checked="checked">
+                                                <label class="text-uppercase" for="radio6">Very Easy</label>
+                                            </div>
+                                            <div class="radio radio-primary mt-2">
+                                                <input type="radio" name="radio2" value="option2" id="radio7">
+                                                <label class="text-uppercase" for="radio7">Somewhat Easy</label>
+                                            </div>
+                                            <div class="radio radio-primary mt-2">
+                                                <input type="radio" name="radio2" value="option3" id="radio8">
+                                                <label class="text-uppercase" for="radio8">Nether Easy or Hard</label>
+                                            </div>
+                                            <div class="radio radio-primary mt-2">
+                                                <input type="radio" name="radio2" value="option4" id="radio9">
+                                                <label class="text-uppercase" for="radio9">Very Hard</label>
+                                            </div>
+                                            <div class="radio radio-primary mt-2">
+                                                <input type="radio" name="radio2" value="option4" id="radio10">
+                                                <label class="text-uppercase" for="radio10">N/A</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header text-uppercase" role="tab" id="heading3">
+                                        <h5 class="mb-0">
+                                            <a href="#collapse3" data-toggle="collapse" aria-expanded="true" aria-controls="collapse3">
+                                               Do wireless Devices need a scan?
+                                            </a>
+                                        </h5>
+                                    </div>
+                                    <div id="collapse3" class="collapse" aria-labelledby="heading1" data-parent="#accordion" role="tabpanel">
+                                        <div class="card-body">
+                                            <div class="radio radio-primary mt-2">
+                                                <input type="radio" name="radio3" value="option1" id="radio11" checked="checked">
+                                                <label class="text-uppercase" for="radio11">Very Easy</label>
+                                            </div>
+                                            <div class="radio radio-primary mt-2">
+                                                <input type="radio" name="radio3" value="option2" id="radio12">
+                                                <label class="text-uppercase" for="radio12">Somewhat Easy</label>
+                                            </div>
+                                            <div class="radio radio-primary mt-2">
+                                                <input type="radio" name="radio3" value="option3" id="radio13">
+                                                <label class="text-uppercase" for="radio13">Nether Easy or Hard</label>
+                                            </div>
+                                            <div class="radio radio-primary mt-2">
+                                                <input type="radio" name="radio3" value="option4" id="radio14">
+                                                <label class="text-uppercase" for="radio14">Very Hard</label>
+                                            </div>
+                                            <div class="radio radio-primary mt-2">
+                                                <input type="radio" name="radio3" value="option4" id="radio15">
+                                                <label class="text-uppercase" for="radio15">N/A</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+                    </div>
+                </div>
+                <div class="row justify-content-between">
+                    <div class="col-sm-12 col-md-6 col-lg-3 my-1">
+                        <button type="button" class="btn btn-light btn-block waves-effect waves-light text-uppercase">Cancel</button>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3 my-1">
+                        <button type="button" class="btn btn-primary btn-block waves-effect waves-light text-uppercase">Send</button>
                     </div>
                 </div>
             </div>
@@ -240,7 +329,6 @@
     <script type="text/javascript">
        $(document).ready(function() {
         $('#responsive-datatable').DataTable();
-        TableManageButtons.init();
        }); 
     </script>
 </body>

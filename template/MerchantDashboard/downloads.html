@@ -118,7 +118,7 @@
                     <!-- Navigation Menu-->
                     <ul class="navigation-menu text-uppercase">
                         <li class="has-submenu">
-                            <a><h4 class="page-title m-0">Library</h4></a>
+                            <a><h4 class="page-title m-0">Downloads</h4></a>
                         </li>
                         <li class="float-right">
                             <button onclick="location.href='merchantDashboard.html'" type="button" class="btn btn-light waves-effect waves-light m-t-10">DASHBOARD</button>
@@ -134,30 +134,56 @@
     <div class="wrapper">
         <form>
             <div class="container">
-                <div class="row mt-5">
-                    <div class="col-12">
-                        <div class="card-box table-responsive">
-                            <table id="responsive-datatable" class="table text-center table-bordered table-hover table-striped nowrap dt-responsive" cellspacing="0" width="100%">
-                                <thead class="thead-light">
-                                    <tr>
-                                        <th></th>
-                                        <th>Name</th>
-                                        <th>Size</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td><i class="mdi mdi-file-pdf font-18"></i></td>
-                                        <td>10 COMMON MYTHS OF PCI DSS COMPLIANCE</td>
-                                        <td>833366</td>
-                                    </tr>
-                                    <tr>
-                                        <td><i class="mdi mdi-file-pdf font-18"></i></td>
-                                        <td>ABOUT THE PCI SECURITY STANDARDS COUNCIL</td>
-                                        <td>38260</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                <div class="card mt-5 mb-4">
+                    <div class="card-header"><h4 class="text-uppercase m-0">DOWNLOADS</h4></div>
+                    <div class="card-body">
+                        <div class="row justify-content-between mb-5">
+                            <div class="col-sm-12 col-md-6 col-lg-2">
+                                <div class="text-center">
+                                    <a href="sendEmailsSearch.html">
+                                        <img src="../assets/images/add_edit_icon/comp_cert_block.png">
+                                    </a>
+                                    <h4 class="text-muted">COMPLETION CERTIFICATES</h4>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-2">
+                                <div class="text-center">
+                                    <a href="sendEmailsSearch.html">
+                                        <img src="../assets/images/add_edit_icon/comp_cert_block.png">
+                                    </a>
+                                    <h4 class="text-muted">ATTESTATION OF COMPLIANCE</h4>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-2">
+                                <div class="text-center">
+                                    <a href="sendEmailsSearch.html">
+                                        <img src="../assets/images/add_edit_icon/comp_cert_block.png">
+                                    </a>
+                                    <h4 class="text-muted">POLICY TEMPLATES</h4>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-2">
+                                <div class="text-center">
+                                    <a href="sendEmailsSearch.html">
+                                        <img src="../assets/images/add_edit_icon/comp_cert_block.png">
+                                    </a>
+                                    <h4 class="text-muted">BREACH CERTIFICATE</h4>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-2">
+                                <div class="text-center">
+                                    <a href="sendEmailsSearch.html">
+                                        <img src="../assets/images/add_edit_icon/merchant_block.png">
+                                    </a>
+                                    <h4 class="text-muted">DYNAMIC IP TRACKER</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row text-uppercase">
+                            <div class="col-sm-12 col-md-6 col-lg-3">
+                                <div class="text-primary">SAQ Version:</div>
+                                <input type="text" class="form-control mt-3" aria-label="Default" aria-describedby="inputGroup-sizing-default" value="SAQ P2PE">        
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -240,7 +266,6 @@
     <script type="text/javascript">
        $(document).ready(function() {
         $('#responsive-datatable').DataTable();
-        TableManageButtons.init();
        }); 
     </script>
 </body>

@@ -118,7 +118,7 @@
                     <!-- Navigation Menu-->
                     <ul class="navigation-menu text-uppercase">
                         <li class="has-submenu">
-                            <a><h4 class="page-title m-0">Library</h4></a>
+                            <a><h4 class="page-title m-0">Verify Email</h4></a>
                         </li>
                         <li class="float-right">
                             <button onclick="location.href='merchantDashboard.html'" type="button" class="btn btn-light waves-effect waves-light m-t-10">DASHBOARD</button>
@@ -134,31 +134,36 @@
     <div class="wrapper">
         <form>
             <div class="container">
-                <div class="row mt-5">
-                    <div class="col-12">
-                        <div class="card-box table-responsive">
-                            <table id="responsive-datatable" class="table text-center table-bordered table-hover table-striped nowrap dt-responsive" cellspacing="0" width="100%">
-                                <thead class="thead-light">
-                                    <tr>
-                                        <th></th>
-                                        <th>Name</th>
-                                        <th>Size</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td><i class="mdi mdi-file-pdf font-18"></i></td>
-                                        <td>10 COMMON MYTHS OF PCI DSS COMPLIANCE</td>
-                                        <td>833366</td>
-                                    </tr>
-                                    <tr>
-                                        <td><i class="mdi mdi-file-pdf font-18"></i></td>
-                                        <td>ABOUT THE PCI SECURITY STANDARDS COUNCIL</td>
-                                        <td>38260</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                <div class="card mt-5 mb-3">
+                    <div class="card-header"><h4 class="text-uppercase m-0">Verify Email</h4></div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-12 col-lg-6 mb-2">
+                                To ensure we have your correct email please click on the verification email sent to your inbox. Having a valid email is critical for communication regarding your PCI Compliance status, updates, and reminders. Simply find the email (look in your : 'junk' folder as it may be sorted as unknown). Follow the email and click the link to complete verification. If you did not receive the email, please make sure your email to the right is correct and then click 'Send/Re-Send Verification Email'. This will resend the confirmation link. If your email is incorrect please return to the Dashboard and update your email under the Merchant Overview page then follow the process above to resend your email validation. Please note the verification email link can take up to 30 min to receive.
+                            </div>
+                            <div class="col-sm-12 col-md-12 col-lg-5 offset-lg-1">
+                                <div class="row mb-4">
+                                    <div class="col-12">
+                                        <h4>Your e-mail address is: <span class="text-info">hvacbrad@yahoo.com</span></h4>
+                                    </div>
+                                </div>
+                                <div class="row mb-4">
+                                    <div class="col-12">
+                                        <h3><i class="mdi mdi-check-circle-outline text-success"></i><span class="font-18 ml-2">Verified</span></h3>
+                                    </div>
+                                </div>
+                                <div class="row mb-4">
+                                    <div class="col-12">
+                                        <a href="" class="btn btn-light waves-effect waves-light">Edit Email Now</a>
+                                    </div>
+                                </div>
+                            </div> 
                         </div>
+                    </div>
+                </div>
+                <div class="row justify-content-end">
+                    <div class="col-sm-8 col-md-4 col-lg-4">
+                        <button type="button" class="btn btn-primary btn-block waves-effect waves-light text-uppercase">Send/Re-send Verification Email</button>
                     </div>
                 </div>
             </div>
@@ -240,7 +245,6 @@
     <script type="text/javascript">
        $(document).ready(function() {
         $('#responsive-datatable').DataTable();
-        TableManageButtons.init();
        }); 
     </script>
 </body>
