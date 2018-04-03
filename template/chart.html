@@ -367,9 +367,6 @@
         <script src="../plugins/datatables/responsive.bootstrap4.min.js"></script>
         <script src="../plugins/datatables/dataTables.select.min.js"></script>
 
-        <!--Chartist Chart-->
-        <script src="../plugins/chartist/dist/chartist.min.js"></script>
-        <script src="assets/pages/jquery.chartist.init.js"></script>
         <!--Chart-->
         <script src="../plugins/chart.js/Chart.js"></script>
 
@@ -391,13 +388,7 @@
         <script src="assets/js/jquery.app.js"></script>
 
         <script>
-            $(function() {
-                $(".knob").knob();
-                $('.circliful-chart').circliful();
-            });
-        </script>
-        <script>
-            var ctx = document.getElementById("myChart").getContext('2d');
+            var ctx = document.getElementById("myChart");
             var myChart = new Chart(ctx, {
             type: 'horizontalBar',
             data: {
@@ -431,7 +422,7 @@
             });
     </script>
     <script type="text/javascript">
-        var ctxD = document.getElementById("doughnutChart").getContext('2d');
+        var ctxD = document.getElementById("doughnutChart");
         var myLineChart = new Chart(ctxD, {
             type: 'doughnut',
             data: {

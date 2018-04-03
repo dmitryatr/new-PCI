@@ -9,6 +9,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="shortcut icon" href="../assets/images/favicon.ico">
     <link href="../../plugins/jquery-circliful/css/jquery.circliful.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../plugins/jquery.steps/css/jquery.steps.css">
+
 
     <!-- App css -->
     <link href="../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
@@ -16,8 +18,6 @@
     <link href="../assets/css/style.css" rel="stylesheet" type="text/css" />
         
     <!-- Plugins css-->
-    <link rel="stylesheet" type="text/css" href="../../plugins/jquery.steps/css/jquery.steps.css">
-
     <link href="../../plugins/datatables/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css">
     <link href="../../plugins/datatables/buttons.bootstrap4.min.css" rel="stylesheet" type="text/css" />
     <link href="../../plugins/datatables/responsive.bootstrap4.min.css" rel="stylesheet" type="text/css">
@@ -31,6 +31,7 @@
     <link href="../../plugins/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css" rel="stylesheet">
     <link href="../../plugins/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
     <link href="../../plugins/switchery/switchery.min.css" rel="stylesheet" /> 
+
         
     <script src="../assets/js/modernizr.min.js"></script>
     </head>
@@ -140,91 +141,139 @@
                     <div class="card-box">
                         <form id="basic-form" action="#">
                                 <div>
-                                    <h3>Account</h3>
+                                    <h3>3</h3>
                                     <section>
-                                        <div class="form-group clearfix">
-                                            <label class="control-label " for="userName">User name *</label>
-                                            <div class="">
-                                                <input class="form-control required" id="userName" name="userName" type="text">
-                                            </div>
-                                        </div>
-                                        <div class="form-group clearfix">
-                                            <label class="control-label " for="password"> Password *</label>
-                                            <div class="">
-                                                <input id="password" name="password" type="text" class="required form-control">
-
-                                            </div>
-                                        </div>
-
-                                        <div class="form-group clearfix">
-                                            <label class="control-label " for="confirm">Confirm Password *</label>
-                                            <div class="">
-                                                <input id="confirm" name="confirm" type="text" class="required form-control">
-                                            </div>
-                                        </div>
-
-                                    </section>
-                                    <h3>Profile</h3>
-                                    <section>
-                                        <div class="form-group clearfix">
-
-                                            <label class="control-label" for="name"> First name *</label>
-                                            <div class="">
-                                                <input id="name" name="name" type="text" class="required form-control">
-                                            </div>
-                                        </div>
-                                        <div class="form-group clearfix">
-                                            <label class="control-label " for="surname"> Last name *</label>
-                                            <div class="">
-                                                <input id="surname" name="surname" type="text" class="required form-control">
-
-                                            </div>
-                                        </div>
-
-                                        <div class="form-group clearfix">
-                                            <label class="control-label " for="email">Email *</label>
-                                            <div class="">
-                                                <input id="email" name="email" type="text" class="required email form-control">
-                                            </div>
-                                        </div>
-
-                                        <div class="form-group clearfix">
-                                            <label class="control-label " for="address">Address *</label>
-                                            <div class="">
-                                                <input id="address" name="address" type="text" class="form-control">
-                                            </div>
-                                        </div>
-
-                                        <div class="form-group clearfix">
-                                            <label class="col-lg-12 control-label ">(*) Mandatory</label>
-                                        </div>
-
-                                    </section>
-                                    <h3>Hints</h3>
-                                    <section>
-                                        <div class="form-group clearfix">
-                                            <div class="col-lg-12">
-                                                <ul class="list-unstyled w-list">
-                                                    <li><b>First Name :</b> Jonathan </li>
-                                                    <li><b>Last Name :</b> Smith </li>
-                                                    <li><b>Emial:</b> jonathan@smith.com</li>
-                                                    <li><b>Address:</b> 123 Your City, Cityname. </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </section>
-                                    <h3>Finish</h3>
-                                    <section>
-                                        <div class="form-group clearfix">
-                                            <div class="col-lg-12">
-                                                <div class="checkbox checkbox-primary">
-                                                    <input id="checkbox-h" type="checkbox">
-                                                    <label for="checkbox-h">
-                                                        I agree with the Terms and Conditions.
-                                                    </label>
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="mb-3">Are data-retention and disposal policies, procedures, and processes implemented as follows:</div>
+                                                <div class="text-primary text-uppercase mb-3 h4">EXPLANATION</div>
+                                                <div class="mb-4">
+                                                    Cardholder data should only be retained for as long as required for your business needs as well as any legal or regulatory obligations that apply to your industry. Your data retention policy should identify how long the data is stored and why, where that data resides, and the secure means of deleting the data when no longer needed. Implementing secure deletion methods ensures that the data cannot be retrieved when it is no longer needed.
+                                                    The only cardholder data that may be stored after authorization is the primary account number or PAN (rendered unreadable), expiration date, cardholder name, and service code.
+                                                    PCI Security Council Explanation:
+                                                    A formal data retention policy identifies what data needs to be retained, and where that data resides so it can be securely destroyed or deleted as soon as it is no longer needed. In order to define appropriate retention requirements, an entity first needs to understand their own business needs as well as any legal or regulatory obligations that apply to their industry, and/or that apply to the type of data being retained. Extended storage of cardholder data that exceeds business need creates an unnecessary risk. The only cardholder data that may be stored after authorization is the primary account number or PAN (rendered unreadable), expiration date, cardholder name, and service code. Implementing secure deletion methods ensure that the data cannot be retrieved when it is no longer needed.
+                                                    Remember, if you don't need it, don't store it!
+                                                </div>
+                                                <div class="text-primary text-uppercase h4 mb-3">GUIDANCE</div>
+                                                <div>
+                                                    A formal data retention policy identifies what data needs to be retained, and where that data resides so it can be securely destroyed or deleted as soon as it is no longer needed.
+                                                    The only cardholder data that may be stored after authorization is the primary account number or PAN (rendered unreadable), expiration date, cardholder name, and service code.
+                                                    Understanding where cardholder data is located is necessary so it can be properly retained or disposed of when no longer needed. In order to define appropriate retention requirements, an entity first needs to understand their own business needs as well as any legal or regulatory obligations that apply to their industry, and/or that apply to the type of data being retained.
+                                                    Identifying and deleting stored data that has exceeded its specified retention period prevents unnecessary retention of data that is no longer needed. This process may be automated or manual or a combination of both. For example, a programmatic procedure (automatic or manual) to locate and remove data and/or a manual review of data storage areas could be performed.
+                                                    Implementing secure deletion methods ensure that the data cannot be retrieved when it is no longer needed.
+                                                    <div class="w-100"></div>
+                                                    <b>Remember, if you don't need it, don't store it!</b>
                                                 </div>
                                             </div>
                                         </div>
+                                    </section>
+                                    <h3>9</h3>
+                                    <section>
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div>
+                                                    Are all media physically secured (including but not limited to computers, removable electronic media, paper receipts, paper reports, and faxes)? For purposes of Requirement 9, “media” refers to all paper and electronic media containing cardholder data.
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12 ml-1">
+                                                        <div class="radio radio-primary mt-1">
+                                                            <input type="radio" name="radio" value="option1" id="radio1" checked="checked" class="d-inline-block">
+                                                            <label class="text-uppercase" for="radio1">Yes</label>
+                                                        </div>
+                                                        <div class="radio radio-primary mt-1">
+                                                            <input type="radio" name="radio" value="option2" id="radio2" class="d-inline-block">
+                                                            <label class="text-uppercase" for="radio2">No</label>
+                                                        </div>
+                                                        <div class="radio radio-primary mt-1">
+                                                            <input type="radio" name="radio" value="option3" id="radio3" class="d-inline-block">
+                                                            <label class="text-uppercase" for="radio3">N/A</label>
+                                                        </div>
+                                                        <div class="radio radio-primary mt-1 mb-2">
+                                                            <input type="radio" name="radio" value="option4" id="radio4" class="d-inline-block">
+                                                            <label class="text-uppercase" for="radio4">YES WITH CCW (COMPENSATING CONTROL WORKSHEET)</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12 mb-4">
+                                                        <div>
+                                                            <span class="text-uppercase font-weight-bold mr-2">Status:</span>
+                                                            <span><i class="mdi mdi-check-circle-outline text-success h3"></i></span>
+                                                            <span class="text-uppercase font-weight-bold">Compliant Answer</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="text-primary mb-3 h4">EXPLANATION</div>
+                                                <div class="mb-4">
+                                                    PCI Security Council Explanation:<div class="w-100"></div>
+                                                    Cardholder data is susceptible to unauthorized viewing, copying, or scanning if it is unprotected while it is on removable or portable media, printed out, or left on someone's desk. Ensure a physically secure location is available for media at all times.
+                                                </div>
+                                                <div class="text-primary mb-3 h4">TESTING PROCEDURES</div>
+                                                <div class="mb-4">
+                                                    Verify that procedures for protecting cardholder data include controls for physically securing all media (including but not limited to computers, removable electronic media, paper receipts, paper reports, and faxes).
+                                                </div>
+                                                <div class="text-primary mb-3 h4">GUIDANCE</div>
+                                                <div>
+                                                    Controls for physically securing media are intended to prevent unauthorized persons from gaining access to cardholder data on any type of media. Cardholder data is susceptible to unauthorized viewing, copying, or scanning if it is unprotected while it is on removable or portable media, printed out, or left on someone’s desk.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <h3>12</h3>
+                                    <section>
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div>
+                                                    Are all media physically secured (including but not limited to computers, removable electronic media, paper receipts, paper reports, and faxes)? For purposes of Requirement 9, “media” refers to all paper and electronic media containing cardholder data.
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12 ml-1">
+                                                        <div class="radio radio-primary mt-1">
+                                                            <input type="radio" name="radio" value="option1" id="radio1" checked="checked" class="d-inline-block">
+                                                            <label class="text-uppercase" for="radio1">Yes</label>
+                                                        </div>
+                                                        <div class="radio radio-primary mt-1">
+                                                            <input type="radio" name="radio" value="option2" id="radio2" class="d-inline-block">
+                                                            <label class="text-uppercase" for="radio2">No</label>
+                                                        </div>
+                                                        <div class="radio radio-primary mt-1">
+                                                            <input type="radio" name="radio" value="option3" id="radio3" class="d-inline-block">
+                                                            <label class="text-uppercase" for="radio3">N/A</label>
+                                                        </div>
+                                                        <div class="radio radio-primary mt-1 mb-2">
+                                                            <input type="radio" name="radio" value="option4" id="radio4" class="d-inline-block">
+                                                            <label class="text-uppercase" for="radio4">YES WITH CCW (COMPENSATING CONTROL WORKSHEET)</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12 mb-4">
+                                                        <div>
+                                                            <span class="text-uppercase font-weight-bold mr-2">Status:</span>
+                                                            <span><i class="mdi mdi-check-circle-outline text-success h3"></i></span>
+                                                            <span class="text-uppercase font-weight-bold">Compliant Answer</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="text-primary mb-3 h4">EXPLANATION</div>
+                                                <div class="mb-4">
+                                                    PCI Security Council Explanation:<div class="w-100"></div>
+                                                    Cardholder data is susceptible to unauthorized viewing, copying, or scanning if it is unprotected while it is on removable or portable media, printed out, or left on someone's desk. Ensure a physically secure location is available for media at all times.
+                                                </div>
+                                                <div class="text-primary mb-3 h4">TESTING PROCEDURES</div>
+                                                <div class="mb-4">
+                                                    Verify that procedures for protecting cardholder data include controls for physically securing all media (including but not limited to computers, removable electronic media, paper receipts, paper reports, and faxes).
+                                                </div>
+                                                <div class="text-primary mb-3 h4">GUIDANCE</div>
+                                                <div>
+                                                    Controls for physically securing media are intended to prevent unauthorized persons from gaining access to cardholder data on any type of media. Cardholder data is susceptible to unauthorized viewing, copying, or scanning if it is unprotected while it is on removable or portable media, printed out, or left on someone’s desk.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <h3>SAQ VALIDATION</h3>
+                                    <section>
+                                        
                                     </section>
                                 </div>
                         </form>
