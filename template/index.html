@@ -461,23 +461,23 @@
                             <button type="button" class="btn btn-primary btn-block btn-custom waves-effect waves-light mt-1">Export</button>
                         </div>
                     </div>
-                    <div id="info1" class=" position-absolute" style="display: none">
+                    <div id="info1" class="position-absolute" style="display: none">
                         <div class="card-box bg-secondary">
                             <div class="row">
                                 <div class="col-4">
-                                    <button type="button" class="btn btn-block btn-primary mb-1">Overview</button>
-                                    <button type="button" class="btn btn-block btn-primary mb-1">Email</button>
-                                    <button type="button" class="btn btn-block btn-primary mb-1">SAQ Certificate</button>
+                                    <a href="#" class="btn btn-block btn-primary btn-sm mb-1">Overview</a>
+                                    <a href="#" class="btn btn-block btn-primary btn-sm mb-1">Email</a>
+                                    <a href="#" class="btn btn-block btn-primary btn-sm mb-1">SAQ Certificate</a>
                                 </div>
                                 <div class="col-4">
-                                    <button type="button" class="btn btn-block btn-primary mb-1">Attestation of Co..</button>
-                                    <button type="button" class="btn btn-block btn-primary mb-1">Users</button>
-                                    <button type="button" class="btn btn-block btn-primary mb-1">Login as</button>
+                                    <a href="#" class="btn btn-block btn-primary btn-sm mb-1">Attestation of Co..</a>
+                                    <a href="MerchantDashboard/addEditUserSearch.html" class="btn btn-block btn-primary btn-sm mb-1">Users</a>
+                                    <a href="#" class="btn btn-block btn-primary btn-sm mb-1">Login as</a>
                                 </div>
                                 <div class="col-4">
-                                    <button type="button" class="btn btn-block btn-primary mb-1">Upload Documents</button>
-                                    <button type="button" class="btn btn-block btn-primary mb-1">Disabled</button>
-                                    <button type="button" class="btn btn-block btn-primary mb-1">Remediation</button>
+                                    <a href="#" class="btn btn-block btn-primary btn-sm mb-1">Upload Docume..</a>
+                                    <a href="#" class="btn btn-block btn-primary btn-sm mb-1">Disabled</a>
+                                    <a href="#" class="btn btn-block btn-primary btn-sm mb-1">Remediation</a>
                                 </div>
                             </div>
                         </div>
@@ -602,7 +602,7 @@
             var info = $('#info1'), timeoutId;
             $('tbody tr').hover(function(){
                 clearTimeout(timeoutId);
-                info.show().css({'left': width, 'top': height + 54 * (this.rowIndex + 1) - 283}).fadeIn('slow');
+                info.show().css({'left': width, 'top': height + 54 * (this.rowIndex + 1) - 262}).fadeIn('slow');
             }, function(){
                 timeoutId = setTimeout($.proxy(info, 'hide'), 1000);
             });
@@ -616,28 +616,7 @@
                 height = $("tbody tr").offset().top;
             });
 
-            // $("tbody tr").on("mouseover", function(e) {
-            //     mouseY = e.pageY;
-            //     clearTimeout(timeoutId);
-            //     console.log($("tbody tr").offset().top);
-            //     $('#info1').removeClass("d-none").addClass('d-inline-block').css({'top': height + 50 * (this.rowIndex + 1) - 200}).fadeIn('slow');
-            // }, function() {
-            //     timeoutId = setTimeout($.proxy($('#info1'), 'addClass'), 1000);
-            // });
-
-            // $('#info1').mouseenter(function() {
-            //     clearTimeout(timeoutId);
-            // }).mouseleave(function() {
-            //     $('#info1').addClass('d-none');
-            // });
-
-            //  $("tbody tr").on("mousemove", function(e) {
-            //     $('#info1').css({'left': width}).fadeIn('slow');
-            // });
-
-            // $("tbody tr").on("mouseout", function() {
-            //     $('#info1').addClass("d-none").removeClass('d-inline-block');
-            // });
+            
         </script>
     </body>
 </html>
