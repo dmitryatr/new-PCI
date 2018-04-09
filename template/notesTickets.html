@@ -105,10 +105,10 @@
                         <!-- Navigation Menu-->
                         <ul class="navigation-menu clearfix">
                             <li>
-                                <a><h4 class="m-0">HQS</h4></a>
+                                <a><h4 class="text-uppercase m-0">Note/Ticket</h4></a>
                             </li>
                             <li class="has-submenu float-right">
-                                <button onclick="location.href='addEdit.html'" type="button" class="btn btn-light waves-effect waves-light m-t-10 m-b-10">ADD/EDIT</button>
+                                <button onclick="location.href='communications.html'" type="button" class="btn btn-light waves-effect waves-light m-t-10 m-b-10">COMM LIST</button>
                                 <button onclick="location.href='index.html'" type="button" class="btn btn-light waves-effect waves-light m-t-10 m-b-10">DASHBOARD</button>
                             </li>                           
                         </ul>
@@ -121,70 +121,39 @@
         
         <div class="wrapper mb-5 mb-lg-4 pb-5 pb-lg-0">
             <form>
-                <div class="container" >
-                    <h4 class="mt-5">ADD/EDIT HEADQUARTERS <i class="ti-search"></i></h4>
-                    <div class="card-box">
-                        <div class="row py-2">
-                            <div class="col-sm-12 col-lg-3 my-1">
-                                <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Enter Name">
+                <div class="container">
+                    <div class="card mt-5">
+                        <div class="card-header"><h4 class="text-uppercase m-0">Create New Note/Ticket</h4></div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6 col-lg-6">
+                                    <input type="text" class="form-control mb-3" placeholder="Enter Note/Ticket Topic">
+                                </div>
+                                <div class="col-sm-12 col-md-3 col-lg-3">
+                                    <select class="custom-select mb-3">
+                                        <option selected="">Post Note To</option>
+                                        <option value="1">Admin</option>
+                                        <option value="2">ISO</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-12 col-md-3 col-lg-3">
+                                    <select class="custom-select mb-3">
+                                        <option selected="">Recipient</option>
+                                    </select>
+                                </div>
                             </div>
-                            <div class="col-sm-12 col-lg-2 my-1">
-                                <button type="button" class="btn btn-primary btn-custom btn-block waves-effect waves-light">Search</button>
+                            <div class="row">
+                                <div class="col-12">
+                                    <textarea class="form-control mb-3" rows="8" placeholder="Note/Ticket content goes here"></textarea>
+                                </div>
                             </div>
-                            <div class="col-sm-12 col-lg-2 my-1">
-                                <a href="addEditHQ.html" class="btn btn-primary btn-custom btn-block waves-effect waves-light">Add New</a>
-                            </div>
-                        </div>
-                    </div>
-                    <h4 class="mt-4">FILTER <i class="ti-filter"></i></h4>
-                    <div class="card-box">
-                        <div class="row py-2">
-                            <div class="col-sm-12 col-lg-3 my-1">
-                                <select class="custom-select">
-                                    <option selected="">OFFICE/AGENT</option>
-                                    <option value="1">BestCard</option>
-                                    <option value="2">MAC USA</option>
-                                </select>
-                            </div>
-                            <div class="col-sm-12 col-lg-3 my-1">
-                                <select class="custom-select">
-                                    <option selected="">REP</option>
-                                    <option value="1">BestCard - IP76</option>
-                                    <option value="2">BestCard - MT76</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="card-box table-responsive">
-                                <table id="responsive-datatable" class="table text-center table-bordered table-hover table-striped nowrap dt-responsive" cellspacing="0" width="100%">
-                                    <thead class="thead-light">
-                                        <tr>
-                                            <th>Headquarters Name</th>
-                                            <th>Count</th>
-                                            <th></th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>Law Office of John Preston</td>
-                                            <td>4</td>
-                                            <td class="actions">
-                                                <a href="#" class="on-default edit-row px-1" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><i class="fa fa-pencil"></i></a>
-                                                <a href="#" class="on-default text-danger px-1" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><i class="fa fa-trash-o"></i></a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>Parker Orthodontics</td>
-                                            <td>2</td>
-                                            <td class="actions">
-                                                <a href="#" class="on-default edit-row px-1" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><i class="fa fa-pencil"></i></a>
-                                                <a href="#" class="on-default text-danger px-1" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><i class="fa fa-trash-o"></i></a>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                            <div class="row justify-content-end">
+                                <div class="col-sm-12 col-md-6 col-lg-2">
+                                    <button type="button" class="btn btn-primary btn-block waves-effect waves-light mt-2">Create/Finished</button>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-2">
+                                    <button type="button" class="btn btn-default btn-block waves-effect waves-light mt-2">Cancel</button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -244,22 +213,5 @@
 
         <script src="assets/js/jquery.core.js"></script>
         <script src="assets/js/jquery.app.js"></script>
-
-        <script>
-            $(function() {
-                $(".knob").knob();
-                $('.circliful-chart').circliful();
-            });
-        </script>
-        <script type="text/javascript">
-           $(document).ready(function() {
-            $('#datatable').DataTable({
-                scrollX: 400,
-                searching: false,
-                info: false,
-                lengthChange: false
-            });
-           }); 
-        </script>
     </body>
 </html>

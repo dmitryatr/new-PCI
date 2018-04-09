@@ -43,10 +43,11 @@
                 <div class="container-fluid">
 
                     <!-- Logo container-->
-                    <div class="logo m-t-5">
+                    <div class="logo">
                         <!-- Text Logo -->
-                        <a href="index.html" class="logo">
-                            <span class="logo-large">Mersa Tech</span>
+                        <a href="index.html" class="logo"> 
+                            <span class="logo-small"><img src="assets/images/logo_pci.png" style="width:120px; height: auto;"></span> 
+                            <span class="logo-large"><img src="assets/images/logo_pci.png" style="width:150px; height: auto;"></span> 
                         </a>
                     </div>
                     <!-- End Logo container-->
@@ -472,7 +473,7 @@
                                 <div class="col-4">
                                     <a href="#" class="btn btn-block btn-primary btn-sm mb-1">Attestation of Co..</a>
                                     <a href="MerchantDashboard/addEditUserSearch.html" class="btn btn-block btn-primary btn-sm mb-1">Users</a>
-                                    <a href="#" class="btn btn-block btn-primary btn-sm mb-1">Login as</a>
+                                    <a href="MerchantDashboard/merchantDashboard.html" class="btn btn-block btn-primary btn-sm mb-1">Login as</a>
                                 </div>
                                 <div class="col-4">
                                     <a href="#" class="btn btn-block btn-primary btn-sm mb-1">Upload Docume..</a>
@@ -579,9 +580,7 @@
            }); 
         </script>
         <script type="text/javascript">
-            $(document).ready(function() {
-             
-              $(window).resize(function(){
+            function Change_Font_Size() {
                 var windowWidth = $(window).width();
                 if(windowWidth < 350) {
                    $("#large").removeClass("display-4").addClass("h1");
@@ -589,7 +588,12 @@
                 else {
                    $("#large").addClass("display-4").removeClass("h1");
                 }
-              });
+            }
+            $(document).ready(function() {
+                Change_Font_Size();             
+            });
+            $(window).resize(function(){
+                Change_Font_Size();
             });
         </script>
         <script type="text/javascript">

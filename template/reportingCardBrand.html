@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
         <title>PCI Compiliance</title>
         <link href="../plugins/jquery-circliful/css/jquery.circliful.css" rel="stylesheet" type="text/css" />
-        
+
         <!-- Plugins css-->
         <link href="../plugins/datatables/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css">
         <link href="../plugins/datatables/buttons.bootstrap4.min.css" rel="stylesheet" type="text/css" />
@@ -114,10 +114,10 @@
                         <!-- Navigation Menu-->
                         <ul class="navigation-menu clearfix">
                             <li>
-                                <a><h4 class="m-0">SEND EMAILS</h4></a>
+                                <a><h4 class="m-0 text-uppercase">Card Brend Reports</h4></a>
                             </li>
                             <li class="has-submenu float-right">
-                                <button onclick="location.href='communications.html'" type="button" class="btn btn-light waves-effect waves-light m-t-10 m-b-10">COMM LIST</button>
+                                <button onclick="location.href='reportingType.html'" type="button" class="btn btn-light waves-effect waves-light m-t-10 m-b-10">REPORTS</button>
                                 <button onclick="location.href='index.html'" type="button" class="btn btn-light waves-effect waves-light m-t-10 m-b-10">DASHBOARD</button>
                             </li>                           
                         </ul>
@@ -130,44 +130,166 @@
         
         <div class="wrapper mb-5 mb-lg-4 pb-5 pb-lg-0">
             <form>
-                <div class="container" >
+                <div class="container">
                     <div class="card mt-5">
-                        <div class="card-header"><h4 class="text-uppercase m-0">Send New Email</h4></div>
+                        <div class="card-header"><h4 class="text-uppercase m-0">Card Brand Reporting</h4></div>
                         <div class="card-body">
-                            <div class="row mb-3">
-                                <div class="col-sm-12 col-md-6 col-lg-4">
-                                    <h4 class="text-primary text-uppercase">Name:</h4>
-                                    <input type="text" class="form-control" required="" placeholder="Name of Set">
-                                </div> 
-                            </div>
-                            <h4 class="text-uppercase text-primary">List:</h4>
                             <div class="row">
-                                <div class="col-sm-12 col-md-6 col-lg-3">
-                                    <select class="custom-select mb-2">
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <h4 class="text-uppercase text-primary">Report Name:</h4>
+                                    <input type="text" class="form-control" required="" placeholder="Enter New Report Name">
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <h4 class="text-uppercase text-primary">Report Export Default Language:</h4>
+                                    <select class="custom-select">
+                                        <option selected="">Choose Language</option>
+                                        <option value="1">English</option>
+                                        <option value="2">Spanish</option>
+                                        <option value="3">Vietnamese</option>
+                                        <option value="4">Portuguese</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <h4 class="text-uppercase text-primary mt-4">List:</h4>
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <select class="custom-select mb-3">
                                         <option selected="">OFFICE/AGENT</option>
                                         <option value="1">BestCard</option>
                                         <option value="2">MAC USA</option>
                                     </select>
                                 </div>
-                                <div class="col-sm-12 col-md-6 col-lg-3">
-                                    <select class="custom-select mb-2">
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <select class="custom-select mb-3">
                                         <option selected="">REP</option>
                                         <option value="1">BestCard - IP76</option>
                                         <option value="2">BestCard - MT76</option>
                                     </select>
                                 </div>
-                                <div class="col-sm-12 col-md-6 col-lg-3">
-                                    <select class="custom-select mb-2">
-                                        <option selected="">EMAIL GROUP</option>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mt-5">
+                        <div class="card-header"><h4 class="text-uppercase m-0">Template Text</h4></div>
+                        <div class="card-body">
+                            <div class="row mb-3">
+                                <div class="col-12">
+                                    <span class="text-primary text-uppercase mr-2 h4">Merchants:</span>
+                                    <div class="radio radio-primary form-check-inline mr-4">
+                                        <input type="radio" name="radio_inline3" value="option1" id="radio1">
+                                        <label class="text-uppercase" for="radio1">All</label>
+                                    </div>
+                                    <div class="radio radio-primary form-check-inline mr-4">
+                                        <input type="radio" name="radio_inline3" value="option1" id="radio2">
+                                        <label class="text-uppercase" for="radio2">Active</label>
+                                    </div>
+                                    <div class="radio radio-primary form-check-inline mr-4">
+                                        <input type="radio" name="radio_inline3" value="option1" id="radio3">
+                                        <label class="text-uppercase" for="radio3">Pre-Registered</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-12">
+                                    <span class="text-primary text-uppercase mr-2 h4">MID Status:</span>
+                                    <div class="radio radio-primary form-check-inline mr-4">
+                                        <input type="radio" name="radio_inline1" value="option2" id="radio4">
+                                        <label class="text-uppercase" for="radio4">All</label>
+                                    </div>
+                                    <div class="radio radio-primary form-check-inline mr-4">
+                                        <input type="radio" name="radio_inline1" value="option2" id="radio5">
+                                        <label class="text-uppercase" for="radio5">Active Only</label>
+                                    </div>
+                                    <div class="radio radio-primary form-check-inline mr-4">
+                                        <input type="radio" name="radio_inline1" value="option2" id="radio6">
+                                        <label class="text-uppercase" for="radio6">Disabled Only</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-12">
+                                    <span class="text-primary text-uppercase mr-2 mr-lg-5 h4">Type:</span>
+                                    <div class="radio radio-primary form-check-inline mr-4">
+                                        <input type="radio" name="radio_inline2" value="option3" id="radio7" class="ml-lg-4">
+                                        <label class="text-uppercase" for="radio7">Both</label>
+                                    </div>
+                                    <div class="radio radio-primary form-check-inline mr-4">
+                                        <input type="radio" name="radio_inline2" value="option3" id="radio8">
+                                        <label class="text-uppercase" for="radio8">Saq</label>
+                                    </div>
+                                    <div class="radio radio-primary form-check-inline mr-4">
+                                        <input type="radio" name="radio_inline2" value="option3" id="radio9">
+                                        <label class="text-uppercase" for="radio9">Scan</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-12">
+                                    <span class="text-primary text-uppercase mr-2 h4">Card Brand:</span>
+                                    <div class="w-100 d-sm-block d-lg-none"></div>
+                                    <div class="checkbox checkbox-primary form-check-inline mb-2 mr-4">
+                                        <input type="checkbox" id="checkbox1">
+                                        <label class="text-uppercase" for="checkbox1">Visa</label>
+                                    </div>
+                                    <div class="checkbox checkbox-primary form-check-inline mb-2 mr-4">
+                                        <input type="checkbox" id="checkbox2">
+                                        <label class="text-uppercase" for="checkbox2">Mastercard</label>
+                                    </div>
+                                    <div class="checkbox checkbox-primary form-check-inline mb-2 mr-4">
+                                        <input type="checkbox" id="checkbox3">
+                                        <label class="text-uppercase" for="checkbox3">Discover</label>
+                                    </div>
+                                    <div class="checkbox checkbox-primary form-check-inline mb-2 mr-4">
+                                        <input type="checkbox" id="checkbox4">
+                                        <label class="text-uppercase" for="checkbox4">First Data</label>
+                                    </div>
+                                    <div class="checkbox checkbox-primary form-check-inline mb-2 mr-4">
+                                        <input type="checkbox" id="checkbox5">
+                                        <label class="text-uppercase" for="checkbox5">Global Payments</label>
+                                    </div>
+                                    <div class="checkbox checkbox-primary form-check-inline mb-2 mr-4">
+                                        <input type="checkbox" id="checkbox6">
+                                        <label class="text-uppercase" for="checkbox6">Transfirst</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-sm-12 col-md-4 col-lg-4 order-lg-last">
+                                    <h4 class="text-primary text-uppercase">Hierarchy</h4>
+                                    <select class="custom-select mb-3">
+                                        <option selected="">OFFICE/AGENT</option>
+                                        <option value="1">BestCard</option>
+                                        <option value="2">MAC USA</option>
+                                    </select>
+                                    <select class="custom-select mb-3">
+                                        <option selected="">REP</option>
+                                        <option value="1">BestCard - IP76</option>
+                                        <option value="2">BestCard - MT76</option>
+                                    </select>
+                                    <select class="custom-select mb-3">
+                                        <option selected="">BANK/PROCESSOR</option>
+                                        <option value="1">Electronic Merchant Systems (EMS)</option>
+                                        <option value="2">Evo/PowerPay</option>
+                                        <option value="3">First Data Merchant Services</option>
+                                        <option value="4">iPmt</option>
+                                        <option value="5">Vantiv</option>
+                                    </select>
+                                    <select class="custom-select mb-3">
+                                        <option selected="">PLATFORM</option>
+                                    </select>
+                                    <select class="custom-select mb-3">
+                                        <option selected="">SYS/PRIN</option>
+                                        <option value="1">02740</option>
+                                        <option value="2">02949</option>
                                     </select>
                                 </div>
-                                <div class="col-sm-12 col-md-6 col-lg-3">
-                                    <select class="custom-select mb-2">
-                                        <option selected="">EMAIL TEMPLATE</option>
-                                    </select>
+                                <div class="col-sm-12 col-md-8 col-lg-8">
+                                    <input type="text" class="form-control mb-3" placeholder="Custom report subject">
+                                    <textarea class="form-control mb-3" rows="9" placeholder="Would you like add some text to email body? Type text here..."></textarea>
                                 </div>
-                            </div>   
-                        </div>                                                       
+                                
+                            </div>
+                        </div>
                     </div>
                     <div class="card mt-5">
                         <div class="card-header"><h4 class="text-uppercase m-0">Auto-Pilot</h4></div>
@@ -193,22 +315,31 @@
                                     </div>
                                 </div>
                                 <div class="col-sm-12 col-lg-4">
-                                    <input class="form-control" name="start" type="text" placeholder="End After Number of Occurrences">
+                                    <input class="form-control mb-3" name="start" type="text" placeholder="End After Number of Occurrences">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12"><h4 class="text-uppercase text-primary">ADDITIONAL EMAILS PLEASE SEPARATE BY SEMICOLON</h4></div>
+                                <div class="col-sm-12 col-md-4 col-lg-4">
+                                    <input class="form-control mb-2" type="text" placeholder="Email">
+                                </div>
+                                <div class="col-sm-12 col-md-4 col-lg-4">
+                                    <input class="form-control mb-2" type="text" placeholder="Email CC">
+                                </div>
+                                <div class="col-sm-12 col-md-4 col-lg-4">
+                                    <input class="form-control mb-2" type="text" placeholder="Email BCC">
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="row justify-content-end mb-3">
-                        <div class="col-sm-12 col-md-4 col-lg-2">
-                            <button type="button" class="btn btn-block btn-primary waves-effect waves-light mt-3">Send Emails</button>   
+                    <div class="row justify-content-end">
+                        <div class="col-sm-12 col-md-6 col-lg-2">
+                            <button type="submit" class="btn btn-primary btn-custom btn-block waves-effect waves-light my-4">Create/Save</button>
                         </div>
-                        <div class="col-sm-12 col-md-4 col-lg-2">
-                            <button type="submit" class="btn btn-block btn-primary waves-effect waves-light mt-3">Save</button>   
+                        <div class="col-sm-12 col-md-6 col-lg-2">
+                            <button type="button" class="btn btn-default btn-custom btn-block waves-effect waves-light my-4">Cancel</button>
                         </div>
-                        <div class="col-sm-12 col-md-4 col-lg-2">
-                            <button type="button" class="btn btn-block btn-default waves-effect waves-light mt-3">Cancel</button>   
-                        </div>
-                    </div> 
+                    </div>
                     <div class="card">
                         <div class="card-header"><h4 class="text-uppercase m-0">Email History</h4></div>
                         <div class="card-body table-responsive">
@@ -227,11 +358,12 @@
                 </div>
             </form>
         </div>
+        
 
         <!--Footer-->
         <footer class="footer">
             <div class="container-fluid">
-                <div class="row justify-content-center">
+                <div class="row">
                     <div class="col-sm-12 col-lg-10 text-center">©2018 PCI Compliance. All rights reserved
                         <a href="termsOfService.html" class="m-r-5">Terms Of Service</a>|
                         <a href="termsConditions.html" class="m-l-5 m-r-5">ISO Terms & Conditions</a>|
@@ -292,9 +424,6 @@
                 $('form').parsley();
                 $('#responsive-datatable').DataTable();
             });
-            $(document).on('click', '#checkbox1', function() {
-                $('#checkbox1').is(':checked') ? $('#end_date').addClass('d-none') : $('#end_date').removeClass('d-none');
-            })
-        </script>
+        </script> 
     </body>
 </html>
