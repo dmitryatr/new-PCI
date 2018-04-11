@@ -97,14 +97,31 @@
                 <div class="container-fluid">
                     <div id="navigation">
                         <!-- Navigation Menu-->
-                        <ul class="navigation-menu clearfix">
-                            <li>
-                                <a><h4 class="m-0">MANUALLY ENTER MERCHANT</h4></a>
+                        <ul class="navigation-menu text-uppercase">
+                            <li class="has-submenu">
+                                <a href="index.html"><i class="ti-home"></i>ISO Dashboard</a>
                             </li>
-                            <li class="has-submenu float-right">
-                                <button onclick="location.href='reportingType.html'" type="button" class="btn btn-light waves-effect waves-light m-t-10 m-b-10">REPORTS</button>
-                                <button onclick="location.href='index.html'" type="button" class="btn btn-light waves-effect waves-light m-t-10 m-b-10">DASHBOARD</button>
-                            </li>                           
+
+                            <li class="has-submenu">
+                                <a href="addEdit.html"><i class="ti-pencil"></i>Add/Edit</a>
+                            </li>
+
+                            <li class="has-submenu">
+                                <a href="communications.html"><i class="ti-comments"></i>Comm List</a>
+                            </li>
+
+                            <li class="has-submenu">
+                                <a href="isoDocuments.html"><i class="ti-briefcase"></i>Docs</a>
+                            </li>
+
+                            <li class="has-submenu">
+                                <a href="reportingType.html"><i class="ti-clipboard"></i>Reports</a>
+                            </li>
+
+                            <li class="has-submenu">
+                                <a href="scanDashboard.html"><i class="ti-harddrive"></i>Scan Dashboard</a>
+                            </li>
+                            
                         </ul>
                         <!-- End navigation menu -->
                     </div> <!-- end #navigation -->
@@ -116,159 +133,175 @@
         <div class="wrapper mb-5 mb-lg-4 pb-5 pb-lg-0">
             <form>
                 <div class="container">
-                    <h4 class="mt-5 text-uppercase">Add/Edit Merchant</h4>
-                    <div class="card-box">
-                        <div class="row">
-                            <div class="col-sm-12 col-md-12 col-lg-3">
-                                <div class="m-b-20">
-                                    <span>Business Name</span>
-                                    <div class="m-t-5">
-                                    <input type="text" class="form-control m-b-10" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="*Business Name (DBA)">
-                                    <input type="text" class="form-control m-b-10" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Legal Name">
-                                    <input type="text" class="form-control m-b-10" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="*Merchant ID">
-                                    </div>
+                    <div class="row text-uppercase">
+                        <div class="col-sm-12">
+                            <div class="page-title-box">
+                                <div class="btn-group pull-right">
+                                    <ol class="breadcrumb hide-phone p-0 m-0">
+                                    <!--li class="breadcrumb-item"><a href="#">Minton</a></li-->
+                                        <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+                                        <li class="breadcrumb-item active">Mannualy Enter Merchant</li>
+                                    </ol>
                                 </div>
-                                <div class="m-b-20">
-                                    <span>Account Info</span>
-                                    <div class="m-t-5">
-                                    <input type="text" class="form-control m-b-10" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Account Number (DDA)">
-                                    <input type="text" class="form-control m-b-10" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Routing Number">
-                                    </div>
-                                </div>
-                                <div class="m-b-20">
-                                    <span>Company Name</span>
-                                    <input type="text" class="form-control m-b-10 m-t-5" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Company Phone">
-                                    <input type="text" class="form-control m-b-10" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Company Contact Email">
-                                    <input type="text" class="form-control m-b-10" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Company Url">
-                                    <input type="text" class="form-control m-b-10" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="MCC/SIC Code">
-                                </div>
-                                <div class="m-b-20">
-                                    <span>Type of Business</span>
-                                    <div class="my-2">
-                                        <select class="custom-select">
-                                            <option selected="">None</option>
-                                            <option value="1">Retailer</option>
-                                            <option value="2">Telecommunication</option>
-                                        </select>
-                                    </div>
-                                    <div class="checkbox checkbox-primary m-t-10">
-                                        <input id="checkbox1" type="checkbox">
-                                        <label for="checkbox1">Compliant Through Another Provider</label>
-                                    </div>
-                                </div>
-                                <div class="m-b-20">
-                                    <span>Custom Fields</span>
-                                    <input type="text" class="form-control m-b-10 m-t-5" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Custom 1">
-                                    <input type="text" class="form-control m-b-10" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Custom 2">
-                                    <input type="text" class="form-control m-b-10" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Custom 3">
-                                </div>
-                                <div class="m-b-20">
-                                    <span>Breach Protection</span>
-                                    <div class="checkbox checkbox-primary m-t-10">
-                                        <input id="checkbox2" disabled="" checked="" type="checkbox">
-                                        <label for="checkbox2">Breach Protection Coverage</label>
-                                    </div>
-                                </div>
-                                <div class="m-b-20">
-                                    <span>Coverage Start Date</span>
-                                    <input type="text" class="form-control m-b-10 m-t-5" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Date">
-                                </div>
-                                <div class="m-b-20">
-                                    <span>Level:</span>
-                                    <input type="text" class="form-control m-b-10 m-t-5" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Level">
-                                </div>
+                                <h3 class="page-title">Mannualy Enter Merchant</h3>
                             </div>
-                            <div class="col-1"></div>
-                            <div class="col-sm-12 col-md-12 col-lg-3">
-                                <div>
-                                    <span>Location Info</span>
-                                    <div class="m-t-5 m-b-20">
-                                    <input type="text" class="form-control m-b-10" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Street Line 1:">
-                                    <input type="text" class="form-control m-b-10" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Street Line 2:">
-                                    <input type="text" class="form-control m-b-10" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="City">
-                                    <select class="custom-select m-b-10">
-                                        <option selected="">Country</option>
-                                        <option value="1">USA</option>
-                                        <option value="2">Belarus</option>
-                                    </select>
-                                    <select class="custom-select">
-                                        <option selected="">State</option>
-                                        <option value="1">Alabama</option>
-                                        <option value="2">Alaska</option>
-                                    </select>
-                                    <div class="row">
-                                        <div class="col-6 col-sm-6 col-md-6 col-lg-6 m-t-10">
+                        </div>
+                    </div>
+                    <div class="card mb-3">
+                        <div class="card-header"><h4 class="text-uppercase m-0">Add/Edit Merchant</h4></div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-12 col-lg-3">
+                                    <div class="m-b-20">
+                                        <span>Business Name</span>
+                                        <div class="m-t-5">
+                                        <input type="text" class="form-control m-b-10" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="*Business Name (DBA)">
+                                        <input type="text" class="form-control m-b-10" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Legal Name">
+                                        <input type="text" class="form-control m-b-10" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="*Merchant ID">
+                                        </div>
+                                    </div>
+                                    <div class="m-b-20">
+                                        <span>Account Info</span>
+                                        <div class="m-t-5">
+                                        <input type="text" class="form-control m-b-10" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Account Number (DDA)">
+                                        <input type="text" class="form-control m-b-10" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Routing Number">
+                                        </div>
+                                    </div>
+                                    <div class="m-b-20">
+                                        <span>Company Name</span>
+                                        <input type="text" class="form-control m-b-10 m-t-5" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Company Phone">
+                                        <input type="text" class="form-control m-b-10" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Company Contact Email">
+                                        <input type="text" class="form-control m-b-10" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Company Url">
+                                        <input type="text" class="form-control m-b-10" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="MCC/SIC Code">
+                                    </div>
+                                    <div class="m-b-20">
+                                        <span>Type of Business</span>
+                                        <div class="my-2">
                                             <select class="custom-select">
-                                                <option value="1" selected="">Non US Zip</option>
-                                                <option value="2">US Zip</option>
+                                                <option selected="">None</option>
+                                                <option value="1">Retailer</option>
+                                                <option value="2">Telecommunication</option>
                                             </select>
                                         </div>
-                                        <div class="col-6 col-sm-6 col-md-6 col-lg-6 m-t-10">
-                                            <input type="text" class="form-control m-b-10" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="*Merchant Zip Code">
+                                        <div class="checkbox checkbox-primary m-t-10">
+                                            <input id="checkbox1" type="checkbox">
+                                            <label for="checkbox1">Compliant Through Another Provider</label>
                                         </div>
                                     </div>
+                                    <div class="m-b-20">
+                                        <span>Custom Fields</span>
+                                        <input type="text" class="form-control m-b-10 m-t-5" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Custom 1">
+                                        <input type="text" class="form-control m-b-10" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Custom 2">
+                                        <input type="text" class="form-control m-b-10" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Custom 3">
+                                    </div>
+                                    <div class="m-b-20">
+                                        <span>Breach Protection</span>
+                                        <div class="checkbox checkbox-primary m-t-10">
+                                            <input id="checkbox2" disabled="" checked="" type="checkbox">
+                                            <label for="checkbox2">Breach Protection Coverage</label>
+                                        </div>
+                                    </div>
+                                    <div class="m-b-20">
+                                        <span>Coverage Start Date</span>
+                                        <input type="text" class="form-control m-b-10 m-t-5" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Date">
+                                    </div>
+                                    <div class="m-b-20">
+                                        <span>Level:</span>
+                                        <input type="text" class="form-control m-b-10 m-t-5" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Level">
                                     </div>
                                 </div>
-                                <div class="m-b-20">
-                                    <span class="m-t-5">Hierarchy</span>
-                                   <select class="custom-select m-b-10 m-t-5">
-                                        <option selected="">OFFICE/AGENT</option>
-                                        <option value="1">BestCard</option>
-                                        <option value="2">MAC USA</option>
-                                    </select>
-                                    <select class="custom-select m-b-10">
-                                        <option selected="">REP</option>
-                                        <option value="1">BestCard - IP76</option>
-                                        <option value="2">BestCard - MT76</option>
-                                    </select>
-                                    <select class="custom-select m-b-10">
-                                        <option selected="">BANK/PROCESSOR</option>
-                                        <option value="1">Electronic Merchant Systems (EMS)</option>
-                                        <option value="2">Evo/PowerPay</option>
-                                        <option value="3">First Data Merchant Services</option>
-                                        <option value="4">iPmt</option>
-                                        <option value="5">Vantiv</option>
-                                    </select>
-                                    <select class="custom-select m-b-10">
-                                        <option selected="">PLATFORM</option>
-                                    </select>
-                                    <select class="custom-select m-b-10">
-                                        <option selected="">SYS/PRIN</option>
-                                        <option value="1">02740</option>
-                                        <option value="2">02949</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-1"></div>
-                            <div class="col-sm-12 col-md-12 col-lg-3">
-                                <div>
-                                    <span>Contact Info</span>
-                                    <div class="m-t-5 m-b-20">
-                                        <input type="text" class="form-control m-b-10" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Contact Name">
-                                        <input type="text" class="form-control m-b-10" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Contact Phone">
-                                        <input type="text" class="form-control m-b-10" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Extension:">
-                                        <input type="text" class="form-control m-b-10" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Contact Phone 2">
-                                        <input type="text" class="form-control m-b-10" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Contact Email">
-                                        <input type="text" class="form-control m-b-10" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Contact Fax">
+                                <div class="col-1"></div>
+                                <div class="col-sm-12 col-md-12 col-lg-3">
+                                    <div>
+                                        <span>Location Info</span>
+                                        <div class="m-t-5 m-b-20">
+                                        <input type="text" class="form-control m-b-10" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Street Line 1:">
+                                        <input type="text" class="form-control m-b-10" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Street Line 2:">
+                                        <input type="text" class="form-control m-b-10" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="City">
+                                        <select class="custom-select m-b-10">
+                                            <option selected="">Country</option>
+                                            <option value="1">USA</option>
+                                            <option value="2">Belarus</option>
+                                        </select>
+                                        <select class="custom-select">
+                                            <option selected="">State</option>
+                                            <option value="1">Alabama</option>
+                                            <option value="2">Alaska</option>
+                                        </select>
+                                        <div class="row">
+                                            <div class="col-6 col-sm-6 col-md-6 col-lg-6 m-t-10">
+                                                <select class="custom-select">
+                                                    <option value="1" selected="">Non US Zip</option>
+                                                    <option value="2">US Zip</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-6 col-sm-6 col-md-6 col-lg-6 m-t-10">
+                                                <input type="text" class="form-control m-b-10" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="*Merchant Zip Code">
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    <div class="m-b-20">
+                                        <span class="m-t-5">Hierarchy</span>
+                                       <select class="custom-select m-b-10 m-t-5">
+                                            <option selected="">OFFICE/AGENT</option>
+                                            <option value="1">BestCard</option>
+                                            <option value="2">MAC USA</option>
+                                        </select>
+                                        <select class="custom-select m-b-10">
+                                            <option selected="">REP</option>
+                                            <option value="1">BestCard - IP76</option>
+                                            <option value="2">BestCard - MT76</option>
+                                        </select>
+                                        <select class="custom-select m-b-10">
+                                            <option selected="">BANK/PROCESSOR</option>
+                                            <option value="1">Electronic Merchant Systems (EMS)</option>
+                                            <option value="2">Evo/PowerPay</option>
+                                            <option value="3">First Data Merchant Services</option>
+                                            <option value="4">iPmt</option>
+                                            <option value="5">Vantiv</option>
+                                        </select>
+                                        <select class="custom-select m-b-10">
+                                            <option selected="">PLATFORM</option>
+                                        </select>
+                                        <select class="custom-select m-b-10">
+                                            <option selected="">SYS/PRIN</option>
+                                            <option value="1">02740</option>
+                                            <option value="2">02949</option>
+                                        </select>
                                     </div>
                                 </div>
-                                <div class="m-b-20">
-                                    <span>Business Description</span>
-                                    <textarea class="form-control m-t-5" rows="6"></textarea>
-                                    <div class="checkbox checkbox-primary m-t-10">
-                                        <input id="checkbox3" type="checkbox">
-                                        <label for="checkbox3">Send to multiple email addresses</label>
+                                <div class="col-1"></div>
+                                <div class="col-sm-12 col-md-12 col-lg-3">
+                                    <div>
+                                        <span>Contact Info</span>
+                                        <div class="m-t-5 m-b-20">
+                                            <input type="text" class="form-control m-b-10" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Contact Name">
+                                            <input type="text" class="form-control m-b-10" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Contact Phone">
+                                            <input type="text" class="form-control m-b-10" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Extension:">
+                                            <input type="text" class="form-control m-b-10" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Contact Phone 2">
+                                            <input type="text" class="form-control m-b-10" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Contact Email">
+                                            <input type="text" class="form-control m-b-10" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Contact Fax">
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="m-b-20">
-                                    <span>Default language:</span>
-                                    <select class="custom-select">
-                                        <option selected="">Choose Language</option>
-                                        <option value="1">English</option>
-                                        <option value="2">Spanish</option>
-                                        <option value="3">Portuguese</option>
-                                        <option value="4">Vietnamese</option>
-                                    </select>
+                                    <div class="m-b-20">
+                                        <span>Business Description</span>
+                                        <textarea class="form-control m-t-5" rows="6"></textarea>
+                                        <div class="checkbox checkbox-primary m-t-10">
+                                            <input id="checkbox3" type="checkbox">
+                                            <label for="checkbox3">Send to multiple email addresses</label>
+                                        </div>
+                                    </div>
+                                    <div class="m-b-20">
+                                        <span>Default language:</span>
+                                        <select class="custom-select">
+                                            <option selected="">Choose Language</option>
+                                            <option value="1">English</option>
+                                            <option value="2">Spanish</option>
+                                            <option value="3">Portuguese</option>
+                                            <option value="4">Vietnamese</option>
+                                        </select>
+                                    </div>
                                 </div>
                             </div>
                         </div>

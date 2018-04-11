@@ -135,44 +135,61 @@
     <div class="wrapper mb-5 mb-lg-4 pb-5 pb-lg-0">
         <form>
             <div class="container">
-                <div class="row mt-5">
-                    <div class="col-12">
-                        <h4 class="text-uppercase">Submit a Chargeback Claim</h4>
-                        <div class="card-box text-uppercase">
-                            <div class="row">
-                                <div class="col-sm-12 col-md-9 col-lg-5">
-                                    <h4 class="text-primary">CHARGEBACK AMOUNT:</h4>
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Chargeback Amount">
-                                    </div>
-                                    <h4 class="text-primary mt-4">Date of Charge Back:</h4>
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="mm/dd/yyyy" id="datepicker-autoclose">
-                                    </div>
-                                </div>
+                <div class="row text-uppercase">
+                    <div class="col-sm-12">
+                        <div class="page-title-box">
+                            <div class="btn-group pull-right">
+                                <ol class="breadcrumb hide-phone p-0 m-0">
+                                <!--li class="breadcrumb-item"><a href="#">Minton</a></li-->
+                                    <li class="breadcrumb-item"><a href="merchantDashboard.html">Dashboard</a></li>
+                                    <li class="breadcrumb-item active">Submit a Chargeback Claim</li>
+                                </ol>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="row mt-3">
                     <div class="col-12">
-                        <h4 class="text-uppercase">Upload Attachment Info</h4>
-                        <div class="card-box text-uppercase">
-                            <div class="row mb-3">
-                                <div class="col-sm-12 col-md-12 col-lg-12">
-                                    <span class="text-uppercase text-white">Instructions:</span>
-                                    <div class="w-100"></div>
-                                    <span>PLEASE INCLUDE A COPY OF THE CHARGEBACK LETTER YOU RECEIVED FROM YOUR PROCESSOR. THIS CAN BE A SCAN OR PICTURE OF THE LETTER.</span>
+                        <div class="card">
+                            <div class="card-header"><h4 class="text-uppercase m-0">Submit a Chargeback Claim</h4></div>
+                            <div class="card-body text-uppercase">
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-9 col-lg-5">
+                                        <h4 class="text-primary">CHARGEBACK AMOUNT:</h4>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Chargeback Amount">
+                                        </div>
+                                        <h4 class="text-primary mt-4">Date of Charge Back:</h4>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="mm/dd/yyyy" id="datepicker-autoclose">
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="row align-items-center">
-                                <div class="col-sm-4 col-md-4 col-lg-2 my-1">
-                                    <span>Upload Attachment</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-3 mb-3">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-header"><h4 class="text-uppercase m-0">Upload Attachment Info</h4></div>
+                            <div class="card-body text-uppercase">
+                                <div class="row mb-3">
+                                    <div class="col-sm-12 col-md-12 col-lg-12">
+                                        <span class="text-uppercase text-white">Instructions:</span>
+                                        <div class="w-100"></div>
+                                        <span>PLEASE INCLUDE A COPY OF THE CHARGEBACK LETTER YOU RECEIVED FROM YOUR PROCESSOR. THIS CAN BE A SCAN OR PICTURE OF THE LETTER.</span>
+                                    </div>
                                 </div>
-                                <div class="col-sm-6 col-md-4 col-lg-5 my-1">
-                                    <div class=" fileupload btn waves-effect btn-primary">
-                                        <span><i class="ion-upload m-r-5"></i>Upload</span>
-                                        <input class="upload" type="file">
+                                <div class="row align-items-center">
+                                    <div class="col-sm-4 col-md-4 col-lg-2 my-1">
+                                        <span>Upload Attachment</span>
+                                    </div>
+                                    <div class="col-sm-6 col-md-4 col-lg-5 my-1">
+                                        <div class=" fileupload btn waves-effect btn-primary">
+                                            <span><i class="ion-upload m-r-5"></i>Upload</span>
+                                            <input class="upload" type="file">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -187,19 +204,21 @@
                         <button type="button" class="btn btn-primary btn-custom btn-block mt-1">Send</button>
                     </div>
                 </div>
-                <h4 class="text-uppercase mt-4">Important Notices</h4>
-                <div class="card-box">
-                    <div class="row">
-                        <div class="col-12 text-danger">
-                            I) YOU MUST SUBMIT THE CHARGEBACK CLAIM AS MAY BE COVERED AS SOON AS POSSIBLE BUT IN ANY EVENT WITHIN 60 DAYS OF THE END OF THE MONTH IN WHICH THE CHARGEBACK OCCURRED.
-                            <div class="w-100 mb-3"></div>
-                            II) ONLY TRANSACTIONS WITH A VALUE EQUAL TO OR LESS THAN $1000 ARE ELIGIBLE FOR COVERAGE. CHARGEBACK'S IN EXCESS OF $1000 ARE NOT COVERED.
-                            <div class="w-100 mb-3"></div>
-                            III) ELIGIBILITY IS LIMITED TO LEVEL 4 MERCHANTS ONLY.
-                            <div class="w-100 mb-3"></div>
-                            IV) CHARGEBACK CLAIMS ARE ONLY ELIGIBLE FOR FACE-TO-FACE TRANSACTION
-                            <div class="w-100 mb-3"></div>
-                            V) THIS PROGRAM IS BACKED BY A LICENSED 3RD PARTY INSURANCE PROVIDER.
+                <div class="card mt-5">
+                    <div class="card-header"><h4 class="text-uppercase m-0">Important Notices</h4></div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-12 text-danger">
+                                I) YOU MUST SUBMIT THE CHARGEBACK CLAIM AS MAY BE COVERED AS SOON AS POSSIBLE BUT IN ANY EVENT WITHIN 60 DAYS OF THE END OF THE MONTH IN WHICH THE CHARGEBACK OCCURRED.
+                                <div class="w-100 mb-3"></div>
+                                II) ONLY TRANSACTIONS WITH A VALUE EQUAL TO OR LESS THAN $1000 ARE ELIGIBLE FOR COVERAGE. CHARGEBACK'S IN EXCESS OF $1000 ARE NOT COVERED.
+                                <div class="w-100 mb-3"></div>
+                                III) ELIGIBILITY IS LIMITED TO LEVEL 4 MERCHANTS ONLY.
+                                <div class="w-100 mb-3"></div>
+                                IV) CHARGEBACK CLAIMS ARE ONLY ELIGIBLE FOR FACE-TO-FACE TRANSACTION
+                                <div class="w-100 mb-3"></div>
+                                V) THIS PROGRAM IS BACKED BY A LICENSED 3RD PARTY INSURANCE PROVIDER.
+                            </div>
                         </div>
                     </div>
                 </div>

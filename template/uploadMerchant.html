@@ -106,14 +106,31 @@
                 <div class="container-fluid">
                     <div id="navigation">
                         <!-- Navigation Menu-->
-                        <ul class="navigation-menu clearfix">
-                            <li>
-                                <a><h4 class="m-0">UPLOAD MERCHANT</h4></a>
+                        <ul class="navigation-menu text-uppercase">
+                            <li class="has-submenu">
+                                <a href="index.html"><i class="ti-home"></i>ISO Dashboard</a>
                             </li>
-                            <li class="has-submenu float-right">
-                                <button onclick="location.href='addEdit.html'" type="button" class="btn btn-light waves-effect waves-light m-t-10 m-b-10">ADD/EDIT</button>
-                                <button onclick="location.href='index.html'" type="button" class="btn btn-light waves-effect waves-light m-t-10 m-b-10">DASHBOARD</button>
-                            </li>                           
+
+                            <li class="has-submenu">
+                                <a href="addEdit.html"><i class="ti-pencil"></i>Add/Edit</a>
+                            </li>
+
+                            <li class="has-submenu">
+                                <a href="communications.html"><i class="ti-comments"></i>Comm List</a>
+                            </li>
+
+                            <li class="has-submenu">
+                                <a href="isoDocuments.html"><i class="ti-briefcase"></i>Docs</a>
+                            </li>
+
+                            <li class="has-submenu">
+                                <a href="reportingType.html"><i class="ti-clipboard"></i>Reports</a>
+                            </li>
+
+                            <li class="has-submenu">
+                                <a href="scanDashboard.html"><i class="ti-harddrive"></i>Scan Dashboard</a>
+                            </li>
+                            
                         </ul>
                         <!-- End navigation menu -->
                     </div> <!-- end #navigation -->
@@ -125,128 +142,150 @@
         <div class="wrapper mb-5 mb-lg-4 pb-5 pb-lg-0">
             <form>
                 <div class="container">
-                    <h4 class="mt-5">FILE VALIDATION</h4>
-                    <div class="card-box">
-                        <div class="row">
-                            <div class="col-sm-12 col-md-6 col-lg-3">
-                                <div class="row align-items-center">
-                                    <div class="col-sm-4 col-md-6 col-lg-7 my-1">
-                                        <span>Select Uploaded File</span>
+                    <div class="row text-uppercase">
+                        <div class="col-sm-12">
+                            <div class="page-title-box">
+                                <div class="btn-group pull-right">
+                                    <ol class="breadcrumb hide-phone p-0 m-0">
+                                    <!--li class="breadcrumb-item"><a href="#">Minton</a></li-->
+                                        <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+                                        <li class="breadcrumb-item active">Upload Merchant</li>
+                                    </ol>
+                                </div>
+                                <h3 class="page-title">Upload Merchant</i></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3">
+                        <div class="card-header"><h4 class="m-0">FILE VALIDATION</h4></div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6 col-lg-3">
+                                    <div class="row align-items-center">
+                                        <div class="col-sm-4 col-md-6 col-lg-7 my-1">
+                                            <span>Select Uploaded File</span>
+                                        </div>
+                                        <div class="col-sm-6 col-md-4 col-lg-5 my-1">
+                                            <div class=" fileupload btn waves-effect btn-primary">
+                                                <span><i class="ion-upload m-r-5"></i>Upload</span>
+                                                <input class="upload" type="file">
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="col-sm-6 col-md-4 col-lg-5 my-1">
-                                        <div class=" fileupload btn waves-effect btn-primary">
-                                            <span><i class="ion-upload m-r-5"></i>Upload</span>
-                                            <input class="upload" type="file">
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-10 col-lg-12 my-1">
+                                            <select class="custom-select">
+                                                <option selected="">SELECT BANK...</option>
+                                                <option value="1">iPmt</option>
+                                                <option value="2">Vantiv</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-10 col-lg-12 my-1">
+                                            <div class="checkbox checkbox-primary m-t-10">
+                                                <input id="checkbox3" type="checkbox">
+                                                <label for="checkbox3">Show Full Validation Log</label>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-sm-12 col-md-10 col-lg-12 my-1">
-                                        <select class="custom-select">
-                                            <option selected="">SELECT BANK...</option>
-                                            <option value="1">iPmt</option>
-                                            <option value="2">Vantiv</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-12 col-md-10 col-lg-12 my-1">
-                                        <div class="checkbox checkbox-primary m-t-10">
-                                            <input id="checkbox3" type="checkbox">
-                                            <label for="checkbox3">Show Full Validation Log</label>
+                                <div class="col-sm-12 col-md-6 col-lg-6 offset-lg-2">
+                                    <h4>If there is a duplicate company how do you want us to handle?</h4>
+                                    <div class="row">
+                                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 my-2">
+                                            <div class="radio radio-primary">
+                                                <input type="radio" name="radio_inline" value="option1" id="radio5">
+                                                <label for="radio5">Skip the duplicate</label>
+                                            </div>
+                                            <div class="radio radio-primary">
+                                                <input type="radio" name="radio_inline" value="option2" id="radio6" checked="">
+                                                <label for="radio6">Update the merchant with this information</label>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-12 col-md-6 col-lg-6 offset-lg-2">
-                                <h4>If there is a duplicate company how do you want us to handle?</h4>
-                                <div class="row">
-                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 my-2">
-                                        <div class="radio radio-primary">
-                                            <input type="radio" name="radio_inline" value="option1" id="radio5">
-                                            <label for="radio5">Skip the duplicate</label>
-                                        </div>
-                                        <div class="radio radio-primary">
-                                            <input type="radio" name="radio_inline" value="option2" id="radio6" checked="">
-                                            <label for="radio6">Update the merchant with this information</label>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-end m-b-20">
+                        <button type="button" class="btn btn-primary btn-custom waves-effect waves-light w-lg">Validate File</button>
+                        <button type="button" class="btn btn-default btn-custom waves-effect waves-light m-l-10 w-lg">Load File</button>
+                    </div>
+                    <div class="card mt-5">
+                        <div class="card-header"><h4 class="m-0">FILE VALIDATION</h4></div>
+                        <div class="card-body">
+                            <div class="row m-b-30">
+                                <div class="col">
+                                    <span>Validation Report Summary</span>
+                                    <textarea class="form-control m-t-5" rows="3"></textarea>
+                                    <button type="button" class="btn btn-default btn-custom waves-effect m-t-10 waves-light w-lg">View Full Validation Report</button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <span>Loading Report Summary</span>
+                                    <textarea class="form-control m-t-5" rows="3"></textarea>
+                                    <button type="button" class="btn btn-default btn-custom waves-effect m-t-10 aves-light w-lg">View Full Loading Report</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mt-5 mb-3">
+                        <div class="card-header"><h4 class="m-0">FILTER <i class="ti-filter"></i></h4></div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-12 col-lg-4 my-2">
+                                    <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Full or Partial File Name">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 col-md-12 col-lg-8 my-2">
+                                    <div class="form-group m-0">
+                                        <div class="input-daterange input-group" id="date-range">
+                                            <input type="text" class="form-control" name="start" placeholder="Start Date" />
+                                            <input type="text" class="form-control" name="end" placeholder="End Date" />
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6 col-lg-4 my-2">
+                                    <select class="custom-select" data-toggle="dropdown" aria-expanded="false">
+                                        <option>Equal To (=)</option>
+                                        <option>Greater Than (>)</option>
+                                        <option>Less Than (<)</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4 my-2">
+                                    <input type="text" class="form-control" placeholder="Record count">
+                                </div>                        
+                            </div>
                         </div>
                     </div>
-                <div class="d-flex justify-content-end m-b-20">
-                    <button type="button" class="btn btn-primary btn-custom waves-effect waves-light w-lg">Validate File</button>
-                    <button type="button" class="btn btn-default btn-custom waves-effect waves-light m-l-10 w-lg">Load File</button>
-                </div>
-                <h4 class="mt-4">FILE VALIDATION</h4>
-                <div class="card-box">
-                    <div class="row m-b-30">
-                        <div class="col">
-                            <span>Validation Report Summary</span>
-                            <textarea class="form-control m-t-5" rows="3"></textarea>
-                            <button type="button" class="btn btn-default btn-custom waves-effect m-t-10 waves-light w-lg">View Full Validation Report</button>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <span>Loading Report Summary</span>
-                            <textarea class="form-control m-t-5" rows="3"></textarea>
-                            <button type="button" class="btn btn-default btn-custom waves-effect m-t-10 aves-light w-lg">View Full Loading Report</button>
-                        </div>
-                    </div>
-                </div>
-                <h4 class="mt-4">FILTER <i class="ti-filter"></i></h4>
-                <div class="card-box">
-                    <div class="row">
-                        <div class="col-sm-12 col-md-12 col-lg-4 my-2">
-                            <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Full or Partial File Name">
-                        </div>
+                    <div class="d-flex justify-content-end m-b-20">
+                        <button type="button" class="btn btn-primary btn-custom waves-effect waves-light w-lg">Search</button>
+                        <button type="button" class="btn btn-default btn-custom waves-effect waves-light m-l-10 w-lg">View All</button>
                     </div>
                     <div class="row">
-                        <div class="col-sm-12 col-md-12 col-lg-8 my-2">
-                            <div class="form-group m-0">
-                                <div class="input-daterange input-group" id="date-range">
-                                    <input type="text" class="form-control" name="start" placeholder="Start Date" />
-                                    <input type="text" class="form-control" name="end" placeholder="End Date" />
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-body table-responsive">
+                                    <table id="responsive-datatable" class="table text-center table-bordered table-hover table-striped nowrap dt-responsive" cellspacing="0" width="100%">
+                                        <thead class="thead-light">
+                                            <tr>
+                                                <th>Date Loading</th>
+                                                <th>File Name</th>
+                                                <th>Records</th>
+                                                <th>Start Date</th>
+                                                <th>End Date</th>
+                                            </tr>
+                                        </thead>
+                                    </table>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-sm-12 col-md-6 col-lg-4 my-2">
-                            <select class="custom-select" data-toggle="dropdown" aria-expanded="false">
-                                <option>Equal To (=)</option>
-                                <option>Greater Than (>)</option>
-                                <option>Less Than (<)</option>
-                            </select>
-                        </div>
-                        <div class="col-sm-12 col-md-6 col-lg-4 my-2">
-                            <input type="text" class="form-control" placeholder="Record count">
-                        </div>                        
-                    </div>
-                </div>
-                <div class="d-flex justify-content-end m-b-20">
-                    <button type="button" class="btn btn-primary btn-custom waves-effect waves-light w-lg">Search</button>
-                    <button type="button" class="btn btn-default btn-custom waves-effect waves-light m-l-10 w-lg">View All</button>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <div class="card-box table-responsive">
-                            <table id="responsive-datatable" class="table text-center table-bordered table-hover table-striped nowrap dt-responsive" cellspacing="0" width="100%">
-                                <thead class="thead-light">
-                                    <tr>
-                                        <th>Date Loading</th>
-                                        <th>File Name</th>
-                                        <th>Records</th>
-                                        <th>Start Date</th>
-                                        <th>End Date</th>
-                                    </tr>
-                                </thead>
-                            </table>
-                        </div>
-                    </div>
-                </div>
                 </div>
             </form>
         </div>

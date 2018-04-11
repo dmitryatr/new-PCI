@@ -135,92 +135,115 @@
     <div class="wrapper mb-5 mb-lg-4 pb-5 pb-lg-0">
         <form>
             <div class="container">
-                <div class="row mt-5">
-                    <div class="col-12">
-                        <h4 class="text-uppercase">Additional Documents</h4>
-                        <div class="card-box table-responsive">
-                            <table id="responsive-datatable1" class="table text-center table-bordered table-hover table-striped nowrap dt-responsive" cellspacing="0" width="100%">
-                                <thead class="thead-light">
-                                    <tr>
-                                        <th>Date</th>
-                                        <th>Document</th>
-                                    </tr>
-                                </thead>
-                            </table>
+                <div class="row text-uppercase">
+                    <div class="col-sm-12">
+                        <div class="page-title-box">
+                            <div class="btn-group pull-right">
+                                <ol class="breadcrumb hide-phone p-0 m-0">
+                                <!--li class="breadcrumb-item"><a href="#">Minton</a></li-->
+                                    <li class="breadcrumb-item"><a href="merchantDashboard.html">Dashboard</a></li>
+                                    <li class="breadcrumb-item active">Notes/Tickets</li>
+                                </ol>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="card-box mt-3">
-                    <div class="row py-2">
-                        <div class="col-sm-12 col-lg-3 my-1">
-                            <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Enter Name">
+                <div class="row mt-3">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-header"><h4 class="text-uppercase m-0">Additional Documents</h4></div>
+                            <div class="card-body table-responsive">
+                                <table id="responsive-datatable1" class="table text-center table-bordered table-hover table-striped nowrap dt-responsive" cellspacing="0" width="100%">
+                                    <thead class="thead-light">
+                                        <tr>
+                                            <th>Date</th>
+                                            <th>Document</th>
+                                        </tr>
+                                    </thead>
+                                </table>
+                            </div>
                         </div>
-                        <div class="col-sm-12 col-lg-2 my-1">
-                            <button type="button" class="btn btn-primary btn-custom btn-block waves-effect waves-light">Search</button>
-                        </div>
-                        <div class="col-sm-12 col-lg-2 my-1">
-                            <button type="button" class="btn btn-primary btn-custom btn-block waves-effect waves-light">Add New</button>
+                    </div>
+                </div>
+                <div class="card mt-5">
+                    <div class="card-body mt-3">
+                        <div class="row py-2">
+                            <div class="col-sm-12 col-lg-3 my-1">
+                                <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Enter Name">
+                            </div>
+                            <div class="col-sm-12 col-lg-2 my-1">
+                                <button type="button" class="btn btn-primary btn-custom btn-block waves-effect waves-light">Search</button>
+                            </div>
+                            <div class="col-sm-12 col-lg-2 my-1">
+                                <button type="button" class="btn btn-primary btn-custom btn-block waves-effect waves-light">Add New</button>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="row mt-4">
                     <div class="col-12">
-                        <div class="card-box table-responsive">
-                            <table id="responsive-datatable2" class="table table-bordered table-hover table-striped nowrap dt-responsive" cellspacing="0" width="100%">
-                                <thead class="thead-light">
-                                    <tr>
-                                        <th>Number</th>
-                                        <th>Name</th>
-                                        <th>Data Sent</th>
-                                        <th>From</th>
-                                        <th>Posted From</th>
-                                        <th>To</th>
-                                        <th>Posted To</th>
-                                        <th></th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td></td>
-                                        <td>PCI COMPLIANCE PORTAL EMAIL VERIFICATION</td>
-                                        <td>12/13/2017</td>
-                                        <td>ADMIN</td>
-                                        <td>ADMIN</td>
-                                        <td>MERCHANT</td>
-                                        <td>A TECH HEATING AND COOLING</td>
-                                        <td class="actions">
-                                            <a href="#" class="on-default px-1 text-warning" data-toggle="tooltip" data-placement="top" title="" data-original-title="Details"><i class="mdi mdi-file-find"></i></a>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-                <h4 class="text-uppercase mt-4">Upload Document To ISO</h4>
-                <div class="card-box">
-                    <div class="row align-items-center">
-                        <div class="col-sm-6 col-md-4 col-lg-3 my-1">
-                            <div class=" fileupload btn btn-block waves-effect btn-secondary">
-                                <span><i class="ion-upload m-r-5"></i>Select File</span>
-                                <input class="upload" type="file">
+                        <div class="card">
+                            <div class="card-body table-responsive">
+                                <table id="responsive-datatable2" class="table table-bordered table-hover table-striped nowrap dt-responsive" cellspacing="0" width="100%">
+                                    <thead class="thead-light">
+                                        <tr>
+                                            <th>Number</th>
+                                            <th>Name</th>
+                                            <th>Data Sent</th>
+                                            <th>From</th>
+                                            <th>Posted From</th>
+                                            <th>To</th>
+                                            <th>Posted To</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td></td>
+                                            <td>PCI COMPLIANCE PORTAL EMAIL VERIFICATION</td>
+                                            <td>12/13/2017</td>
+                                            <td>ADMIN</td>
+                                            <td>ADMIN</td>
+                                            <td>MERCHANT</td>
+                                            <td>A TECH HEATING AND COOLING</td>
+                                            <td class="actions">
+                                                <a href="#" class="on-default px-1 text-warning" data-toggle="tooltip" data-placement="top" title="" data-original-title="Details"><i class="mdi mdi-file-find"></i></a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-md-4 col-lg-3 my-1">
-                            <input type="submit" name="Upload" class="btn btn-primary btn-block" value="Upload">
+                    </div>
+                </div>
+                <div class="card mt-5">
+                    <div class="card-header"><h4 class="text-uppercase m-0">Upload Document To ISO</h4></div>
+                    <div class="card-body">
+                        <div class="row align-items-center">
+                            <div class="col-sm-6 col-md-4 col-lg-3 my-1">
+                                <div class=" fileupload btn btn-block waves-effect btn-secondary">
+                                    <span><i class="ion-upload m-r-5"></i>Select File</span>
+                                    <input class="upload" type="file">
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-3 my-1">
+                                <input type="submit" name="Upload" class="btn btn-primary btn-block" value="Upload">
+                            </div>
                         </div>
                     </div>
                 </div>
-                <h4 class="text-uppercase mt-4">Additional Documents - Mersatech</h4>
-                <div class="card-box table-responsive">
-                    <table id="responsive-datatable3" class="table text-center table-bordered table-hover table-striped nowrap dt-responsive" cellspacing="0" width="100%">
-                        <thead class="thead-light">
-                            <tr>
-                                <th>Date</th>
-                                <th>Document</th>
-                            </tr>
-                        </thead>
-                    </table>
+                <div class="card mt-5">
+                    <div class="card-header"><h4 class="text-uppercase m-0">Additional Documents - Mersatech</h4></div>
+                    <div class="card-body table-responsive">
+                        <table id="responsive-datatable3" class="table text-center table-bordered table-hover table-striped nowrap dt-responsive" cellspacing="0" width="100%">
+                            <thead class="thead-light">
+                                <tr>
+                                    <th>Date</th>
+                                    <th>Document</th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
                 </div>
             </div>
         </form>        
